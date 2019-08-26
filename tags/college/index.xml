@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>college on Pobega&#39;s Blog</title>
+    <link>https://pobe.ga/tags/college/</link>
+    <description>Recent content in college on Pobega&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/pobega&#34;&gt;Michael Pobega&lt;/a&gt; 2019</copyright>
+    <lastBuildDate>Sun, 01 Feb 2009 14:23:15 -0400</lastBuildDate>
+    
+	<atom:link href="https://pobe.ga/tags/college/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tunneling a connection through SSH</title>
+      <link>https://pobe.ga/posts/tunneling-through-ssh/</link>
+      <pubDate>Sun, 01 Feb 2009 14:23:15 -0400</pubDate>
+      
+      <guid>https://pobe.ga/posts/tunneling-through-ssh/</guid>
+      <description>So I finally arrived at school, only to find that my college has decided to block IRC on the campus wifi. Weirdly enough, they allow AIM/MSN/Jabber/Skype/Ekiga/etc traffic, but not IRC. According to the IT department &amp;ldquo;IRC is commonly used to spread viruses&amp;rdquo;. I&amp;rsquo;m not sure how valid that is, but it didn&amp;rsquo;t stop me from trying to connect to my usual IRC networks.
+Luckily all they did was block the common (6000~7000) IRC ports, which meant that I could still get on any networks that offered alternate ports.</description>
+    </item>
+    
+    <item>
+      <title>Accepted!</title>
+      <link>https://pobe.ga/posts/accepted/</link>
+      <pubDate>Tue, 16 Dec 2008 21:54:33 -0400</pubDate>
+      
+      <guid>https://pobe.ga/posts/accepted/</guid>
+      <description>I got my acceptance letter from SUNY IT today, it put me in a pretty good mood. Finally, I&amp;rsquo;ll be out of the cruddy CUNY system and in a real tech school. No more bullshit Computer Science professors or retarded classes (a web design class where they teach you basic HTML in six months? No way!) for good.
+I&amp;rsquo;ve been telling all my friends that I&amp;rsquo;m leaving in a few weeks, and I am getting mixed reactions.</description>
+    </item>
+    
+  </channel>
+</rss>

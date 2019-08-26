@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>gaming on Pobega&#39;s Blog</title>
+    <link>https://pobe.ga/tags/gaming/</link>
+    <description>Recent content in gaming on Pobega&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/pobega&#34;&gt;Michael Pobega&lt;/a&gt; 2019</copyright>
+    <lastBuildDate>Sun, 21 Dec 2008 16:41:36 -0400</lastBuildDate>
+    
+	<atom:link href="https://pobe.ga/tags/gaming/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Wget and Post Data</title>
+      <link>https://pobe.ga/posts/wget-and-post-data/</link>
+      <pubDate>Sun, 21 Dec 2008 16:41:36 -0400</pubDate>
+      
+      <guid>https://pobe.ga/posts/wget-and-post-data/</guid>
+      <description>I had an idea for a script to automatically log me in to Advance Wars by Web and grab the number of games which it is my turn in, but Wget seems to have a lot of trouble with post-data and cookies while accessing pages. Currently, this is how my script looks:
+#! /bin/sh # Script for grabbing &amp;quot;Your Turn Games&amp;quot; from AWBW (http://awbw.amarriner.com) # Written and maintained by Michael Pobega # Special thanks to the GNU Wget manpage for help with cookie sessions wget --keep-session-cookies --save-cookies cookies.</description>
+    </item>
+    
+    <item>
+      <title>Advance Wars by Web - Free Browser Game</title>
+      <link>https://pobe.ga/posts/awbw/</link>
+      <pubDate>Wed, 17 Dec 2008 01:39:26 -0400</pubDate>
+      
+      <guid>https://pobe.ga/posts/awbw/</guid>
+      <description>Advance Wars is one of the best turn based strategy games ever. Each separate games offers balance between both opponents without one side having an obvious advantage (like with the leveling system of Fire Emblem). A website called Advance Wars by Web lets users play Advance Wars online against other players through a simple web interface. Those who are familiar with the Gameboy Advance series should be able to get comfortable with the AWBW interface quickly.</description>
+    </item>
+    
+    <item>
+      <title>Urban Terror, a realistic, modern day FPS on the Eee PC 900</title>
+      <link>https://pobe.ga/posts/urban-terror-eeepc-900/</link>
+      <pubDate>Mon, 15 Dec 2008 21:46:02 -0400</pubDate>
+      
+      <guid>https://pobe.ga/posts/urban-terror-eeepc-900/</guid>
+      <description>Since I&amp;rsquo;ve owned my Eee PC 900 I&amp;rsquo;ve been trying to find a good game to play on it. Most games require a real graphics card, or more than 900 MHz of computing power, so getting an Eee PC to comfortably run these games is a chore. Games like Tremulous or Counter Strike: Source (through Wine) run, but only at about 10 FPS maximum. Being frustrated with this, I Googled for a few hours looking for a good Linux native FPS.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -4,42 +4,172 @@
   
   <url>
     <loc>https://pobe.ga/posts/intel-9260-suspend/</loc>
-    <lastmod>2019-08-25T22:45:13-04:00</lastmod>
+    <lastmod>2019-08-26T11:15:13-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://pobe.ga/</loc>
-    <lastmod>2019-08-25T22:45:13-04:00</lastmod>
+    <lastmod>2019-08-26T11:15:13-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://pobe.ga/posts/</loc>
-    <lastmod>2019-08-25T22:45:13-04:00</lastmod>
+    <lastmod>2019-08-26T11:15:13-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://pobe.ga/tags/</loc>
-    <lastmod>2019-08-25T22:45:13-04:00</lastmod>
+    <lastmod>2019-08-26T11:15:13-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://pobe.ga/tags/intel/</loc>
-    <lastmod>2019-08-25T22:45:13-04:00</lastmod>
+    <lastmod>2019-08-26T11:15:13-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://pobe.ga/tags/linux/</loc>
-    <lastmod>2019-08-25T22:45:13-04:00</lastmod>
+    <lastmod>2019-08-26T11:15:13-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://pobe.ga/tags/suspend/</loc>
-    <lastmod>2019-08-25T22:45:13-04:00</lastmod>
+    <lastmod>2019-08-26T11:15:13-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://pobe.ga/posts/quicknote-migration/</loc>
+    <lastmod>2019-08-25T11:22:19-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pobe.ga/posts/clevo-w740su/</loc>
+    <lastmod>2013-09-08T11:44:15-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pobe.ga/tags/arcihve/</loc>
+    <lastmod>2013-09-08T11:44:15-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://pobe.ga/tags/hardware/</loc>
+    <lastmod>2013-09-08T11:44:15-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://pobe.ga/posts/eeecontrol-snd_hda_intel-troubles/</loc>
+    <lastmod>2009-02-03T09:03:19-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pobe.ga/posts/first-fully-open-netbook/</loc>
+    <lastmod>2009-02-02T08:49:01-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pobe.ga/posts/tunneling-through-ssh/</loc>
+    <lastmod>2009-02-01T14:23:15-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pobe.ga/tags/college/</loc>
+    <lastmod>2009-02-01T14:23:15-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://pobe.ga/posts/upgraded-eee901/</loc>
+    <lastmod>2009-01-13T18:08:43-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pobe.ga/posts/new-kernel-eee/</loc>
+    <lastmod>2008-12-31T16:32:14-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pobe.ga/posts/all-hail-vimpress/</loc>
+    <lastmod>2008-12-21T18:08:27-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pobe.ga/tags/archive/</loc>
+    <lastmod>2008-12-21T18:08:27-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://pobe.ga/tags/vim/</loc>
+    <lastmod>2008-12-21T18:08:27-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://pobe.ga/posts/wget-and-post-data/</loc>
+    <lastmod>2008-12-21T16:41:36-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pobe.ga/tags/automation/</loc>
+    <lastmod>2008-12-21T16:41:36-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://pobe.ga/tags/gaming/</loc>
+    <lastmod>2008-12-21T16:41:36-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://pobe.ga/tags/web/</loc>
+    <lastmod>2008-12-21T16:41:36-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://pobe.ga/posts/awbw/</loc>
+    <lastmod>2008-12-17T01:39:26-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pobe.ga/posts/celeronm-vs-atomn270/</loc>
+    <lastmod>2008-12-17T01:22:11-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pobe.ga/posts/accepted/</loc>
+    <lastmod>2008-12-16T21:54:33-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pobe.ga/posts/urban-terror-eeepc-900/</loc>
+    <lastmod>2008-12-15T21:46:02-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pobe.ga/posts/flashplayer-bug/</loc>
+    <lastmod>2008-12-14T19:52:15-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pobe.ga/tags/adobeflash/</loc>
+    <lastmod>2008-12-14T19:52:15-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://pobe.ga/tags/bug/</loc>
+    <lastmod>2008-12-14T19:52:15-04:00</lastmod>
     <priority>0</priority>
   </url>
   

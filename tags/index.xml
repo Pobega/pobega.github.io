@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/pobega&#34;&gt;Michael Pobega&lt;/a&gt; 2019</copyright>
-    <lastBuildDate>Sun, 25 Aug 2019 22:45:13 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 26 Aug 2019 11:15:13 -0400</lastBuildDate>
     
 	<atom:link href="https://pobe.ga/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>intel</title>
       <link>https://pobe.ga/tags/intel/</link>
-      <pubDate>Sun, 25 Aug 2019 22:45:13 -0400</pubDate>
+      <pubDate>Mon, 26 Aug 2019 11:15:13 -0400</pubDate>
       
       <guid>https://pobe.ga/tags/intel/</guid>
       <description></description>
@@ -24,7 +24,7 @@
     <item>
       <title>linux</title>
       <link>https://pobe.ga/tags/linux/</link>
-      <pubDate>Sun, 25 Aug 2019 22:45:13 -0400</pubDate>
+      <pubDate>Mon, 26 Aug 2019 11:15:13 -0400</pubDate>
       
       <guid>https://pobe.ga/tags/linux/</guid>
       <description></description>
@@ -33,9 +33,99 @@
     <item>
       <title>suspend</title>
       <link>https://pobe.ga/tags/suspend/</link>
-      <pubDate>Sun, 25 Aug 2019 22:45:13 -0400</pubDate>
+      <pubDate>Mon, 26 Aug 2019 11:15:13 -0400</pubDate>
       
       <guid>https://pobe.ga/tags/suspend/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>arcihve</title>
+      <link>https://pobe.ga/tags/arcihve/</link>
+      <pubDate>Sun, 08 Sep 2013 11:44:15 -0400</pubDate>
+      
+      <guid>https://pobe.ga/tags/arcihve/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hardware</title>
+      <link>https://pobe.ga/tags/hardware/</link>
+      <pubDate>Sun, 08 Sep 2013 11:44:15 -0400</pubDate>
+      
+      <guid>https://pobe.ga/tags/hardware/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>college</title>
+      <link>https://pobe.ga/tags/college/</link>
+      <pubDate>Sun, 01 Feb 2009 14:23:15 -0400</pubDate>
+      
+      <guid>https://pobe.ga/tags/college/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>archive</title>
+      <link>https://pobe.ga/tags/archive/</link>
+      <pubDate>Sun, 21 Dec 2008 18:08:27 -0400</pubDate>
+      
+      <guid>https://pobe.ga/tags/archive/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vim</title>
+      <link>https://pobe.ga/tags/vim/</link>
+      <pubDate>Sun, 21 Dec 2008 18:08:27 -0400</pubDate>
+      
+      <guid>https://pobe.ga/tags/vim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>automation</title>
+      <link>https://pobe.ga/tags/automation/</link>
+      <pubDate>Sun, 21 Dec 2008 16:41:36 -0400</pubDate>
+      
+      <guid>https://pobe.ga/tags/automation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gaming</title>
+      <link>https://pobe.ga/tags/gaming/</link>
+      <pubDate>Sun, 21 Dec 2008 16:41:36 -0400</pubDate>
+      
+      <guid>https://pobe.ga/tags/gaming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>web</title>
+      <link>https://pobe.ga/tags/web/</link>
+      <pubDate>Sun, 21 Dec 2008 16:41:36 -0400</pubDate>
+      
+      <guid>https://pobe.ga/tags/web/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>adobeflash</title>
+      <link>https://pobe.ga/tags/adobeflash/</link>
+      <pubDate>Sun, 14 Dec 2008 19:52:15 -0400</pubDate>
+      
+      <guid>https://pobe.ga/tags/adobeflash/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bug</title>
+      <link>https://pobe.ga/tags/bug/</link>
+      <pubDate>Sun, 14 Dec 2008 19:52:15 -0400</pubDate>
+      
+      <guid>https://pobe.ga/tags/bug/</guid>
       <description></description>
     </item>
     

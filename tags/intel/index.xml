@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/pobega&#34;&gt;Michael Pobega&lt;/a&gt; 2019</copyright>
-    <lastBuildDate>Sun, 25 Aug 2019 22:45:13 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 26 Aug 2019 11:15:13 -0400</lastBuildDate>
     
 	<atom:link href="https://pobe.ga/tags/intel/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,11 +15,21 @@
     <item>
       <title>Fixing Suspend Issues Caused By Intel 9260 Bluetooth</title>
       <link>https://pobe.ga/posts/intel-9260-suspend/</link>
-      <pubDate>Sun, 25 Aug 2019 22:45:13 -0400</pubDate>
+      <pubDate>Mon, 26 Aug 2019 11:15:13 -0400</pubDate>
       
       <guid>https://pobe.ga/posts/intel-9260-suspend/</guid>
       <description>Last week I received my Lenovo ThinkPad T495s, a new T-series line of ThinkPads from Lenovo that uses AMD processors instead of Intel. Everything so far is working perfectly (after getting a patched Systemd) except suspend.
 It seems to be caused by the Intel 9260&amp;rsquo;s bluetooth device waking the machine up after it enters hibernation. If you own a device with an Intel 9260 you can verify yourself that the wakeup of this device is set to &amp;lsquo;enabled&amp;rsquo; by doing cat /sys/bus/usb/devices/*/power/wakeup.</description>
+    </item>
+    
+    <item>
+      <title>Celeron M vs. Atom 270</title>
+      <link>https://pobe.ga/posts/celeronm-vs-atomn270/</link>
+      <pubDate>Wed, 17 Dec 2008 01:22:11 -0400</pubDate>
+      
+      <guid>https://pobe.ga/posts/celeronm-vs-atomn270/</guid>
+      <description>Ah, the question everyone asks. Celeron M vs Atom N270 for netbook computers (VIA is ruled out here, as it is outperformed by both in most benchmark tests). A note before I continue writing this article, I don&amp;rsquo;t actually own a netbook with an N270 processor, so the comparisons are based on my friend Quack&amp;rsquo;s Acer Aspire One.
+Day to Day Usage: In day to day usage, the Intel Atom outperforms the Celeron M in almost every field.</description>
     </item>
     
   </channel>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bug on Pobega&#39;s Blog</title>
+    <link>https://pobe.ga/tags/bug/</link>
+    <description>Recent content in bug on Pobega&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/pobega&#34;&gt;Michael Pobega&lt;/a&gt; 2019</copyright>
+    <lastBuildDate>Sun, 14 Dec 2008 19:52:15 -0400</lastBuildDate>
+    
+	<atom:link href="https://pobe.ga/tags/bug/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Flashplayer 10 - Horrible Bug</title>
+      <link>https://pobe.ga/posts/flashplayer-bug/</link>
+      <pubDate>Sun, 14 Dec 2008 19:52:15 -0400</pubDate>
+      
+      <guid>https://pobe.ga/posts/flashplayer-bug/</guid>
+      <description>So, I installed the Debian flashplayer-mozilla package the other day just to try out a game (Dofus, to be exact) while simultaneously voice chatting with a friend, when crash completely segfaulted and crashed my laptop. After rebooting and calling my friend back he complained about the quality of my voice &amp;ndash; Apparently flash player did something to my microphone and now it&amp;rsquo;s borked..
+My theory for how this happened is that I was using my microphone while flash was trying to access it (since Adobe&amp;rsquo;s flash player has mic and webcam access), Adobe flash panicked, and crashed (while still trying to access the mic) which caused a system crash and microphone hardware failure.</description>
+    </item>
+    
+  </channel>
+</rss>

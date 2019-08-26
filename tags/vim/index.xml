@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vim on Pobega&#39;s Blog</title>
+    <link>https://pobe.ga/tags/vim/</link>
+    <description>Recent content in vim on Pobega&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/pobega&#34;&gt;Michael Pobega&lt;/a&gt; 2019</copyright>
+    <lastBuildDate>Sun, 21 Dec 2008 18:08:27 -0400</lastBuildDate>
+    
+	<atom:link href="https://pobe.ga/tags/vim/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>All Hail Vimpress!</title>
+      <link>https://pobe.ga/posts/all-hail-vimpress/</link>
+      <pubDate>Sun, 21 Dec 2008 18:08:27 -0400</pubDate>
+      
+      <guid>https://pobe.ga/posts/all-hail-vimpress/</guid>
+      <description>For the last week I&amp;rsquo;ve been using Drivel &amp;ndash; a GNOME application for blogging from your desktop. The problem with using Drivel for a Wordpress blog is that it doesn&amp;rsquo;t support multiple categories or even tags! Luckily, I&amp;rsquo;ve found a nice alternative that integrated with my favorite text editor; Vimpress!
+Vimpress supports categories and tags, as well as the ability to edit previous posts. My only quarry with Vim is that it doesn&amp;rsquo;t allow the deletion of older entries, for which I&amp;rsquo;m still forced to login to my Wordpress dashboard to do.</description>
+    </item>
+    
+  </channel>
+</rss>
