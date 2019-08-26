@@ -2,7 +2,7 @@
 title: "Urban Terror, a realistic, modern day FPS on the Eee PC 900"
 date: 2008-12-15T21:46:02-04:00
 draft: false
-tags: ["arcihve","gaming"]
+tags: ["archive","gaming"]
 ---
 Since I've owned my Eee PC 900 I've been trying to find a good game to play on it. Most games require a real graphics card, or more than 900 MHz of computing power, so getting an Eee PC to comfortably run these games is a chore. Games like Tremulous or Counter Strike: Source (through Wine) run, but only at about 10 FPS maximum. Being frustrated with this, I Googled for a few hours looking for a good Linux native FPS.
 

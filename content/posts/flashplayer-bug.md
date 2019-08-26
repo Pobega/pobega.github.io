@@ -2,7 +2,7 @@
 title: "Flashplayer 10 - Horrible Bug"
 date: 2008-12-14T19:52:15-04:00
 draft: false
-tags: ["arcihve","bug","adobeflash"]
+tags: ["archive","bug","adobeflash"]
 ---
 
 So, I installed the Debian *flashplayer-mozilla* package the other day just to try out a game (**Dofus**, to be exact) while simultaneously voice chatting with a friend, when crash completely segfaulted and crashed my laptop. After rebooting and calling my friend back he complained about the quality of my voice -- Apparently flash player did something to my microphone and now it's borked..

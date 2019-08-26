@@ -2,7 +2,7 @@
 title: "Tunneling a connection through SSH"
 date: 2009-02-01T14:23:15-04:00
 draft: false
-tags: ["arcihve","college"]
+tags: ["archive","college"]
 ---
 
 So I finally arrived at school, only to find that my college has decided to block IRC on the campus wifi. Weirdly enough, they allow AIM/MSN/Jabber/Skype/Ekiga/etc traffic, but not IRC. According to the IT department *"IRC is commonly used to spread viruses"*. I'm not sure how valid that is, but it didn't stop me from trying to connect to my usual IRC networks.

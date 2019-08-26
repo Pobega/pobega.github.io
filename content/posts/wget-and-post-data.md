@@ -2,7 +2,7 @@
 title: "Wget and Post Data"
 date: 2008-12-21T16:41:36-04:00
 draft: false
-tags: ["arcihve","gaming","web","automation"]
+tags: ["archive","gaming","web","automation"]
 ---
 
 I had an idea for a script to automatically log me in to Advance Wars by Web and grab the number of games which it is my turn in, but Wget seems to have a lot of trouble with post-data and cookies while accessing pages. Currently, this is how my script looks:

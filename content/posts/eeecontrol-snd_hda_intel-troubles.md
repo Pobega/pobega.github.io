@@ -2,7 +2,7 @@
 title: "Eee-Control and snd_hda_intel Troubles"
 date: 2009-02-03T09:03:19-04:00
 draft: false
-tags: ["arcihve","linux"]
+tags: ["archive","linux"]
 ---
 
 Ever since I bought my Eee PC 901 I've been trying to find a way to manually control the fan; all of the tools that worked on my Celeron-powered 900 don't work at all on my Atom-powered 901.

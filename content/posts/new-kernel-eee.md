@@ -2,7 +2,7 @@
 title: "New Kernel (2.6.27.9) Upgrade on my Eee"
 date: 2008-12-31T16:32:14-04:00
 draft: false
-tags: ["arcihve","linux", "hardware"]
+tags: ["archive","linux", "hardware"]
 ---
 
 So I upgraded my kernel from my very outdated 2.6.25-\* kernel to 2.6.27.9, and I have to say I'm impressed.

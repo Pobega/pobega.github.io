@@ -2,7 +2,7 @@
 title: "Mythlogic Callisto 1413 (Clevo W740SU) Review"
 date: 2013-09-08T11:44:15-04:00
 draft: false
-tags: ["arcihve","hardware"]
+tags: ["archive","hardware"]
 ---
 
 The last time I splurged on a laptop was back when the Intel Core 2 Duo was the newest CPU on the market. Nowadays, I tend to just use EeePCs or budget i3 laptops to get my work done. With graduation approaching and senior projects looming I decided I wanted something powerful, and it needed to be fully Linux compatible. After a bit of research I decided on the Clevo W740SU, also known as the Callisto 1413 sold by Mythlogic, the [Galago Ultrapro](https://system76.com/laptops/galago) sold by System76, the [Zeus Hercules](https://www.cyberpowerpc.com/page/ZeusHercules/) as sold by CyberpowerPC, and various other names from other resellers.
