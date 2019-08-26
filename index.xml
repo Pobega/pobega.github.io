@@ -1,22 +1,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
-    <link>http://example.org/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <title>Pobega&#39;s Blog</title>
+    <link>https://pobe.ga/</link>
+    <description>Recent content on Pobega&#39;s Blog</description>
     <generator>Hugo - gohugo.io</generator>
     <language>en</language>
     <contact></contact>
-    <copyright></copyright>
+    <copyright>&copy; <a href="https://github.com/pobega">Michael Pobega</a> 2019</copyright>
     
-        <atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://pobe.ga/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>My First Post</title>
-      <link>http://example.org/posts/my-first-post/</link>
+      <title>Fixing Suspend Issues Caused By Intel 9260 Bluetooth</title>
+      <link>https://pobe.ga/posts/intel-9260-suspend/</link>
       <pubDate>Sun, 25 Aug 2019 22:45:13 -0400</pubDate>
       <author></author>
-      <guid>http://example.org/posts/my-first-post/</guid>
+      <guid>https://pobe.ga/posts/intel-9260-suspend/</guid>
       <description></description>
       
     </item>

@@ -3,29 +3,43 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/posts/my-first-post/</loc>
+    <loc>https://pobe.ga/posts/intel-9260-suspend/</loc>
     <lastmod>2019-08-25T22:45:13-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/</loc>
-    <lastmod>2019-08-25T22:45:13-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.org/posts/</loc>
+    <loc>https://pobe.ga/</loc>
     <lastmod>2019-08-25T22:45:13-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://pobe.ga/posts/</loc>
+    <lastmod>2019-08-25T22:45:13-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://pobe.ga/tags/</loc>
+    <lastmod>2019-08-25T22:45:13-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://pobe.ga/tags/intel/</loc>
+    <lastmod>2019-08-25T22:45:13-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://pobe.ga/tags/linux/</loc>
+    <lastmod>2019-08-25T22:45:13-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://pobe.ga/tags/suspend/</loc>
+    <lastmod>2019-08-25T22:45:13-04:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"  lang="en-us">
 <head>
-	<meta name="generator" content="Hugo 0.55.6" />
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-<title></title>
+<title>Fixing Suspend Issues Caused By Intel 9260 Bluetooth | Pobega&#39;s Blog</title>
 
 
 
@@ -78,13 +77,9 @@
 </section>
 <section class="section">
   <div class="container">
-    
-    
-    
-    <article>
-      <div class="subtitle tags is-6 is-pulled-right">
-        
-        
+    <div class="subtitle tags is-6 is-pulled-right">
+      
+      
 <a class="subtitle is-6" href="/tags/linux">#linux</a>
 
 
@@ -95,39 +90,74 @@
   | <a class="subtitle is-6" href="/tags/suspend">#suspend</a>
   
 
-        
-      </div>
-      <h2 class="subtitle is-6 date">August 25, 2019</h2>
-      <h1 class="title"><a href="https://pobe.ga/posts/intel-9260-suspend/">Fixing Suspend Issues Caused By Intel 9260 Bluetooth</a></h1>
-      <div class="content">
-        Last week I received my Lenovo ThinkPad T495s, a new T-series line of ThinkPads from Lenovo that uses AMD processors instead of Intel. Everything so far is working perfectly (after getting a patched Systemd) except suspend.
-It seems to be caused by the Intel 9260&rsquo;s bluetooth device waking the machine up after it enters hibernation. If you own a device with an Intel 9260 you can verify yourself that the wakeup of this device is set to &lsquo;enabled&rsquo; by doing cat /sys/bus/usb/devices/*/power/wakeup.
-        
-        <a class="button is-link" href="https://pobe.ga/posts/intel-9260-suspend/" style="height:28px">
-          Read more
-        </a>
-        
-      </div>
-    </article>
+      
+    </div>
+    <h2 class="subtitle is-6">August 25, 2019</h2>
+    <h1 class="title">Fixing Suspend Issues Caused By Intel 9260 Bluetooth</h1>
+    
+    <div class="content">
+      <p>Last week I received my Lenovo ThinkPad T495s, a new T-series line of ThinkPads from Lenovo that uses AMD processors instead of Intel. Everything so far is working perfectly (after getting a patched Systemd) except suspend.</p>
+
+<p>It seems to be caused by the Intel 9260&rsquo;s bluetooth device waking the machine up after it enters hibernation. If you own a device with an Intel 9260 you can verify yourself that the wakeup of this device is set to &lsquo;enabled&rsquo; by doing <code>cat /sys/bus/usb/devices/*/power/wakeup</code>.</p>
+
+<p>You can temporarily fix this by changing the value to disabled by running <code>echo disabled &gt; /sys/bus/usb/devices/&lt;DEVICE-HERE&gt;/power/wakeup</code> (obviously switch out <DEVICE-HERE> with your device, mine was 4-1 but this could be different based on your machine&rsquo;s config). After a sleep resume cycle it will re-enable itself, though.</p>
+
+<p>You can make this semi-permanent using udev by adding this rule to a new file in <code>/etc/udev/rules.d/</code>:</p>
+
+<pre><code># Disable wakeup on Intel 9260 bluetooth to allow suspend/resume
+SUBSYSTEM==&quot;usb&quot; ATTR{idVendor}==&quot;8087&quot;, ATTR{idProduct}==&quot;0025&quot; \
+        SUBSYSTEMS==&quot;usb&quot; DRIVERS==&quot;usb&quot; \
+        ATTR{power/wakeup}=&quot;disabled&quot;
+</code></pre>
+
+<p>I&rsquo;ve put the file up <a href="https://github.com/Pobega/dotfiles/blob/65798e02182ed86f4901365af6c68c5137fcdfa3/t495s/80-intel9260-btusb.rules">on my Github</a> for anyone who wants to just download it.</p>
+
+<p>Unfortunately it still seems to reset itself after a suspend cycle, I&rsquo;m trying to figure out if there&rsquo;s some way to have a udev rule trigger after suspend. In the meantime you could use a tool like <strong>tlp</strong> to keep the bluetooth off if you aren&rsquo;t using it.</p>
+
+      
+      <div class="related">
+</div>
+      
+    </div>
     
   </div>
 </section>
+
+    <script src="/js/copycode.js"></script>
+
+
 <section class="section">
   <div class="container">
-    <nav class="level is-mobile">
-      <div class="level-left">
-        <div class="level-item">
-          
-        </div>
-      </div>
-      <div class="level-right is-marginless">
-        <div class="level-item">
-          
-        </div>
-      </div>
-    </nav>
+    <aside><div id="disqus_thread"></div></aside>
+  
+    <div id="show_comments"><a id="load_comments" class="button is-link">Load comments</a></div>
+  
+    <script type="text/javascript">
+      var disqus_shortname = 'pobega';
+      function disqus() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      }
+  
+      
+      var hash = window.location.hash.substr(1);
+      if ((hash.length > 8) && (hash.substring(0, 8) === "comment-")) {
+        disqus();
+        document.getElementById("show_comments").style.display = "none";
+      } else {
+        document.getElementById('load_comments').onclick = function() {
+          disqus();
+          document.getElementById("show_comments").style.display = "none";
+        };
+      }
+  
+
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
   </div>
 </section>
+
 
 <section class="section">
   <div class="container has-text-centered">
