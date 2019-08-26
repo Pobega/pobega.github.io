@@ -1,174 +1,206 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"  lang="en-us">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<html lang="en-us">
+    <head>
+         
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Eee-Control and snd_hda_intel Troubles</title>
+        
+        <style>
 
-<title>Eee-Control and snd_hda_intel Troubles | Pobega&#39;s Blog</title>
+    html body {
+        font-family: 'Raleway', sans-serif;
+        background-color: white;
+    }
+
+    :root {
+        --accent: purple;
+        --border-width:  5px ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="https://pobe.ga/css/main.css">
 
 
 
-<link rel="stylesheet" href="/css/style.css"/><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
-</head>
-<body>
-<section class="section">
-  <div class="container">
-    <nav class="nav">
-      <div class="nav-left">
-        <a class="nav-item" href="https://pobe.ga/">
-          <h1 class="title is-4">Pobega&#39;s Blog</h1>
-        </a>
-      </div>
-      <div class="nav-right">
-        <nav class="nav-item level is-mobile"><a class="level-item" aria-label="github" href='https://github.com/pobega'
-            target='_blank' rel='noopener'>
-            <span class="icon">
-              <i class><svg viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-dark.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+ 
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/haskell.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scala.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/swift.min.js"></script> 
+
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+ <meta name="generator" content="Hugo 0.55.6" />
+        
+
+        
+
+        
+        
+        <script type="text/javascript" async
+          src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+        </script>
+        
+    </head>
+
+    <body>
+         
+        <nav class="navbar navbar-default navbar-fixed-top">
+
+            <div class="container">
+
+                <div class="navbar-header">
+
+                    <a class="navbar-brand visible-xs" href="#">Eee-Control and snd_hda_intel Troubles</a>
+
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+
+                <div class="collapse navbar-collapse">
+
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="/">Home</a></li>
+                            
+                                <li><a href="/posts/">Posts</a></li>
+                            
+                                <li><a href="/projects/">Projects</a></li>
+                            
+                        </ul>
+                    
+
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="mailto:pobega@gmail.com"><i class="far fa-envelope-open"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://github.com/pobega/"><i class="fab fa-github"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://twitter.com/pobega/"><i class="fab fa-twitter"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://www.stackoverflow.com/pobega/"><i class="fab fa-stack-overflow"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://www.linkedin.com/in/username/"><i class="fab fa-linkedin"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://pobega.itch.io/"><i class="fab fa-itch-io"></i></a></li>
+                            
+                        </ul>
+                    
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+<main>
+
+    <div class="item">
+
     
-    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
     
-  </svg></i>
-            </span>
-          </a><a class="level-item" aria-label="twitter" href='https://twitter.com/pobega'
-            target='_blank' rel='noopener'>
-            <span class="icon">
-              <i class><svg viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
     
-    <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
-    
-  </svg></i>
-            </span>
-          </a><a class="level-item" aria-label="linkedin" href='https://linkedin.com/in/pobega'
-            target='_blank' rel='noopener'>
-            <span class="icon">
-              <i class><svg viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-    
-    <path stroke-width="1.8" d="m5.839218,4.101561c0,1.211972 -0.974141,2.194011 -2.176459,2.194011s-2.176459,-0.982039 -2.176459,-2.194011c0,-1.211094 0.974141,-2.194011 2.176459,-2.194011s2.176459,0.982917 2.176459,2.194011zm0.017552,3.94922l-4.388022,0l0,14.04167l4.388022,0l0,-14.04167zm7.005038,0l-4.359939,0l0,14.04167l4.360816,0l0,-7.370999c0,-4.098413 5.291077,-4.433657 5.291077,0l0,7.370999l4.377491,0l0,-8.89101c0,-6.915523 -7.829986,-6.66365 -9.669445,-3.259423l0,-1.891237z"/>
-    
-  </svg></i>
-            </span>
-          </a><a class="level-item" aria-label="email" href='mailto:pobega@gmail.com'
-            target='_blank' rel='noopener'>
-            <span class="icon">
-              <i class><svg viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-    
-    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-    <polyline points="22,6 12,13 2,6"/>
-    
-  </svg></i>
-            </span>
-          </a></nav>
-      </div>
-    </nav>
 
-    <nav class="nav">
-      
+    
+    
 
-      
-    </nav>
+    <h4><a href="/posts/eeecontrol-snd_hda_intel-troubles/">Eee-Control and snd_hda_intel Troubles</a></h4>
+    <h5>February 3, 2009</h5>
+    
+    <a href="https://pobe.ga/tags/archive"><kbd class="item-tag">archive</kbd></a>
+    
+    <a href="https://pobe.ga/tags/linux"><kbd class="item-tag">linux</kbd></a>
+    
 
-  </div>
-</section>
-<section class="section">
-  <div class="container">
-    <div class="subtitle tags is-6 is-pulled-right">
-      
-      
-<a class="subtitle is-6" href="/tags/archive">#archive</a>
+</div>
 
 
-
-  
-  | <a class="subtitle is-6" href="/tags/linux">#linux</a>
-  
-
-      
-    </div>
-    <h2 class="subtitle is-6">February 3, 2009</h2>
-    <h1 class="title">Eee-Control and snd_hda_intel Troubles</h1>
-    
-    <div class="content">
-      <p>Ever since I bought my Eee PC 901 I&rsquo;ve been trying to find a way to manually control the fan; all of the tools that worked on my Celeron-powered 900 don&rsquo;t work at all on my Atom-powered 901.</p>
+    <br> <div class="text-justify"><p>Ever since I bought my Eee PC 901 I&rsquo;ve been trying to find a way to manually control the fan; all of the tools that worked on my Celeron-powered 900 don&rsquo;t work at all on my Atom-powered 901.</p>
 
 <p>After a bit of Googling I found a program called Eee-Control, which claimed that it could control the Atom&rsquo;s clock and fan speed. After trying and disliking the software I removed it from my system, but then I noticed a weird problem with my speakers &ndash; they kept popping every time I initialized the sound! So after recompiling the drivers and my kernel (and completely borking 2.6.28.2) I found that the problem was a silly script that EeeControl put in /etc/modprobe.d/ setting snd_hda_intel&rsquo;s power_save parameter to 1.</p>
 
 <p>According to modinfo, parm: power_save:Automatic power-saving timeout (in second, 0 = disable). (int), so the script was turning off my speakers after one second of inactivity. I can only assume that the upstream author thought it was a boolean argument.</p>
 
 <p>Anyway, I contacted upstream and hope to have it fixed &hellip; Even a value of 30 would be better.</p>
-
-      
-      <div class="related">
-
-<h3>Similar articles:</h3>
-<ul>
-	
-	<li><a href="/posts/new-kernel-eee/">New Kernel (2.6.27.9) Upgrade on my Eee</a></li>
-	
-	<li><a href="/posts/first-fully-open-netbook/">Introduction; the World&#39;s First Fully Open Netbook</a></li>
-	
-	<li><a href="/posts/tunneling-through-ssh/">Tunneling a connection through SSH</a></li>
-	
-	<li><a href="/posts/upgraded-eee901/">Finally upgraded my Eee PC 900 - Eee PC 901</a></li>
-	
-	<li><a href="/posts/all-hail-vimpress/">All Hail Vimpress!</a></li>
-	
-</ul>
 </div>
-      
-    </div>
+
     
-  </div>
-</section>
-
-
-<section class="section">
-  <div class="container">
-    <aside><div id="disqus_thread"></div></aside>
-  
-    <div id="show_comments"><a id="load_comments" class="button is-link">Load comments</a></div>
-  
-    <script type="text/javascript">
-      var disqus_shortname = 'pobega';
-      function disqus() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-      }
-  
-      
-      var hash = window.location.hash.substr(1);
-      if ((hash.length > 8) && (hash.substring(0, 8) === "comment-")) {
-        disqus();
-        document.getElementById("show_comments").style.display = "none";
-      } else {
-        document.getElementById('load_comments').onclick = function() {
-          disqus();
-          document.getElementById("show_comments").style.display = "none";
-        };
-      }
-  
-
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-  </div>
-</section>
-
-
-<section class="section">
-  <div class="container has-text-centered">
-    <p>&copy; <a href="https://github.com/pobega">Michael Pobega</a> 2019</p>
     
-  </div>
-</section>
 
+    
 
+    
 
-</body>
+        <h4 class="page-header">Comments</h4>
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "pobega" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    
+
+</main>
+
+        <footer>
+
+            <p class="copyright text-muted"></p>
+
+        </footer>
+       
+    </body>
+
 </html>
 

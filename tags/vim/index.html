@@ -1,245 +1,172 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"  lang="en-us">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<html lang="en-us">
+    <head>
+         
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>vim</title>
+        
+        <style>
 
-<title>vim | Pobega&#39;s Blog</title>
+    html body {
+        font-family: 'Raleway', sans-serif;
+        background-color: white;
+    }
+
+    :root {
+        --accent: purple;
+        --border-width:  5px ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="https://pobe.ga/css/main.css">
 
 
 
-<link rel="stylesheet" href="/css/style.css"/><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
-</head>
-<body>
-<section class="section">
-  <div class="container">
-    <nav class="nav">
-      <div class="nav-left">
-        <a class="nav-item" href="https://pobe.ga/">
-          <h1 class="title is-4">Pobega&#39;s Blog</h1>
-        </a>
-      </div>
-      <div class="nav-right">
-        <nav class="nav-item level is-mobile"><a class="level-item" aria-label="github" href='https://github.com/pobega'
-            target='_blank' rel='noopener'>
-            <span class="icon">
-              <i class><svg viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-dark.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+ 
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/haskell.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scala.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/swift.min.js"></script> 
+
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+ <meta name="generator" content="Hugo 0.55.6" />
+        
+        <link href="/tags/vim/index.xml" rel="alternate" type="application/rss&#43;xml" title="Michael Pobega" />
+        <link href="/tags/vim/index.xml" rel="feed" type="application/rss&#43;xml" title="Michael Pobega" />
+        
+
+        
+
+        
+        
+        <script type="text/javascript" async
+          src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+        </script>
+        
+    </head>
+
+    <body>
+         
+        <nav class="navbar navbar-default navbar-fixed-top">
+
+            <div class="container">
+
+                <div class="navbar-header">
+
+                    <a class="navbar-brand visible-xs" href="#">vim</a>
+
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+
+                <div class="collapse navbar-collapse">
+
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="/">Home</a></li>
+                            
+                                <li><a href="/posts/">Posts</a></li>
+                            
+                                <li><a href="/projects/">Projects</a></li>
+                            
+                        </ul>
+                    
+
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="mailto:pobega@gmail.com"><i class="far fa-envelope-open"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://github.com/pobega/"><i class="fab fa-github"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://twitter.com/pobega/"><i class="fab fa-twitter"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://www.stackoverflow.com/pobega/"><i class="fab fa-stack-overflow"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://www.linkedin.com/in/username/"><i class="fab fa-linkedin"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://pobega.itch.io/"><i class="fab fa-itch-io"></i></a></li>
+                            
+                        </ul>
+                    
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+<main>
+
+    <h2>vim</h2>
+
+     <div class="item">
+
     
-    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
-    
-  </svg></i>
-            </span>
-          </a><a class="level-item" aria-label="twitter" href='https://twitter.com/pobega'
-            target='_blank' rel='noopener'>
-            <span class="icon">
-              <i class><svg viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-    
-    <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
-    
-  </svg></i>
-            </span>
-          </a><a class="level-item" aria-label="linkedin" href='https://linkedin.com/in/pobega'
-            target='_blank' rel='noopener'>
-            <span class="icon">
-              <i class><svg viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-    
-    <path stroke-width="1.8" d="m5.839218,4.101561c0,1.211972 -0.974141,2.194011 -2.176459,2.194011s-2.176459,-0.982039 -2.176459,-2.194011c0,-1.211094 0.974141,-2.194011 2.176459,-2.194011s2.176459,0.982917 2.176459,2.194011zm0.017552,3.94922l-4.388022,0l0,14.04167l4.388022,0l0,-14.04167zm7.005038,0l-4.359939,0l0,14.04167l4.360816,0l0,-7.370999c0,-4.098413 5.291077,-4.433657 5.291077,0l0,7.370999l4.377491,0l0,-8.89101c0,-6.915523 -7.829986,-6.66365 -9.669445,-3.259423l0,-1.891237z"/>
-    
-  </svg></i>
-            </span>
-          </a><a class="level-item" aria-label="email" href='mailto:pobega@gmail.com'
-            target='_blank' rel='noopener'>
-            <span class="icon">
-              <i class><svg viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-    
-    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-    <polyline points="22,6 12,13 2,6"/>
-    
-  </svg></i>
-            </span>
-          </a></nav>
-      </div>
-    </nav>
-
-    <nav class="nav">
-      
-
-      
-    </nav>
-
-  </div>
-</section>
-<section class="section">
-  <div class="container">
     
     
+
     
-    <article>
-      <div class="subtitle tags is-6 is-pulled-right">
-        
-        
-<a class="subtitle is-6" href="/tags/linux">#linux</a>
-
-
-
-  
-  | <a class="subtitle is-6" href="/tags/intel">#intel</a>
-  
-  | <a class="subtitle is-6" href="/tags/suspend">#suspend</a>
-  
-
-        
-      </div>
-      <h2 class="subtitle is-6 date">August 26, 2019</h2>
-      <h1 class="title"><a href="https://pobe.ga/posts/intel-9260-suspend/">Fixing Suspend Issues Caused By Intel 9260 Bluetooth</a></h1>
-      <div class="content">
-        Last week I received my Lenovo ThinkPad T495s, a new T-series line of ThinkPads from Lenovo that uses AMD processors instead of Intel. Everything so far is working perfectly (after getting a patched Systemd) except suspend.
-It seems to be caused by the Intel 9260&rsquo;s bluetooth device waking the machine up after it enters hibernation. If you own a device with an Intel 9260 you can verify yourself that the wakeup of this device is set to &lsquo;enabled&rsquo; by doing cat /sys/bus/usb/devices/*/power/wakeup.
-        
-        <a class="button is-link" href="https://pobe.ga/posts/intel-9260-suspend/" style="height:28px">
-          Read more
-        </a>
-        
-      </div>
-    </article>
     
-    <article>
-      <div class="subtitle tags is-6 is-pulled-right">
-        
-      </div>
-      <h2 class="subtitle is-6 date">August 25, 2019</h2>
-      <h1 class="title"><a href="https://pobe.ga/posts/quicknote-migration/">Quicknote - Migration</a></h1>
-      <div class="content">
-        I&rsquo;ve migrated all my old blog posts from my teenage years to be archived here. Future posts will be Linux dev focused. The old posts are all tagged #archive
-        
-      </div>
-    </article>
+
+    <h4><a href="/posts/all-hail-vimpress/">All Hail Vimpress!</a></h4>
+    <h5>December 21, 2008</h5>
     
-    <article>
-      <div class="subtitle tags is-6 is-pulled-right">
-        
-        
-<a class="subtitle is-6" href="/tags/archive">#archive</a>
-
-
-
-  
-  | <a class="subtitle is-6" href="/tags/hardware">#hardware</a>
-  
-
-        
-      </div>
-      <h2 class="subtitle is-6 date">September 8, 2013</h2>
-      <h1 class="title"><a href="https://pobe.ga/posts/clevo-w740su/">Mythlogic Callisto 1413 (Clevo W740SU) Review</a></h1>
-      <div class="content">
-        The last time I splurged on a laptop was back when the Intel Core 2 Duo was the newest CPU on the market. Nowadays, I tend to just use EeePCs or budget i3 laptops to get my work done. With graduation approaching and senior projects looming I decided I wanted something powerful, and it needed to be fully Linux compatible. After a bit of research I decided on the Clevo W740SU, also known as the Callisto 1413 sold by Mythlogic, the Galago Ultrapro sold by System76, the Zeus Hercules as sold by CyberpowerPC, and various other names from other resellers.
-        
-        <a class="button is-link" href="https://pobe.ga/posts/clevo-w740su/" style="height:28px">
-          Read more
-        </a>
-        
-      </div>
-    </article>
+    <a href="https://pobe.ga/tags/archive"><kbd class="item-tag">archive</kbd></a>
     
-    <article>
-      <div class="subtitle tags is-6 is-pulled-right">
-        
-        
-<a class="subtitle is-6" href="/tags/archive">#archive</a>
-
-
-
-  
-  | <a class="subtitle is-6" href="/tags/linux">#linux</a>
-  
-
-        
-      </div>
-      <h2 class="subtitle is-6 date">February 3, 2009</h2>
-      <h1 class="title"><a href="https://pobe.ga/posts/eeecontrol-snd_hda_intel-troubles/">Eee-Control and snd_hda_intel Troubles</a></h1>
-      <div class="content">
-        Ever since I bought my Eee PC 901 I&rsquo;ve been trying to find a way to manually control the fan; all of the tools that worked on my Celeron-powered 900 don&rsquo;t work at all on my Atom-powered 901.
-After a bit of Googling I found a program called Eee-Control, which claimed that it could control the Atom&rsquo;s clock and fan speed. After trying and disliking the software I removed it from my system, but then I noticed a weird problem with my speakers &ndash; they kept popping every time I initialized the sound!
-        
-        <a class="button is-link" href="https://pobe.ga/posts/eeecontrol-snd_hda_intel-troubles/" style="height:28px">
-          Read more
-        </a>
-        
-      </div>
-    </article>
+    <a href="https://pobe.ga/tags/vim"><kbd class="item-tag">vim</kbd></a>
     
-    <article>
-      <div class="subtitle tags is-6 is-pulled-right">
-        
-        
-<a class="subtitle is-6" href="/tags/archive">#archive</a>
+
+</div>
+ 
+
+</main>
 
 
 
-  
-  | <a class="subtitle is-6" href="/tags/hardware">#hardware</a>
-  
+        <footer>
 
-        
-      </div>
-      <h2 class="subtitle is-6 date">February 2, 2009</h2>
-      <h1 class="title"><a href="https://pobe.ga/posts/first-fully-open-netbook/">Introduction; the World&#39;s First Fully Open Netbook</a></h1>
-      <div class="content">
-        The netbook market has become watered down with so many competitors trying to cash in on the new craze, including but not limited to netbooks from companies such as Asus, Acer, Dell, MSI Wind, and Sony. Finally though, one company has decided to release a fully open netbook for those of us who love open stuff. Lemote&rsquo;s 8.9 inch YeeLoong netbook doesn&rsquo;t look fantastic by any means, and it sports a processor barely half as powerful as it&rsquo;s competitors, but it&rsquo;s definitely a step in the right direction.
-        
-        <a class="button is-link" href="https://pobe.ga/posts/first-fully-open-netbook/" style="height:28px">
-          Read more
-        </a>
-        
-      </div>
-    </article>
-    
-  </div>
-</section>
-<section class="section">
-  <div class="container">
-    <nav class="level is-mobile">
-      <div class="level-left">
-        <div class="level-item">
-          
-        </div>
-      </div>
-      <div class="level-right is-marginless">
-        <div class="level-item">
-          
-          <a class="button" href="/tags/vim/page/2/">
-            Older
-            <span class="icon is-small is-marginless">
-              <svg viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-    
-    <polyline points="14 6 20 12 14 18"/>
-    
-  </svg>
-            </span>
-          </a>
-          
-        </div>
-      </div>
-    </nav>
-  </div>
-</section>
+            <p class="copyright text-muted"></p>
 
-<section class="section">
-  <div class="container has-text-centered">
-    <p>&copy; <a href="https://github.com/pobega">Michael Pobega</a> 2019</p>
-    
-  </div>
-</section>
+        </footer>
+       
+    </body>
 
-
-
-</body>
 </html>
-
 

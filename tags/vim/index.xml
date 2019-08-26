@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>vim on Pobega&#39;s Blog</title>
+    <title>vim on Michael Pobega</title>
     <link>https://pobe.ga/tags/vim/</link>
-    <description>Recent content in vim on Pobega&#39;s Blog</description>
+    <description>Recent content in vim on Michael Pobega</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/pobega&#34;&gt;Michael Pobega&lt;/a&gt; 2019</copyright>
