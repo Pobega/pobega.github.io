@@ -1,6 +1,6 @@
 ---
 title: "Fixing Suspend Issues Caused By Intel 9260 Bluetooth"
-date: 2019-08-25T22:45:13-04:00
+date: 2019-08-26T11:15:13-04:00
 draft: false
 tags: ["linux","intel","suspend"]
 ---
