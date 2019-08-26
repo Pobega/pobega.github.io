@@ -7,7 +7,6 @@ googleAnalytics = ""
 disqusShortname = "pobega"
 Paginate = 5 #
 enableRobotsTXT = true
-copyright = "&copy; <a href=\"https://github.com/pobega\">Michael Pobega</a> 2019"
 
 [params]
     author = "Michael Pobega"
@@ -57,12 +56,12 @@ copyright = "&copy; <a href=\"https://github.com/pobega\">Michael Pobega</a> 201
     weight = 3
 
 [[menu.icon]]
-    url = "https://www.stackoverflow.com/pobega/"
+    url = "https://serverfault.com/users/18474/michael-pobega"
     name = "fab fa-stack-overflow"
     weight = 4
 
 [[menu.icon]]
-    url = "https://www.linkedin.com/in/username/"
+    url = "https://www.linkedin.com/in/pobega/"
     name = "fab fa-linkedin"
     weight = 5
 
@@ -71,15 +70,12 @@ copyright = "&copy; <a href=\"https://github.com/pobega\">Michael Pobega</a> 201
     name = "fab fa-itch-io"
     weight = 6
 
-#[params.assets]
-#customCSS = ["css/custom.css"]
-
 [params.info]
-related = true # Includes related articles at the bottom of the article
-codeCopy = true # Add copy button above code blocks
+    related = true # Includes related articles at the bottom of the article
+    codeCopy = true # Add copy button above code blocks
 
 [params.features]
-disqusOnDemand = true
+    disqusOnDemand = true
 
 [taxonomies]
-tag ="tags"
+    tag ="tags"
