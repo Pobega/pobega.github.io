@@ -1,13 +1,75 @@
 baseURL = "https://pobe.ga/"
 languageCode = "en-us"
-title = "Pobega's Blog"
-theme = "kiss"
+title = "Michael Pobega"
+theme = "minimal"
 publishDir = "public"
 googleAnalytics = ""
 disqusShortname = "pobega"
 Paginate = 5 #
 enableRobotsTXT = true
 copyright = "&copy; <a href=\"https://github.com/pobega\">Michael Pobega</a> 2019"
+
+[params]
+    author = "Michael Pobega"
+    description = "Ramblings of a Linux kernel developer"
+    githubUsername = "pobega"
+    accent = "purple"
+    showBorder = true
+    backgroundColor = "white"
+    font = "Raleway" # should match the name on Google Fonts!
+    highlight = true
+    highlightStyle = "solarized-dark"
+    highlightLanguages = ["go", "haskell", "kotlin", "scala", "swift"]
+    copyright = " "
+
+[[menu.main]]
+    url = "/"
+    name = "Home"
+    weight = 1
+
+[[menu.main]]
+    url = "/posts/"
+    name = "Posts"
+    weight = 2
+
+[[menu.main]]
+    url = "/projects/"
+    name = "Projects"
+    weight = 3
+
+# Social icons to be shown on the right-hand side of the navigation bar
+# The "name" field should match the name of the icon to be used
+# The list of available icons can be found at http://fontawesome.io/icons/
+
+[[menu.icon]]
+    url = "mailto:pobega@gmail.com"
+    name = "far fa-envelope-open"
+    weight = 1
+
+[[menu.icon]]
+    url = "https://github.com/pobega/"
+    name = "fab fa-github"
+    weight = 2
+
+[[menu.icon]]
+    url = "https://twitter.com/pobega/"
+    name = "fab fa-twitter"
+    weight = 3
+
+[[menu.icon]]
+    url = "https://www.stackoverflow.com/pobega/"
+    name = "fab fa-stack-overflow"
+    weight = 4
+
+[[menu.icon]]
+    url = "https://www.linkedin.com/in/username/"
+    name = "fab fa-linkedin"
+    weight = 5
+
+[[menu.icon]]
+    url = "https://pobega.itch.io/"
+    name = "fab fa-itch-io"
+    weight = 6
 
 #[params.assets]
 #customCSS = ["css/custom.css"]
@@ -18,15 +80,6 @@ codeCopy = true # Add copy button above code blocks
 
 [params.features]
 disqusOnDemand = true
-
-[params.social]
-twitter = "pobega"
-github = "pobega"
-email = "pobega@gmail.com"
-linkedin = "pobega"
-
-[params.social.config]
-platforms = ["github","twitter","linkedin","email"]
 
 [taxonomies]
 tag ="tags"
