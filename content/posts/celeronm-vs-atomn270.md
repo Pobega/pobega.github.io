@@ -1,8 +1,8 @@
 ---
-title: "Celeron M vs. Atom 270"
+title: "Celeron M vs Atom N270"
 date: 2008-12-17T01:22:11-04:00
 draft: false
-tags: ["archive","intel", "hardware"]
+tags: ["archive","intel","hardware"]
 ---
 
 Ah, the question everyone asks. Celeron M vs Atom N270 for netbook computers (VIA is ruled out here, as it is outperformed by both in most benchmark tests). A note before I continue writing this article, I don't actually own a netbook with an N270 processor, so the comparisons are based on my friend Quack's Acer Aspire One.
