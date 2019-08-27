@@ -87,6 +87,8 @@ While I'll need to invest in an external SDHC reader to get pictures off my came
 # Display <i class="far fa-check-circle"></i>
 
 
+The **FHD 400-nit Low Power IPS** display offering on the T495s is a really fantastic panel.
+The display is bright and colorful. 
 * Bright
 * Low power consumption
 * Viewing angles are perfect
@@ -121,8 +123,58 @@ While I'll need to invest in an external SDHC reader to get pictures off my came
 * APU throttles more than CPU
 * Now using TLP so performance is worse on battery, but even with `powersave` the performance seems pretty good.
 * Using BFQ scheduler (which is [now default on ChromeOS](https://www.phoronix.com/scan.php?page=news_item&px=Chromebooks-BFQ-Default-IO) and [coming soon to Fedora](https://www.phoronix.com/scan.php?page=news_item&px=Fedora-Switching-To-BFQ) the application lag on battery with the `powersave` governor is mostly negated.
-* Dual channel RAM (2x 8GB) works well
 * NVMe SSD flies (**NOTE: Include benchmarks**)
+
+`$ time dd bs=16k count=102400 oflag=direct if=/dev/zero of=test_data`
+
+```
+102400+0 records in
+102400+0 records out
+1677721600 bytes (1.7 GB, 1.6 GiB) copied, 6.54317 s, 256 MB/s
+
+real    0m6.885s
+user    0m0.053s
+sys     0m4.536s
+```
+
+
+`# hdparm -t /dev/nvme0n1`
+
+```
+/dev/nvme0n1:
+ Timing buffered disk reads: 3472 MB in  3.00 seconds = 1156.78 MB/sec
+```
+
+
+[fs_mark](https://github.com/josefbacik/fs_mark)
+
+`$ fs_mark -d test  -s 10240 -n 1000 -v`
+
+```
+Count       Size         Files/sec        App Overhead
+1000        10240        901.6            21158
+
+CREAT (Min/Avg/Max)        WRITE (Min/Avg/Max)        FSYNC (Min/Avg/Max)
+54      90     265         20      30      95         844     961     6606
+
+SYNC (Min/Avg/Max)        CLOSE (Min/Avg/Max)       UNLINK (Min/Avg/Max)
+0       0        0        2        5       32       10       16      133
+```
+
+* Dual channel RAM (2x 8GB) works well
+
+[STREAM](https://github.com/jeffhammond/STREAM)
+
+`$ ./stream_c.exe`
+
+```
+Function    Best Rate MB/s  Avg time     Min time     Max time
+Copy:           11253.3     0.015865     0.014218     0.018171
+Scale:          11174.8     0.015669     0.014318     0.018882
+Add:            13363.0     0.018631     0.017960     0.020059
+Triad:          13321.6     0.019757     0.018016     0.022583
+```
+
 * Intel 9260 works well compared to 7260 in X1CG3. I can consistently get 5GHz across my apartment.
 
 <br />
@@ -152,3 +204,27 @@ While I'll need to invest in an external SDHC reader to get pictures off my came
 * Performance in higher end games like DotA2 and Counter Strike still below what I expect, but playable.
 * [Upcoming changes to Mesa](https://www.phoronix.com/scan.php?page=news_item&px=Mesa-Radeon-Boost-No-vRAM-Type) in 19.3 may improve the APU's performance by 30%
 * Insert some basic Vulkan benchmarks.
+
+`$ glmark2`
+```
+glmark2 Score: 3763
+```
+
+Ungine Heaven Benchmark:
+
+```
+Basic Preset
+FPS: 35.4
+Score: 892
+Min FPS: 10.6
+Max FPS: 54.3
+```
+
+```
+Ultra Preset
+FPS: 9.9
+Score: 249
+Min FPS: 4.9
+Max FPS: 18.7
+```
+
