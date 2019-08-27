@@ -22,8 +22,8 @@ For the unaware, the AMD Pro CPUs ship with Vega M APUs (Vega 6, 8 and 10 respec
 
 I purchased the laptop to run Linux (specifically Fedora Silverblue) for some dev work and light gaming, so this review will be written with that use case in mind.
 
-
-## Specs <i class="far fa-check-circle"></i>
+<br />
+# Specs <i class="far fa-check-circle"></i>
 
 
 My **T495s** came equipped with
@@ -39,7 +39,8 @@ My **T495s** came equipped with
 (specs taken from [Lenovo's T495s product page](https://www.lenovo.com/us/en/laptops/thinkpad/thinkpad-t-series/T495s/p/22TP2TT495S))
 
 
-## Design <i class="far fa-check-circle"></i>
+<br />
+# Design <i class="far fa-check-circle"></i>
 
 
 Lenovo's 2019 ThinkPad redesign trades ports and upgradability for thinner and lighter bodies.
@@ -82,7 +83,8 @@ The loss of the *RJ-45* and *SDHC* are definitely overall cons to the new design
 While I'll need to invest in an external SDHC reader to get pictures off my camera I don't need the SDHC card every moment of every day, and I've personally never found the performance of SD to be good enough to use as a dedicated storage device.
 
 
-## Display <i class="far fa-check-circle"></i>
+<br />
+# Display <i class="far fa-check-circle"></i>
 
 
 * Bright
@@ -90,7 +92,8 @@ While I'll need to invest in an external SDHC reader to get pictures off my came
 * Viewing angles are perfect
 
 
-## Keyboard, touchpad and trackpoint <i class="far fa-check-circle"></i>
+<br />
+# Keyboard, touchpad and trackpoint <i class="far fa-check-circle"></i>
 ### Keyboard <i class="far fa-question-circle"></i>
 * Layout feels great, smile shaped keys good as ever.
 * Buttons feel heavy compared to X1C
@@ -112,7 +115,8 @@ While I'll need to invest in an external SDHC reader to get pictures off my came
 * Haven't experienced trackpoint drift yet.
 
 
-## Performance <i class="far fa-question-circle"></i>
+<br />
+# Performance <i class="far fa-question-circle"></i>
 * Throttles on battery pretty had
 * APU throttles more than CPU
 * Now using TLP so performance is worse on battery, but even with `powersave` the performance seems pretty good.
@@ -121,14 +125,16 @@ While I'll need to invest in an external SDHC reader to get pictures off my came
 * NVMe SSD flies (**NOTE: Include benchmarks**)
 * Intel 9260 works well compared to 7260 in X1CG3. I can consistently get 5GHz across my apartment.
 
-## Linux <i class="far fa-check-circle"></i>
+<br />
+# Linux <i class="far fa-check-circle"></i>
 
 * amdgpu works out of the box with RADV for Vulkan
 * [systemd requires a patch for rdrand](https://github.com/systemd/systemd/issues/11810) which isn't in Fedora 30 meaning I cannot install Silverblue. Fedora Desktop ReSpin (with patched systemd and updated kernel) works fine.
 * Kernel 5.1 required. Previous kernels required boot workarounds.
 * Suspend/resume: the bluetooth blocks proper suspending
 
-## Battery <i class="far fa-times-circle"></i>
+<br />
+# Battery <i class="far fa-times-circle"></i>
 
 
 * 3-5 hours with TLP enabled
@@ -138,7 +144,8 @@ While I'll need to invest in an external SDHC reader to get pictures off my came
 * Overall
 
 
-## Gaming <i class="far fa-check-circle"></i>
+<br />
+# Gaming <i class="far fa-check-circle"></i>
 
 * Works well for light gaming. Have been playing DotA Underlords, Hollow Knight, Oxenfree
 * Vulkan works well meaning Proton works well. Get 300% the framerate I got on Intel in Fallout: New Vegas.
