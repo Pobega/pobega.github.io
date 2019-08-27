@@ -1,74 +1,147 @@
 ---
 title: "Lenovo Thinkpad T495s Review"
 date: 2019-08-26T11:37:10-04:00
-draft: true
+draft: false
 tags: ["hardware","review","linux","amd"]
 ---
-Earlier in 2019 [Lenovo announced](https://www.theverge.com/circuitbreaker/2017/9/7/16267428/lenovo-a275-a475-thinkpad-amd-pro-processors) that they were adding new ThinkPads with AMD Pro processors to their lineup. As someone who's spent the last few years trying to migrate away from Intel this appealed to me. After waiting months Lenovo finally dropped three new laptops; The ThinkPad [T495](https://www.lenovo.com/us/en/laptops/thinkpad/thinkpad-t-series/T495/p/22TP2TTT495), [T495s](https://www.lenovo.com/us/en/laptops/thinkpad/thinkpad-t-series/T495s/p/22TP2TT495S) and [X395](https://www.lenovo.com/us/en/laptops/thinkpad/thinkpad-x/X395/p/22TP2TXX395).
+
+<p align="center">
+  <i>
+    Lenovo's first T-series AMD ThinkPads proves that they can stand with the big boys
+  </i>
+</p>
+<br />
+
+Earlier in 2019 [Lenovo announced](https://www.theverge.com/circuitbreaker/2017/9/7/16267428/lenovo-a275-a475-thinkpad-amd-pro-processors) that they were adding new ThinkPads with AMD Pro processors to their lineup.
+As someone who's spent the last few years trying to migrate away from Intel this appealed to me.
+After waiting months Lenovo finally dropped three new laptops; The ThinkPad [T495](https://www.lenovo.com/us/en/laptops/thinkpad/thinkpad-t-series/T495/p/22TP2TTT495), [T495s](https://www.lenovo.com/us/en/laptops/thinkpad/thinkpad-t-series/T495s/p/22TP2TT495S) and [X395](https://www.lenovo.com/us/en/laptops/thinkpad/thinkpad-x/X395/p/22TP2TXX395).
+
 
 For the unaware, the AMD Pro CPUs ship with Vega M APUs (Vega 6, 8 and 10 respectively depending on the CPU) which are integrated cards that pack a little more 'oomph' than Intel's offerings.
 
+
 I purchased the laptop to run Linux (specifically Fedora Silverblue) for some dev work and light gaming, so this review will be written with that use case in mind.
 
-## Specs
+
+## Specs <i class="far fa-check-circle"></i>
+
 
 My **T495s** came equipped with
 
 
 * AMD Ryzen™ 5 PRO 3500U Processor (2.10GHz, up to 3.70GHz Max Boost, 4 Cores, 4MB Cache)
 * 14" FHD (1920 x 1080) 400 nits, IPS, Low Power, anti-glare
-* 16 GB DDR4 2400 MHz
+* 16 GB DDR4 2400 MHz (2x 8GB dual channel)
 * 256GB NVMe SSD
 * Integrated AMD Radeon™ Vega 8
 * WLAN: Intel® 9260 802.11 AC (2 x 2)
 
-## Design
-
-Lighter
-Thinner
-
-Cover Ports
+(specs taken from [Lenovo's T495s product page](https://www.lenovo.com/us/en/laptops/thinkpad/thinkpad-t-series/T495s/p/22TP2TT495S))
 
 
-* 3.5mm headphone
-* USB-C, no Thunderbolt
-* 2x USB-3.1
+## Design <i class="far fa-check-circle"></i>
 
-## Display
+
+Lenovo's 2019 ThinkPad redesign trades ports and upgradability for thinner and lighter bodies.
+While this may annoy some users, as a cloud-focused developer the tradeoff is OK by me.
+
+
+### Size & Weight <i class="far fa-check-circle"></i>
+
+
+The ThinkPad T495s shares it's chassis with the T490s, coming in at **16.1 mm** thick and weighing **2.81 lbs**.
+This tiny design manages to pack in a **57 Wh battery** which recharges in about an hour with the included 65W AC adapter.
+
+
+Compared to last year's T480s Lenovo has managed to shave off *2.3 mm* and *.09 lbs* which is pretty respectable.
+
+
+In day-to-day use I barely notice the machine in my backpack. Coming from the X1 Carbon Gen 3 (*19.65 mm* / *2.99 lbs*) this is actually a noticeable improvement.
+
+
+### Ports <i class="far fa-question-circle"></i>
+
+
+As stated earlier the new thinness and weight does come with some tradeoffs, namely ports.
+The **RJ-45** jack on the T480s is **gone** in favor of an adapter port on the left side of the machine, as is the **SDHC card reader**.
+
+
+On the USB side of things it has two **USB-A 3.1** ports (one powered), a **USB-C** charger port and a spare **USB-C** port for connecting devices such as headphones or docks. I have tried to use the USB-C charger port to connect devices when on battery but it doesn't seem to be wired for data transfer, only charging.
+
+
+Curiously, Lenovo decided to leave out *Thunderbolt* on the T495s (even though it is on the T490s,) which means if you are trying to use an eGPU or Thunderbolt dock you may be out of luck with this year's AMD ThinkPad offerings.
+
+
+For display connectivity the T495s does still manage to pack in a **full-size HDMI 2.0** port, which on top of the aforementioned **USB-C** port can be used to power multiple external displays.
+
+
+The T495s still sports the old faithful **3.5mm combo headphone/mic jack**, which works exactly as you'd expect.
+
+
+The loss of the *RJ-45* and *SDHC* are definitely overall cons to the new design, but the tradeoff for slimness and lightness may just be worth it overall.
+While I'll need to invest in an external SDHC reader to get pictures off my camera I don't need the SDHC card every moment of every day, and I've personally never found the performance of SD to be good enough to use as a dedicated storage device.
+
+
+## Display <i class="far fa-check-circle"></i>
+
 
 * Bright
 * Low power consumption
 * Viewing angles are perfect
 
-## Keyboard and touchpad
-Keyboard:
 
-
-* Dropped keys?
+## Keyboard, touchpad and trackpoint <i class="far fa-check-circle"></i>
+### Keyboard <i class="far fa-question-circle"></i>
+* Layout feels great, smile shaped keys good as ever.
 * Buttons feel heavy compared to X1C
+* Dropped keys? Could be learning curve.
+* Backlight works nicely.
+* Caps lock finally has a caps lock light. Big nitpick with X1C G3
 
-Touchpad:
 
-
+### Touchpad <i class="far fa-check-circle"></i>
 * It's not glass.
-* Very good but feels a bit sticky at times.
-* Trackpoint is ol' faithful.
+* Luxuriously large, though not Macbook large.
+* Very good but can feel a bit sticky at times due to the materials.
+* Well supported by libinput.
 
-## Performance
+
+### Trackpoint <i class="far fa-check-circle"></i>
+* Trackpoint is ol' faithful.
+* Very clicky trackpoint buttons
+* Haven't experienced trackpoint drift yet.
+
+
+## Performance <i class="far fa-question-circle"></i>
 * Throttles on battery pretty had
 * APU throttles more than CPU
 * Now using TLP so performance is worse on battery, but even with `powersave` the performance seems pretty good.
 * Using BFQ scheduler (which is [now default on ChromeOS](https://www.phoronix.com/scan.php?page=news_item&px=Chromebooks-BFQ-Default-IO) and [coming soon to Fedora](https://www.phoronix.com/scan.php?page=news_item&px=Fedora-Switching-To-BFQ) the application lag on battery with the `powersave` governor is mostly negated.
+* Dual channel RAM (2x 8GB) works well
+* NVMe SSD flies (**NOTE: Include benchmarks**)
+* Intel 9260 works well compared to 7260 in X1CG3. I can consistently get 5GHz across my apartment.
 
-## Battery
-* 3-5 hours with TLP enabled
-* Depends heavily on load
-* Web browsing uses a lot of battery
+## Linux <i class="far fa-check-circle"></i>
 
-## Linux
 * amdgpu works out of the box with RADV for Vulkan
 * [systemd requires a patch for rdrand](https://github.com/systemd/systemd/issues/11810) which isn't in Fedora 30 meaning I cannot install Silverblue. Fedora Desktop ReSpin (with patched systemd and updated kernel) works fine.
 * Kernel 5.1 required. Previous kernels required boot workarounds.
 * Suspend/resume: the bluetooth blocks proper suspending
 
-## Gaming
+## Battery <i class="far fa-times-circle"></i>
+
+
+* 3-5 hours with TLP enabled
+* Depends heavily on load
+* Idle draw is pretty high, with just Firefox open playing music and a terminal I get anywhere between 9.4W and 11.5W of power draw.
+* Web browsing uses a lot of battery
+* Overall
+
+
+## Gaming <i class="far fa-check-circle"></i>
+
+* Works well for light gaming. Have been playing DotA Underlords, Hollow Knight, Oxenfree
+* Vulkan works well meaning Proton works well. Get 300% the framerate I got on Intel in Fallout: New Vegas.
+* Performance in higher end games like DotA2 and Counter Strike still below what I expect, but playable.
+* [Upcoming changes to Mesa](https://www.phoronix.com/scan.php?page=news_item&px=Mesa-Radeon-Boost-No-vRAM-Type) in 19.3 may improve the APU's performance by 30%
+* Insert some basic Vulkan benchmarks.
