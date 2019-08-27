@@ -6,10 +6,46 @@
     <description>Recent content in Tags on Michael Pobega</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 26 Aug 2019 11:15:13 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 26 Aug 2019 11:37:10 -0400</lastBuildDate>
     
 	<atom:link href="https://pobe.ga/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>amd</title>
+      <link>https://pobe.ga/tags/amd/</link>
+      <pubDate>Mon, 26 Aug 2019 11:37:10 -0400</pubDate>
+      
+      <guid>https://pobe.ga/tags/amd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hardware</title>
+      <link>https://pobe.ga/tags/hardware/</link>
+      <pubDate>Mon, 26 Aug 2019 11:37:10 -0400</pubDate>
+      
+      <guid>https://pobe.ga/tags/hardware/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://pobe.ga/tags/linux/</link>
+      <pubDate>Mon, 26 Aug 2019 11:37:10 -0400</pubDate>
+      
+      <guid>https://pobe.ga/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>review</title>
+      <link>https://pobe.ga/tags/review/</link>
+      <pubDate>Mon, 26 Aug 2019 11:37:10 -0400</pubDate>
+      
+      <guid>https://pobe.ga/tags/review/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>intel</title>
@@ -17,15 +53,6 @@
       <pubDate>Mon, 26 Aug 2019 11:15:13 -0400</pubDate>
       
       <guid>https://pobe.ga/tags/intel/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>linux</title>
-      <link>https://pobe.ga/tags/linux/</link>
-      <pubDate>Mon, 26 Aug 2019 11:15:13 -0400</pubDate>
-      
-      <guid>https://pobe.ga/tags/linux/</guid>
       <description></description>
     </item>
     
@@ -44,24 +71,6 @@
       <pubDate>Sun, 08 Sep 2013 11:44:15 -0400</pubDate>
       
       <guid>https://pobe.ga/tags/archive/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>hardware</title>
-      <link>https://pobe.ga/tags/hardware/</link>
-      <pubDate>Sun, 08 Sep 2013 11:44:15 -0400</pubDate>
-      
-      <guid>https://pobe.ga/tags/hardware/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>review</title>
-      <link>https://pobe.ga/tags/review/</link>
-      <pubDate>Sun, 08 Sep 2013 11:44:15 -0400</pubDate>
-      
-      <guid>https://pobe.ga/tags/review/</guid>
       <description></description>
     </item>
     

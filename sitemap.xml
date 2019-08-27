@@ -3,36 +3,59 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://pobe.ga/posts/intel-9260-suspend/</loc>
-    <lastmod>2019-08-26T11:15:13-04:00</lastmod>
+    <loc>https://pobe.ga/posts/thinkpad-t495s-review/</loc>
+    <lastmod>2019-08-26T11:37:10-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://pobe.ga/</loc>
-    <lastmod>2019-08-26T11:15:13-04:00</lastmod>
+    <lastmod>2019-08-26T11:37:10-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://pobe.ga/posts/</loc>
-    <lastmod>2019-08-26T11:15:13-04:00</lastmod>
+    <lastmod>2019-08-26T11:37:10-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://pobe.ga/tags/</loc>
-    <lastmod>2019-08-26T11:15:13-04:00</lastmod>
+    <lastmod>2019-08-26T11:37:10-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://pobe.ga/tags/intel/</loc>
-    <lastmod>2019-08-26T11:15:13-04:00</lastmod>
+    <loc>https://pobe.ga/tags/amd/</loc>
+    <lastmod>2019-08-26T11:37:10-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://pobe.ga/tags/hardware/</loc>
+    <lastmod>2019-08-26T11:37:10-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://pobe.ga/tags/linux/</loc>
+    <lastmod>2019-08-26T11:37:10-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://pobe.ga/tags/review/</loc>
+    <lastmod>2019-08-26T11:37:10-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://pobe.ga/posts/intel-9260-suspend/</loc>
+    <lastmod>2019-08-26T11:15:13-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pobe.ga/tags/intel/</loc>
     <lastmod>2019-08-26T11:15:13-04:00</lastmod>
     <priority>0</priority>
   </url>
@@ -55,18 +78,6 @@
   
   <url>
     <loc>https://pobe.ga/tags/archive/</loc>
-    <lastmod>2013-09-08T11:44:15-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://pobe.ga/tags/hardware/</loc>
-    <lastmod>2013-09-08T11:44:15-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://pobe.ga/tags/review/</loc>
     <lastmod>2013-09-08T11:44:15-04:00</lastmod>
     <priority>0</priority>
   </url>

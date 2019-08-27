@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>review on Michael Pobega</title>
-    <link>https://pobe.ga/tags/review/</link>
-    <description>Recent content in review on Michael Pobega</description>
+    <title>amd on Michael Pobega</title>
+    <link>https://pobe.ga/tags/amd/</link>
+    <description>Recent content in amd on Michael Pobega</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 26 Aug 2019 11:37:10 -0400</lastBuildDate>
     
-	<atom:link href="https://pobe.ga/tags/review/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://pobe.ga/tags/amd/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,15 +19,6 @@
       <guid>https://pobe.ga/posts/thinkpad-t495s-review/</guid>
       <description>Lenovo&amp;rsquo;s first T-series AMD ThinkPads proves that they can stand with the big boys  Earlier in 2019 Lenovo announced that they were adding new ThinkPads with AMD Pro processors to their lineup. As someone who&amp;rsquo;s spent the last few years trying to migrate away from Intel this appealed to me. After waiting months Lenovo finally dropped three new laptops; The ThinkPad T495, T495s and X395.
 For the unaware, the AMD Pro CPUs ship with Vega M APUs (Vega 6, 8 and 10 respectively depending on the CPU) which are integrated cards that pack a little more &amp;lsquo;oomph&amp;rsquo; than Intel&amp;rsquo;s offerings.</description>
-    </item>
-    
-    <item>
-      <title>Mythlogic Callisto 1413 (Clevo W740SU) Review</title>
-      <link>https://pobe.ga/posts/clevo-w740su/</link>
-      <pubDate>Sun, 08 Sep 2013 11:44:15 -0400</pubDate>
-      
-      <guid>https://pobe.ga/posts/clevo-w740su/</guid>
-      <description>The last time I splurged on a laptop was back when the Intel Core 2 Duo was the newest CPU on the market. Nowadays, I tend to just use EeePCs or budget i3 laptops to get my work done. With graduation approaching and senior projects looming I decided I wanted something powerful, and it needed to be fully Linux compatible. After a bit of research I decided on the Clevo W740SU, also known as the Callisto 1413 sold by Mythlogic, the Galago Ultrapro sold by System76, the Zeus Hercules as sold by CyberpowerPC, and various other names from other resellers.</description>
     </item>
     
   </channel>
