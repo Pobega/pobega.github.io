@@ -15,10 +15,10 @@ enableRobotsTXT = true
     accent = "purple"
     showBorder = true
     backgroundColor = "white"
-    font = "Raleway" # should match the name on Google Fonts!
+    font = "Montserrat" # should match the name on Google Fonts!
     highlight = true
     highlightStyle = "solarized-dark"
-    highlightLanguages = ["go", "haskell", "kotlin", "scala", "swift"]
+    highlightLanguages = ["python", "c", "c++", "rust", "bash", "sh"]
     copyright = " "
 
 [[menu.main]]
@@ -32,7 +32,7 @@ enableRobotsTXT = true
     weight = 2
 
 [[menu.main]]
-    url = "/projects/"
+    url = "https://github.com/Pobega?tab=repositories&q=&type=source"
     name = "Projects"
     weight = 3
 
@@ -42,7 +42,7 @@ enableRobotsTXT = true
 
 [[menu.icon]]
     url = "mailto:pobega@gmail.com"
-    name = "far fa-envelope-open"
+    name = "fas fa-envelope"
     weight = 1
 
 [[menu.icon]]
