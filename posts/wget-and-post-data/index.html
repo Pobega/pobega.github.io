@@ -9,7 +9,7 @@
         <style>
 
     html body {
-        font-family: 'Raleway', sans-serif;
+        font-family: 'Montserrat', sans-serif;
         background-color: white;
     }
 
@@ -27,7 +27,7 @@
 
 
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 
 
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-dark.min.css"> 
@@ -36,13 +36,13 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
  
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
 
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/haskell.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scala.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/swift.min.js"></script> 
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/c.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/c&#43;&#43;.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/rust.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/bash.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/sh.min.js"></script> 
 
     <script>hljs.initHighlightingOnLoad();</script>
 
@@ -99,7 +99,7 @@
                             
                                 <li><a href="/posts/">Posts</a></li>
                             
-                                <li><a href="/projects/">Projects</a></li>
+                                <li><a href="https://github.com/Pobega?tab=repositories&amp;q=&amp;type=source">Projects</a></li>
                             
                         </ul>
                     
@@ -107,7 +107,7 @@
                     
                         <ul class="nav navbar-nav navbar-right">
                             
-                                <li class="navbar-icon"><a href="mailto:pobega@gmail.com"><i class="far fa-envelope-open"></i></a></li>
+                                <li class="navbar-icon"><a href="mailto:pobega@gmail.com"><i class="fas fa-envelope"></i></a></li>
                             
                                 <li class="navbar-icon"><a href="https://github.com/pobega/"><i class="fab fa-github"></i></a></li>
                             
@@ -157,7 +157,7 @@
 
     <br> <div class="text-justify"><p>I had an idea for a script to automatically log me in to Advance Wars by Web and grab the number of games which it is my turn in, but Wget seems to have a lot of trouble with post-data and cookies while accessing pages. Currently, this is how my script looks:</p>
 
-<pre><code>#! /bin/sh
+<pre><code class="language-sh">#! /bin/sh
 # Script for grabbing &quot;Your Turn Games&quot; from AWBW (http://awbw.amarriner.com)
 # Written and maintained by Michael Pobega
 # Special thanks to the GNU Wget manpage for help with cookie sessions
@@ -169,9 +169,9 @@ wget --load-cookies cookies.txt http://awbw.amarriner.com/yourturn.php
 
 <p>Every time I&rsquo;d login to the page, the downloaded yourturn.php would complain that I was not logged in. I&rsquo;m going to mess around with this script a little more and hopefully find the problem.</p>
 
-<p><strong>Edit</strong>: Nevermind, I found the problem. I guess I&rsquo;m a bit blind, but it&rsquo;s right in the wget(1) manpage:</p>
+<p><strong>Edit</strong>: Nevermind, I found the problem. I guess I&rsquo;m a bit blind, but it&rsquo;s right in the <em>wget(1)</em> manpage:</p>
 
-<p>If the server is using session cookies to track user authentication, the above will not work because &ndash;save-cookies will not save them (and neither will browsers) and the cookies.txt file will be empty. In that case use &ndash;keep-session-cookies along with &ndash;save-cookies to force saving of session cookies.</p>
+<p>If the server is using session cookies to track user authentication, the above will not work because <code>--save-cookies</code> will not save them (and neither will browsers) and the cookies.txt file will be empty. In that case use <code>--keep-session-cookies</code> along with <code>--save-cookies</code> to force saving of session cookies.</p>
 </div>
 
     
