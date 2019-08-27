@@ -7,7 +7,7 @@ tags: ["hardware","review","linux","amd"]
 
 <p align="center">
   <i>
-    Lenovo's first T-series AMD ThinkPads proves that they can stand with the big boys
+    Lenovo's first T-series AMD ThinkPads prove that they can stand with the big boys
   </i>
 </p>
 <br />
