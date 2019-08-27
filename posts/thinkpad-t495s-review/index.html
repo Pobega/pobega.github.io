@@ -225,11 +225,11 @@ While I&rsquo;ll need to invest in an external SDHC reader to get pictures off m
 
 <h1 id="display-i-class-far-fa-check-circle-i">Display <i class="far fa-check-circle"></i></h1>
 
-<ul>
-<li>Bright</li>
-<li>Low power consumption</li>
-<li>Viewing angles are perfect</li>
-</ul>
+<p>The <strong>FHD 400-nit Low Power IPS</strong> display offering on the T495s is a really fantastic panel.
+The display is bright and colorful.
+* Bright
+* Low power consumption
+* Viewing angles are perfect</p>
 
 <p><br /></p>
 
@@ -271,8 +271,56 @@ While I&rsquo;ll need to invest in an external SDHC reader to get pictures off m
 <li>APU throttles more than CPU</li>
 <li>Now using TLP so performance is worse on battery, but even with <code>powersave</code> the performance seems pretty good.</li>
 <li>Using BFQ scheduler (which is <a href="https://www.phoronix.com/scan.php?page=news_item&amp;px=Chromebooks-BFQ-Default-IO">now default on ChromeOS</a> and <a href="https://www.phoronix.com/scan.php?page=news_item&amp;px=Fedora-Switching-To-BFQ">coming soon to Fedora</a> the application lag on battery with the <code>powersave</code> governor is mostly negated.</li>
-<li>Dual channel RAM (2x 8GB) works well</li>
 <li>NVMe SSD flies (<strong>NOTE: Include benchmarks</strong>)</li>
+</ul>
+
+<p><code>$ time dd bs=16k count=102400 oflag=direct if=/dev/zero of=test_data</code></p>
+
+<pre><code>102400+0 records in
+102400+0 records out
+1677721600 bytes (1.7 GB, 1.6 GiB) copied, 6.54317 s, 256 MB/s
+
+real    0m6.885s
+user    0m0.053s
+sys     0m4.536s
+</code></pre>
+
+<p><code># hdparm -t /dev/nvme0n1</code></p>
+
+<pre><code>/dev/nvme0n1:
+ Timing buffered disk reads: 3472 MB in  3.00 seconds = 1156.78 MB/sec
+</code></pre>
+
+<p><a href="https://github.com/josefbacik/fs_mark">fs_mark</a></p>
+
+<p><code>$ fs_mark -d test  -s 10240 -n 1000 -v</code></p>
+
+<pre><code>Count       Size         Files/sec        App Overhead
+1000        10240        901.6            21158
+
+CREAT (Min/Avg/Max)        WRITE (Min/Avg/Max)        FSYNC (Min/Avg/Max)
+54      90     265         20      30      95         844     961     6606
+
+SYNC (Min/Avg/Max)        CLOSE (Min/Avg/Max)       UNLINK (Min/Avg/Max)
+0       0        0        2        5       32       10       16      133
+</code></pre>
+
+<ul>
+<li>Dual channel RAM (2x 8GB) works well</li>
+</ul>
+
+<p><a href="https://github.com/jeffhammond/STREAM">STREAM</a></p>
+
+<p><code>$ ./stream_c.exe</code></p>
+
+<pre><code>Function    Best Rate MB/s  Avg time     Min time     Max time
+Copy:           11253.3     0.015865     0.014218     0.018171
+Scale:          11174.8     0.015669     0.014318     0.018882
+Add:            13363.0     0.018631     0.017960     0.020059
+Triad:          13321.6     0.019757     0.018016     0.022583
+</code></pre>
+
+<ul>
 <li>Intel 9260 works well compared to 7260 in X1CG3. I can consistently get 5GHz across my apartment.</li>
 </ul>
 
@@ -310,6 +358,27 @@ While I&rsquo;ll need to invest in an external SDHC reader to get pictures off m
 <li><a href="https://www.phoronix.com/scan.php?page=news_item&amp;px=Mesa-Radeon-Boost-No-vRAM-Type">Upcoming changes to Mesa</a> in 19.3 may improve the APU&rsquo;s performance by 30%</li>
 <li>Insert some basic Vulkan benchmarks.</li>
 </ul>
+
+<p><code>$ glmark2</code></p>
+
+<pre><code>glmark2 Score: 3763
+</code></pre>
+
+<p><a href="https://benchmark.unigine.com/heaven?lang=en">Ungine Heaven</a> Benchmarks:</p>
+
+<pre><code>Basic Preset
+FPS: 35.4
+Score: 892
+Min FPS: 10.6
+Max FPS: 54.3
+</code></pre>
+
+<pre><code>Ultra Preset
+FPS: 9.9
+Score: 249
+Min FPS: 4.9
+Max FPS: 18.7
+</code></pre>
 </div>
 
     
