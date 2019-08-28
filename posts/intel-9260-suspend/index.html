@@ -163,13 +163,25 @@
 
 <pre><code># Disable wakeup on Intel 9260 bluetooth to allow suspend/resume
 SUBSYSTEM==&quot;usb&quot; ATTR{idVendor}==&quot;8087&quot;, ATTR{idProduct}==&quot;0025&quot; \
-        SUBSYSTEMS==&quot;usb&quot; DRIVERS==&quot;usb&quot; \
         ATTR{power/wakeup}=&quot;disabled&quot;
 </code></pre>
 
 <p>I&rsquo;ve put the file up <a href="https://github.com/Pobega/dotfiles/blob/65798e02182ed86f4901365af6c68c5137fcdfa3/t495s/80-intel9260-btusb.rules">on my Github</a> for anyone who wants to just download it.</p>
 
-<p>Unfortunately it still seems to reset itself after a suspend cycle, I&rsquo;m trying to figure out if there&rsquo;s some way to have a udev rule trigger after suspend. In the meantime you could use a tool like <strong>tlp</strong> to keep the bluetooth off if you aren&rsquo;t using it.</p>
+<p><del>Unfortunately it still seems to reset itself after a suspend cycle, I&rsquo;m trying to figure out if there&rsquo;s some way to have a udev rule trigger after suspend. In the meantime you could use a tool like <strong>tlp</strong> to keep the bluetooth off if you aren&rsquo;t using it.</del> (see <strong>edit</strong> for follow-up)</p>
+
+<p><br />
+<strong>Edit</strong> <em>8/27/2019</em>: To get the above rule to trigger after a suspend/resume cycle you can put the following script in <code>/usr/lib/systemd/system-sleep/bluetooth.sh</code></p>
+
+<pre><code class="language-bash">#!/bin/sh
+
+if [ &quot;${1}&quot; == &quot;post&quot; ]; then
+  udevadm trigger --subsystem-match=&quot;usb&quot;
+fi
+</code></pre>
+
+<p><br />
+<strong>Edit 2</strong> <em>8/28/2019</em>: There is an upstream bug against Fedora 30 at <a href="https://bugzilla.redhat.com/show_bug.cgi?id=1731915">https://bugzilla.redhat.com/show_bug.cgi?id=1731915</a></p>
 </div>
 
     
