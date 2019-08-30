@@ -175,13 +175,23 @@ SUBSYSTEM==&quot;usb&quot; ATTR{idVendor}==&quot;8087&quot;, ATTR{idProduct}==&q
 
 <pre><code class="language-bash">#!/bin/sh
 
+if [ &quot;${1}&quot; == &quot;pre&quot; ]; then
+  # Set manually here because `udevadm trigger -s usb`
+  # doesn't seem to work as a pre-suspend script.
+  udevadm trigger --subsystem-match=&quot;usb&quot;
+  udevadm settle # block suspend until udev is done
+fi
 if [ &quot;${1}&quot; == &quot;post&quot; ]; then
   udevadm trigger --subsystem-match=&quot;usb&quot;
 fi
+
 </code></pre>
 
 <p><br />
 <strong>Edit 2</strong> <em>8/28/2019</em>: There is an upstream bug against Fedora 30 at <a href="https://bugzilla.redhat.com/show_bug.cgi?id=1731915">https://bugzilla.redhat.com/show_bug.cgi?id=1731915</a></p>
+
+<p><br />
+<strong>Edit 2</strong> <em>8/30/2019</em>: Added the &lsquo;pre&rsquo; section to the systemd-suspend script since the udev rules don&rsquo;t seem to be triggering at boot on Fedora 30.</p>
 </div>
 
     
