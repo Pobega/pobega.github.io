@@ -28,10 +28,20 @@ I've put the file up [on my Github](https://github.com/Pobega/dotfiles/blob/6579
 ```bash
 #!/bin/sh
 
+if [ "${1}" == "pre" ]; then
+  # Set manually here because `udevadm trigger -s usb`
+  # doesn't seem to work as a pre-suspend script.
+  udevadm trigger --subsystem-match="usb"
+  udevadm settle # block suspend until udev is done
+fi
 if [ "${1}" == "post" ]; then
   udevadm trigger --subsystem-match="usb"
 fi
+
 ```
 
 <br />
 **Edit 2** *8/28/2019*: There is an upstream bug against Fedora 30 at https://bugzilla.redhat.com/show_bug.cgi?id=1731915
+
+<br />
+**Edit 2** *8/30/2019*: Added the 'pre' section to the systemd-suspend script since the udev rules don't seem to be triggering at boot on Fedora 30.
