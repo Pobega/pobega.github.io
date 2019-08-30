@@ -1,6 +1,6 @@
 ---
 title: "Lenovo Thinkpad T495s Review"
-date: 2019-08-26T11:37:10-04:00
+date: 2019-08-30T11:37:10-04:00
 draft: true
 tags: ["hardware","review","linux","amd"]
 ---
@@ -125,10 +125,19 @@ One thing to note is that I have **yet to experience any trackpoint drift** whic
 
 <br />
 # Performance <i class="far fa-question-circle"></i>
+
+### CPU <i class="far fa-question-circle"></i>
 * Throttles on battery pretty had
-* APU throttles more than CPU
 * Now using TLP so performance is worse on battery, but even with `powersave` the performance seems pretty good.
 * Using BFQ scheduler (which is [now default on ChromeOS](https://www.phoronix.com/scan.php?page=news_item&px=Chromebooks-BFQ-Default-IO) and [coming soon to Fedora](https://www.phoronix.com/scan.php?page=news_item&px=Fedora-Switching-To-BFQ) the application lag on battery with the `powersave` governor is mostly negated.
+* Include some CPU benchmarks
+
+### GPU/APU <i class="far fa-question-circle"></i>
+* Throttles on battery pretty had
+* Performance is acceptable for day to day use. General desktop compositing is great and gaming performance is far above other integrated solutions.
+* APU throttles more than CPU
+
+*(See the '__Gaming__' section towards the bottom for benchmarks)*
 
 ### Storage <i class="far fa-check-circle"></i>
 The NVMe SSD included in the T495s is very nice. With average **write speeds** of **250 MB/s** and **read speeds** of **1.1 GB/s** it is very rarely your bottleneck.
@@ -192,10 +201,13 @@ In comparison to the *7260* in my old X1 Carbon I am now able to get a **consist
 <br />
 # Linux <i class="far fa-check-circle"></i>
 
+* All supported hardware works out of the box on kernel 5.2
+* Fingerprint scanner still unsupported in Linux. The community is currently attempting to reverse engineer a driver, see the [Validity90 Github project](https://github.com/nmikhailov/Validity90)
 * amdgpu works out of the box with RADV for Vulkan
 * [systemd requires a patch for rdrand](https://github.com/systemd/systemd/issues/11810) which isn't in Fedora 30 meaning I cannot install Silverblue. Fedora Desktop ReSpin (with patched systemd and updated kernel) works fine.
-* Kernel 5.1 required. Previous kernels required boot workarounds.
-* Suspend/resume: the bluetooth blocks proper suspending
+* Minimum of kernel 5.1 required. Previous kernels required boot arg workarounds.
+* Suspend/resume: the bluetooth blocks proper suspending, see **INSERT LINK** my other article for the current workaround.
+* Touchpad well supported by libinput.
 
 <br />
 # Battery <i class="far fa-times-circle"></i>
@@ -205,24 +217,27 @@ In comparison to the *7260* in my old X1 Carbon I am now able to get a **consist
 * Depends heavily on load
 * Idle draw is pretty high, with just Firefox open playing music and a terminal I get anywhere between 9.4W and 11.5W of power draw.
 * Web browsing uses a lot of battery
-* Touchpad well supported by libinput.
 
 
 <br />
 # Gaming <i class="far fa-check-circle"></i>
 
 * Works well for light gaming. Have been playing DotA Underlords, Hollow Knight, Oxenfree
-* Vulkan works well meaning Proton works well. Get 300% the framerate I got on Intel in Fallout: New Vegas.
+* Vulkan works well meaning Proton works well. Getting roughly 200%-300% the framerate I got on Intel in Fallout: New Vegas.
 * Performance in higher end games like DotA2 and Counter Strike still below what I expect, but playable.
-* [Upcoming changes to Mesa](https://www.phoronix.com/scan.php?page=news_item&px=Mesa-Radeon-Boost-No-vRAM-Type) in 19.3 may improve the APU's performance by 30%
+* [Upcoming changes to Mesa](https://www.phoronix.com/scan.php?page=news_item&px=Mesa-Radeon-Boost-No-vRAM-Type) in 19.3 may improve the APU's performance by 30% making more games playable
 * Insert some basic Vulkan benchmarks.
+
+### Benchmarks
+
+**glmark2 ([Github](https://github.com/glmark2/glmark2)):**
 
 `$ glmark2`
 ```
 glmark2 Score: 3763
 ```
 
-[Ungine Heaven](https://benchmark.unigine.com/heaven?lang=en) Benchmarks:
+**Ungine Heaven ([Link](https://benchmark.unigine.com/heaven?lang=en))**:
 
 ```
 Basic Preset
@@ -240,3 +255,5 @@ Min FPS: 4.9
 Max FPS: 18.7
 ```
 
+# Overall <i class="far fa-check-circle"></i>
+A great machine.
