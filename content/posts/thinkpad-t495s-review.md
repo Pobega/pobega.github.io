@@ -1,7 +1,7 @@
 ---
 title: "Lenovo Thinkpad T495s Review"
 date: 2019-08-26T11:37:10-04:00
-draft: false
+draft: true
 tags: ["hardware","review","linux","amd"]
 ---
 
@@ -17,10 +17,11 @@ As someone who's spent the last few years trying to migrate away from Intel this
 After waiting months Lenovo finally dropped three new laptops; The ThinkPad [T495](https://www.lenovo.com/us/en/laptops/thinkpad/thinkpad-t-series/T495/p/22TP2TTT495), [T495s](https://www.lenovo.com/us/en/laptops/thinkpad/thinkpad-t-series/T495s/p/22TP2TT495S) and [X395](https://www.lenovo.com/us/en/laptops/thinkpad/thinkpad-x/X395/p/22TP2TXX395).
 
 
-For the unaware, the AMD Pro CPUs ship with Vega M APUs (Vega 6, 8 and 10 respectively depending on the CPU) which are integrated cards that pack a little more 'oomph' than Intel's offerings.
+For the unaware, the AMD Pro CPUs ship with mobile Vega APUs (Vega 8 or 10 depending on the CPU configuration) which are integrated cards that pack a little more 'oomph' than Intel's offerings.
 
 
 I purchased the laptop to run Linux (specifically Fedora Silverblue) for some dev work and light gaming, so this review will be written with that use case in mind.
+Also note that I am transitioning off of an X1 Carbon Gen3 (*i5-5200u*) so my review will be talking in comparison to that hardware pretty often.
 
 <br />
 # Specs <i class="far fa-check-circle"></i>
@@ -37,6 +38,8 @@ My **T495s** came equipped with
 * WLAN: Intel® 9260 802.11 AC (2 x 2)
 
 (specs taken from [Lenovo's T495s product page](https://www.lenovo.com/us/en/laptops/thinkpad/thinkpad-t-series/T495s/p/22TP2TT495S))
+
+Lenovo's official T495s platform specification PDF is available [here](https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad%20T495s/ThinkPad_T495s_Platform_Specifications.pdf)
 
 
 <br />
@@ -87,34 +90,37 @@ While I'll need to invest in an external SDHC reader to get pictures off my came
 # Display <i class="far fa-check-circle"></i>
 
 
-The **FHD 400-nit Low Power IPS** display offering on the T495s is a really fantastic panel.
-The display is bright and colorful. 
-* Bright
-* Low power consumption
-* Viewing angles are perfect
+The **FHD 400-nit Low Power IPS** display offered on the T495s is a really fantastic panel.
+The display is **bright**, **vibrant** and the **viewing angles are wide**.
+This specific panel is the **low power** display, although currently I can't get hard information on the power draw as *powertop* is reporting it as 0 mW usage.
+
+
+My specific machine has the *N140HCG-GQ2* made by *Innolux*, which apparently is the [winner of the IPS lottery](https://www.notebookcheck.net/Lenovo-s-Panel-Lottery-continues-with-3-different-14-inch-LowPower-displays.426538.0.html) for this line of ThinkPads.
+Speaking for the Innolux panel I can say that the ghosting and input delay reported by other users with the FHD low-power IPS panel aren't an issue.
+I've done some very basic measurements (playing fighting games) and haven't noticed any appreciable input delay, so for day-to-day use the Innolux panel is perfect.
 
 
 <br />
 # Keyboard, touchpad and trackpoint <i class="far fa-check-circle"></i>
 ### Keyboard <i class="far fa-question-circle"></i>
-* Layout feels great, smile shaped keys good as ever.
-* Buttons feel heavy compared to X1C
-* Dropped keys? Could be learning curve.
-* Backlight works nicely.
-* Caps lock finally has a caps lock light. Big nitpick with X1C G3
+
+The standard 14" ThinkPad keyboard is as **great as ever**.
+It uses a **standard ThinkPad layout** with smile-shaped keycaps, though the **capslock key light** is a much appreciated addition compared to previous iterations.
+
+Compared to my X1 Carbon Gen3, the **keys feel a bit heavy**.
+It could just be me but sometimes I feel like the heaviness causes me to miss keypresses.
+I think over time my fingers will adapt so I find it hard to take away points from the overall machine from this, but if you're a light typist this could be an issue for you.
 
 
 ### Touchpad <i class="far fa-check-circle"></i>
-* It's not glass.
-* Luxuriously large, though not Macbook large.
-* Very good but can feel a bit sticky at times due to the materials.
-* Well supported by libinput.
+The touchpad on the T495s is **nice and large**, though the material leaves a bit to be desired.
+Unlike the higher-end X1 Carbon (which uses *glass* for its touchpad), the T495s touchpad is made of a **Mylar material** which at times can feel less fluid and even a bit sticky compared to its' glass contemporaries.
 
 
 ### Trackpoint <i class="far fa-check-circle"></i>
-* Trackpoint is ol' faithful.
-* Very clicky trackpoint buttons
-* Haven't experienced trackpoint drift yet.
+Ol' faithful ThinkPad trackpoint. The buttons feel **nice and clicky** as always, it's a pleasure to use.
+
+One thing to note is that I have **yet to experience any trackpoint drift** which is a huge improvement over previous iterations of the hardware.
 
 
 <br />
@@ -123,10 +129,15 @@ The display is bright and colorful.
 * APU throttles more than CPU
 * Now using TLP so performance is worse on battery, but even with `powersave` the performance seems pretty good.
 * Using BFQ scheduler (which is [now default on ChromeOS](https://www.phoronix.com/scan.php?page=news_item&px=Chromebooks-BFQ-Default-IO) and [coming soon to Fedora](https://www.phoronix.com/scan.php?page=news_item&px=Fedora-Switching-To-BFQ) the application lag on battery with the `powersave` governor is mostly negated.
-* NVMe SSD flies (**NOTE: Include benchmarks**)
+
+### Storage <i class="far fa-check-circle"></i>
+The NVMe SSD included in the T495s is very nice. With average **write speeds** of **250 MB/s** and **read speeds** of **1.1 GB/s** it is very rarely your bottleneck.
+
+I've included some benchmarks for those interested:
+
+**Write speed test**:
 
 `$ time dd bs=16k count=102400 oflag=direct if=/dev/zero of=test_data`
-
 ```
 102400+0 records in
 102400+0 records out
@@ -137,19 +148,18 @@ user    0m0.053s
 sys     0m4.536s
 ```
 
+**Read speed test**:
 
 `# hdparm -t /dev/nvme0n1`
-
 ```
 /dev/nvme0n1:
  Timing buffered disk reads: 3472 MB in  3.00 seconds = 1156.78 MB/sec
 ```
 
 
-[fs_mark](https://github.com/josefbacik/fs_mark)
+**fs_mark ([Github](https://github.com/josefbacik/fs_mark))**:
 
 `$ fs_mark -d test  -s 10240 -n 1000 -v`
-
 ```
 Count       Size         Files/sec        App Overhead
 1000        10240        901.6            21158
@@ -161,9 +171,9 @@ SYNC (Min/Avg/Max)        CLOSE (Min/Avg/Max)       UNLINK (Min/Avg/Max)
 0       0        0        2        5       32       10       16      133
 ```
 
-* Dual channel RAM (2x 8GB) works well
-
-[STREAM](https://github.com/jeffhammond/STREAM)
+### Memory <i class="far fa-check-circle"></i>
+The 16GB RAM option is **dual channel 2x 8GB**.
+Below is a benchmark gathered using [STREAM](https://github.com/jeffhammond/STREAM)
 
 `$ ./stream_c.exe`
 
@@ -175,7 +185,9 @@ Add:            13363.0     0.018631     0.017960     0.020059
 Triad:          13321.6     0.019757     0.018016     0.022583
 ```
 
-* Intel 9260 works well compared to 7260 in X1CG3. I can consistently get 5GHz across my apartment.
+### Wireless <i class="far fa-check-circle"></i>
+The included **Intel 9260 802.11ac** wireless network card works well.
+In comparison to the *7260* in my old X1 Carbon I am now able to get a **consistent 5GHz connection** across my entire apartment, whereas before I needed to switch to 2.4GHz if I was more than 20 feet from my AP.
 
 <br />
 # Linux <i class="far fa-check-circle"></i>
@@ -193,7 +205,7 @@ Triad:          13321.6     0.019757     0.018016     0.022583
 * Depends heavily on load
 * Idle draw is pretty high, with just Firefox open playing music and a terminal I get anywhere between 9.4W and 11.5W of power draw.
 * Web browsing uses a lot of battery
-* Overall
+* Touchpad well supported by libinput.
 
 
 <br />
