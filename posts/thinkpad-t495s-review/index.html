@@ -168,9 +168,10 @@
 As someone who&rsquo;s spent the last few years trying to migrate away from Intel this appealed to me.
 After waiting months Lenovo finally dropped three new laptops; The ThinkPad <a href="https://www.lenovo.com/us/en/laptops/thinkpad/thinkpad-t-series/T495/p/22TP2TTT495">T495</a>, <a href="https://www.lenovo.com/us/en/laptops/thinkpad/thinkpad-t-series/T495s/p/22TP2TT495S">T495s</a> and <a href="https://www.lenovo.com/us/en/laptops/thinkpad/thinkpad-x/X395/p/22TP2TXX395">X395</a>.</p>
 
-<p>For the unaware, the AMD Pro CPUs ship with Vega M APUs (Vega 6, 8 and 10 respectively depending on the CPU) which are integrated cards that pack a little more &lsquo;oomph&rsquo; than Intel&rsquo;s offerings.</p>
+<p>For the unaware, the AMD Pro CPUs ship with mobile Vega APUs (Vega 8 or 10 depending on the CPU configuration) which are integrated cards that pack a little more &lsquo;oomph&rsquo; than Intel&rsquo;s offerings.</p>
 
-<p>I purchased the laptop to run Linux (specifically Fedora Silverblue) for some dev work and light gaming, so this review will be written with that use case in mind.</p>
+<p>I purchased the laptop to run Linux (specifically Fedora Silverblue) for some dev work and light gaming, so this review will be written with that use case in mind.
+Also note that I am transitioning off of an X1 Carbon Gen3 (<em>i5-5200u</em>) so my review will be talking in comparison to that hardware pretty often.</p>
 
 <p><br /></p>
 
@@ -188,6 +189,8 @@ After waiting months Lenovo finally dropped three new laptops; The ThinkPad <a h
 </ul>
 
 <p>(specs taken from <a href="https://www.lenovo.com/us/en/laptops/thinkpad/thinkpad-t-series/T495s/p/22TP2TT495S">Lenovo&rsquo;s T495s product page</a>)</p>
+
+<p>Lenovo&rsquo;s official T495s platform specification PDF is available <a href="https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad%20T495s/ThinkPad_T495s_Platform_Specifications.pdf">here</a></p>
 
 <p><br /></p>
 
@@ -225,11 +228,13 @@ While I&rsquo;ll need to invest in an external SDHC reader to get pictures off m
 
 <h1 id="display-i-class-far-fa-check-circle-i">Display <i class="far fa-check-circle"></i></h1>
 
-<p>The <strong>FHD 400-nit Low Power IPS</strong> display offering on the T495s is a really fantastic panel.
-The display is bright and colorful.
-* Bright
-* Low power consumption
-* Viewing angles are perfect</p>
+<p>The <strong>FHD 400-nit Low Power IPS</strong> display offered on the T495s is a really fantastic panel.
+The display is <strong>bright</strong>, <strong>vibrant</strong> and the <strong>viewing angles are wide</strong>.
+This specific panel is the <strong>low power</strong> display, although currently I can&rsquo;t get hard information on the power draw as <em>powertop</em> is reporting it as 0 mW usage.</p>
+
+<p>My specific machine has the <em>N140HCG-GQ2</em> made by <em>Innolux</em>, which apparently is the <a href="https://www.notebookcheck.net/Lenovo-s-Panel-Lottery-continues-with-3-different-14-inch-LowPower-displays.426538.0.html">winner of the IPS lottery</a> for this line of ThinkPads.
+Speaking for the Innolux panel I can say that the ghosting and input delay reported by other users with the FHD low-power IPS panel aren&rsquo;t an issue.
+I&rsquo;ve done some very basic measurements (playing fighting games) and haven&rsquo;t noticed any appreciable input delay, so for day-to-day use the Innolux panel is perfect.</p>
 
 <p><br /></p>
 
@@ -237,42 +242,54 @@ The display is bright and colorful.
 
 <h3 id="keyboard-i-class-far-fa-question-circle-i">Keyboard <i class="far fa-question-circle"></i></h3>
 
-<ul>
-<li>Layout feels great, smile shaped keys good as ever.</li>
-<li>Buttons feel heavy compared to X1C</li>
-<li>Dropped keys? Could be learning curve.</li>
-<li>Backlight works nicely.</li>
-<li>Caps lock finally has a caps lock light. Big nitpick with X1C G3</li>
-</ul>
+<p>The standard 14&rdquo; ThinkPad keyboard is as <strong>great as ever</strong>.
+It uses a <strong>standard ThinkPad layout</strong> with smile-shaped keycaps, though the <strong>capslock key light</strong> is a much appreciated addition compared to previous iterations.</p>
+
+<p>Compared to my X1 Carbon Gen3, the <strong>keys feel a bit heavy</strong>.
+It could just be me but sometimes I feel like the heaviness causes me to miss keypresses.
+I think over time my fingers will adapt so I find it hard to take away points from the overall machine from this, but if you&rsquo;re a light typist this could be an issue for you.</p>
 
 <h3 id="touchpad-i-class-far-fa-check-circle-i">Touchpad <i class="far fa-check-circle"></i></h3>
 
-<ul>
-<li>It&rsquo;s not glass.</li>
-<li>Luxuriously large, though not Macbook large.</li>
-<li>Very good but can feel a bit sticky at times due to the materials.</li>
-<li>Well supported by libinput.</li>
-</ul>
+<p>The touchpad on the T495s is <strong>nice and large</strong>, though the material leaves a bit to be desired.
+Unlike the higher-end X1 Carbon (which uses <em>glass</em> for its touchpad), the T495s touchpad is made of a <strong>Mylar material</strong> which at times can feel less fluid and even a bit sticky compared to its&rsquo; glass contemporaries.</p>
 
 <h3 id="trackpoint-i-class-far-fa-check-circle-i">Trackpoint <i class="far fa-check-circle"></i></h3>
 
-<ul>
-<li>Trackpoint is ol&rsquo; faithful.</li>
-<li>Very clicky trackpoint buttons</li>
-<li>Haven&rsquo;t experienced trackpoint drift yet.</li>
-</ul>
+<p>Ol&rsquo; faithful ThinkPad trackpoint. The buttons feel <strong>nice and clicky</strong> as always, it&rsquo;s a pleasure to use.</p>
+
+<p>One thing to note is that I have <strong>yet to experience any trackpoint drift</strong> which is a huge improvement over previous iterations of the hardware.</p>
 
 <p><br /></p>
 
 <h1 id="performance-i-class-far-fa-question-circle-i">Performance <i class="far fa-question-circle"></i></h1>
 
+<h3 id="cpu-i-class-far-fa-question-circle-i">CPU <i class="far fa-question-circle"></i></h3>
+
 <ul>
 <li>Throttles on battery pretty had</li>
-<li>APU throttles more than CPU</li>
 <li>Now using TLP so performance is worse on battery, but even with <code>powersave</code> the performance seems pretty good.</li>
 <li>Using BFQ scheduler (which is <a href="https://www.phoronix.com/scan.php?page=news_item&amp;px=Chromebooks-BFQ-Default-IO">now default on ChromeOS</a> and <a href="https://www.phoronix.com/scan.php?page=news_item&amp;px=Fedora-Switching-To-BFQ">coming soon to Fedora</a> the application lag on battery with the <code>powersave</code> governor is mostly negated.</li>
-<li>NVMe SSD flies (<strong>NOTE: Include benchmarks</strong>)</li>
+<li>Include some CPU benchmarks</li>
 </ul>
+
+<h3 id="gpu-apu-i-class-far-fa-question-circle-i">GPU/APU <i class="far fa-question-circle"></i></h3>
+
+<ul>
+<li>Throttles on battery pretty had</li>
+<li>Performance is acceptable for day to day use. General desktop compositing is great and gaming performance is far above other integrated solutions.</li>
+<li>APU throttles more than CPU</li>
+</ul>
+
+<p><em>(See the &lsquo;<strong>Gaming</strong>&rsquo; section towards the bottom for benchmarks)</em></p>
+
+<h3 id="storage-i-class-far-fa-check-circle-i">Storage <i class="far fa-check-circle"></i></h3>
+
+<p>The NVMe SSD included in the T495s is very nice. With average <strong>write speeds</strong> of <strong>250 MB/s</strong> and <strong>read speeds</strong> of <strong>1.1 GB/s</strong> it is very rarely your bottleneck.</p>
+
+<p>I&rsquo;ve included some benchmarks for those interested:</p>
+
+<p><strong>Write speed test</strong>:</p>
 
 <p><code>$ time dd bs=16k count=102400 oflag=direct if=/dev/zero of=test_data</code></p>
 
@@ -285,13 +302,15 @@ user    0m0.053s
 sys     0m4.536s
 </code></pre>
 
+<p><strong>Read speed test</strong>:</p>
+
 <p><code># hdparm -t /dev/nvme0n1</code></p>
 
 <pre><code>/dev/nvme0n1:
  Timing buffered disk reads: 3472 MB in  3.00 seconds = 1156.78 MB/sec
 </code></pre>
 
-<p><a href="https://github.com/josefbacik/fs_mark">fs_mark</a></p>
+<p><strong>fs_mark (<a href="https://github.com/josefbacik/fs_mark">Github</a>)</strong>:</p>
 
 <p><code>$ fs_mark -d test  -s 10240 -n 1000 -v</code></p>
 
@@ -305,11 +324,10 @@ SYNC (Min/Avg/Max)        CLOSE (Min/Avg/Max)       UNLINK (Min/Avg/Max)
 0       0        0        2        5       32       10       16      133
 </code></pre>
 
-<ul>
-<li>Dual channel RAM (2x 8GB) works well</li>
-</ul>
+<h3 id="memory-i-class-far-fa-check-circle-i">Memory <i class="far fa-check-circle"></i></h3>
 
-<p><a href="https://github.com/jeffhammond/STREAM">STREAM</a></p>
+<p>The 16GB RAM option is <strong>dual channel 2x 8GB</strong>.
+Below is a benchmark gathered using <a href="https://github.com/jeffhammond/STREAM">STREAM</a></p>
 
 <p><code>$ ./stream_c.exe</code></p>
 
@@ -320,9 +338,10 @@ Add:            13363.0     0.018631     0.017960     0.020059
 Triad:          13321.6     0.019757     0.018016     0.022583
 </code></pre>
 
-<ul>
-<li>Intel 9260 works well compared to 7260 in X1CG3. I can consistently get 5GHz across my apartment.</li>
-</ul>
+<h3 id="wireless-i-class-far-fa-check-circle-i">Wireless <i class="far fa-check-circle"></i></h3>
+
+<p>The included <strong>Intel 9260 802.11ac</strong> wireless network card works well.
+In comparison to the <em>7260</em> in my old X1 Carbon I am now able to get a <strong>consistent 5GHz connection</strong> across my entire apartment, whereas before I needed to switch to 2.4GHz if I was more than 20 feet from my AP.</p>
 
 <p><br /></p>
 
@@ -344,7 +363,7 @@ Triad:          13321.6     0.019757     0.018016     0.022583
 <li>Depends heavily on load</li>
 <li>Idle draw is pretty high, with just Firefox open playing music and a terminal I get anywhere between 9.4W and 11.5W of power draw.</li>
 <li>Web browsing uses a lot of battery</li>
-<li>Overall</li>
+<li>Touchpad well supported by libinput.</li>
 </ul>
 
 <p><br /></p>
@@ -359,12 +378,14 @@ Triad:          13321.6     0.019757     0.018016     0.022583
 <li>Insert some basic Vulkan benchmarks.</li>
 </ul>
 
+<p><strong>glmark2 (<a href="https://github.com/glmark2/glmark2">Github</a>):</strong></p>
+
 <p><code>$ glmark2</code></p>
 
 <pre><code>glmark2 Score: 3763
 </code></pre>
 
-<p><a href="https://benchmark.unigine.com/heaven?lang=en">Ungine Heaven</a> Benchmarks:</p>
+<p><strong>Ungine Heaven (<a href="https://benchmark.unigine.com/heaven?lang=en">Link</a>)</strong>:</p>
 
 <pre><code>Basic Preset
 FPS: 35.4
