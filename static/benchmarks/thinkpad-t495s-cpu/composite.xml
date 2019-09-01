@@ -2,13 +2,13 @@
 <!--Phoronix Test Suite v8.6.1-->
 <PhoronixTestSuite>
   <Generated>
-    <Title>Thinkpad T495s CPU</Title>
+    <Title>Thinkpad T495s CPU Benchmarks</Title>
     <LastModified>2019-09-01 09:30:30</LastModified>
     <TestClient>Phoronix Test Suite v8.6.1 (Spydeberg)</TestClient>
     <Description>AMD Ryzen 5 PRO 3500U w/ Radeon Vega Mobile Gfx testing with a LENOVO 20QJCTO1WW (R13ET27W1.01 BIOS) and AMD Picasso 2GB on Fedora 30 via the Phoronix Test Suite.</Description>
   </Generated>
   <System>
-    <Identifier>Thinkpad T495s CPU</Identifier>
+    <Identifier>Thinkpad T495s</Identifier>
     <Hardware>Processor: AMD Ryzen 5 PRO 3500U w/ Radeon Vega Mobile Gfx @ 2.10GHz (4 Cores / 8 Threads), Motherboard: LENOVO 20QJCTO1WW (R13ET27W1.01 BIOS), Chipset: AMD Raven/Raven2, Memory: 14336MB, Disk: 256GB Western Digital PC SN720 SDAQNTW-256G-1001, Graphics: AMD Picasso 2GB (1200/1200MHz), Audio: AMD Raven/Raven2/Fenghuang, Network: Realtek RTL8111/8168/8411 + Intel-AC 9260</Hardware>
     <Software>OS: Fedora 30, Kernel: 5.2.9-200.fc30.x86_64 (x86_64), Desktop: GNOME Shell 3.32.2, Display Server: X Server + Wayland, OpenGL: 4.5 Mesa 19.1.4 (LLVM 8.0.0), Vulkan: 1.1.90, Compiler: GCC 9.1.1 20190503, File-System: ext4, Screen Resolution: 1536x864</Software>
     <User>pobega</User>
@@ -46,7 +46,7 @@
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
       <Entry>
-        <Identifier>Thinkpad T495s CPU</Identifier>
+        <Identifier>Thinkpad T495s</Identifier>
         <Value>67.33</Value>
         <RawString>65.855882883072:67.957617044449:68.16254401207</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lOpenCL"},"test-run-times":"65.86:67.96:68.16"}</JSON>
@@ -64,7 +64,7 @@
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
       <Entry>
-        <Identifier>Thinkpad T495s CPU</Identifier>
+        <Identifier>Thinkpad T495s</Identifier>
         <Value>7.87774</Value>
         <RawString>7.86277:7.87397:7.89649</RawString>
         <JSON>{"test-run-times":"354.78:356.16:361.32"}</JSON>
@@ -82,7 +82,7 @@
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
       <Entry>
-        <Identifier>Thinkpad T495s CPU</Identifier>
+        <Identifier>Thinkpad T495s</Identifier>
         <Value>13941</Value>
         <RawString>14216:13937:13670</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -lpthread"},"test-run-times":"58.34:55.83:56.58"}</JSON>
@@ -100,7 +100,7 @@
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
       <Entry>
-        <Identifier>Thinkpad T495s CPU</Identifier>
+        <Identifier>Thinkpad T495s</Identifier>
         <Value>7326738</Value>
         <RawString>7362892:7355829:7261494</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-m64 -lpthread -fno-exceptions -std=c++11 -pedantic -O3 -msse -msse3 -mpopcnt -flto"},"test-run-times":"184.05:190.16:187.83"}</JSON>
@@ -118,7 +118,7 @@
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
       <Entry>
-        <Identifier>Thinkpad T495s CPU</Identifier>
+        <Identifier>Thinkpad T495s</Identifier>
         <Value>7619240</Value>
         <RawString>7664783:7700488:7492450</RawString>
         <JSON>{"test-run-times":"365.61:350.25:329.85"}</JSON>
@@ -136,7 +136,7 @@
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
       <Entry>
-        <Identifier>Thinkpad T495s CPU</Identifier>
+        <Identifier>Thinkpad T495s</Identifier>
         <Value>2441</Value>
         <RawString>2441.0811710358</RawString>
         <JSON>{"test-run-times":"2441.08"}</JSON>
@@ -154,7 +154,7 @@
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
       <Entry>
-        <Identifier>Thinkpad T495s CPU</Identifier>
+        <Identifier>Thinkpad T495s</Identifier>
         <Value>287.58</Value>
         <RawString>278.3456299305:335.90121412277:334.4762570858:274.4890229702:283.738904953:269.32631707191:271.41662406921:269.98786187172:270.5365550518</RawString>
         <JSON>{"test-run-times":"278.35:335.90:334.48:274.49:283.74:269.33:271.42:269.99:270.54"}</JSON>
@@ -172,7 +172,7 @@
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
       <Entry>
-        <Identifier>Thinkpad T495s CPU</Identifier>
+        <Identifier>Thinkpad T495s</Identifier>
         <Value>180.03</Value>
         <RawString>185.917:177.36:176.819</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -O3 -ffast-math -march=native -pthread -lSDL -lpthread -lSM -lICE -lX11 -ltiff -ljpeg -lpng -lz -lrt -lm -lboost_thread -lboost_system"},"test-run-times":"188.72:180.21:179.72"}</JSON>
@@ -190,7 +190,7 @@
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
       <Entry>
-        <Identifier>Thinkpad T495s CPU</Identifier>
+        <Identifier>Thinkpad T495s</Identifier>
         <Value>884</Value>
         <RawString>883.90382409096</RawString>
         <JSON>{"test-run-times":"883.90"}</JSON>
@@ -208,7 +208,7 @@
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
       <Entry>
-        <Identifier>Thinkpad T495s CPU</Identifier>
+        <Identifier>Thinkpad T495s</Identifier>
         <Value>402.15</Value>
         <RawString>402.1473698616</RawString>
         <JSON>{"test-run-times":"402.15"}</JSON>
@@ -226,7 +226,7 @@
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
       <Entry>
-        <Identifier>Thinkpad T495s CPU</Identifier>
+        <Identifier>Thinkpad T495s</Identifier>
         <Value>535.86</Value>
         <RawString>672.3:555.2:534.6:528.9:523.8:525.2:518:518:515.5:514.5:512:512.3</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -m64 -O3 -lssl -lcrypto -ldl"},"test-run-times":"20.05:20.05:20.05:20.05:20.05:20.09:20.05:20.05:20.05:20.05:20.05:20.05"}</JSON>
@@ -244,7 +244,7 @@
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
       <Entry>
-        <Identifier>Thinkpad T495s CPU</Identifier>
+        <Identifier>Thinkpad T495s</Identifier>
         <Value>105</Value>
         <RawString></RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"0.83:0.83:0.84"}</JSON>
@@ -262,7 +262,7 @@
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
       <Entry>
-        <Identifier>Thinkpad T495s CPU</Identifier>
+        <Identifier>Thinkpad T495s</Identifier>
         <Value>6565.61</Value>
         <RawString>6595.3664:6561.0401:6540.4279</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -O3 -funroll-loops -ggdb3 -march=amdfam10 -rdynamic -ldl -laio -lm"},"test-run-times":"10.02:10.02:10.02"}</JSON>

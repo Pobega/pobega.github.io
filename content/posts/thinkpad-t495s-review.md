@@ -132,6 +132,10 @@ One thing to note is that I have **yet to experience any trackpoint drift** whic
 * Using BFQ scheduler (which is [now default on ChromeOS](https://www.phoronix.com/scan.php?page=news_item&px=Chromebooks-BFQ-Default-IO) and [coming soon to Fedora](https://www.phoronix.com/scan.php?page=news_item&px=Fedora-Switching-To-BFQ) the application lag on battery with the `powersave` governor is mostly negated.
 * Include some CPU benchmarks
 
+### CPU Benchmarks
+https://openbenchmarking.org/result/1909014-SP-THINKPADT29
+[CPU Benchmarks](/benchmarks/thinkpad-t495s-cpu/)
+
 ### GPU/APU <i class="far fa-question-circle"></i>
 * Throttles on battery pretty had
 * Performance is acceptable for day to day use. General desktop compositing is great and gaming performance is far above other integrated solutions.
@@ -201,32 +205,49 @@ In comparison to the *7260* in my old X1 Carbon I am now able to get a **consist
 <br />
 # Linux <i class="far fa-check-circle"></i>
 
-* All supported hardware works out of the box on kernel 5.2
-* Fingerprint scanner still unsupported in Linux. The community is currently attempting to reverse engineer a driver, see the [Validity90 Github project](https://github.com/nmikhailov/Validity90)
-* amdgpu works out of the box with RADV for Vulkan
-* [systemd requires a patch for rdrand](https://github.com/systemd/systemd/issues/11810) which isn't in Fedora 30 meaning I cannot install Silverblue. Fedora Desktop ReSpin (with patched systemd and updated kernel) works fine.
-* Minimum of kernel 5.1 required. Previous kernels required boot arg workarounds.
-* Suspend/resume: the bluetooth blocks proper suspending, see **INSERT LINK** my other article for the current workaround.
-* Touchpad well supported by libinput.
+As for Linux on the T495s, my original plan was to run [Fedora Silverblue](https://silverblue.fedoraproject.org/) but F30 doesn't include the required [systemd patch for rdrand](https://github.com/systemd/systemd/issues/11810) meaning Silverblue cannot be installed until Fedora 31 is released.
+Fortunately I was able to install Fedora Workstation 30 using the [updated Fedora Desktop ReSpin](https://dl.fedoraproject.org/pub/alt/live-respins/) with no issues.
+
+All of my hardware seems to just work out of the box.
+I'm currently running `kernel 5.2.9` and `systemd 241 (v241-10.git511646b.fc30)` .
+Unfortunately the **validity fingerprint scanner is still unsupported in Linux**. The community is currently attempting to reverse engineer a driver, see the [Validity90 Github project](https://github.com/nmikhailov/Validity90)
+
+`amdgpu` works using the open source drivers which utilizes `RADV` for Vulkan, and the performance is fantastic.
+Gnome desktop compositing is very snappy on the Vega 8 in places where my old Intel HD would lag.
+Gaming is also pretty good for an integrated APU, though see the **'Gaming'** section towards the bottom for more information on that.
+
+Keep in mind that a **minimum of kernel 5.1** (or 5.0.9) is required as previous kernels required boot arguments to workaround some hard locks caused by the AMD CPU.
+
+The Synaptics touchpad is well supported by libinput and works with no configuration required.
+
+One negative thing is that **suspend seems to be blocked by the bluetooth adapter**.
+When you `systemctl suspend` the device it is woken back up, but the graphics are corrupt and the machine is unusable requiring a hard reboot.
+I've figured out a workaround using `udev` and `systemd`, see my [article on that fix](/posts/intel-9260-suspend/).
+
 
 <br />
 # Battery <i class="far fa-times-circle"></i>
+The T495s includes a **single internal 57 Wh battery** which is **non-removable**.
 
+Battery life is the one area where the T495s falters.
+Reported battery life of users running Windows (on [/r/thinkpad](https://reddit.com/r/thinkpad/)) seems to be in the realm of 5~9 hours, while on Linux it is more like **3-6 hours of battery life** with [TLP](https://linrunner.de/en/tlp/docs/tlp-linux-advanced-power-management.html) configured and enabled.
 
-* 3-5 hours with TLP enabled
-* Depends heavily on load
-* Idle draw is pretty high, with just Firefox open playing music and a terminal I get anywhere between 9.4W and 11.5W of power draw.
-* Web browsing uses a lot of battery
+Idle power draw seems pretty high, with just Firefox open playing music and a terminal the machine averages between **9.4W and 11.5W of power draw**
+-- for reference equivalent Intel hardware sits at roughly *5W to 9W of idle power draw*.
+
+Hopefully AMD's next iteration of Ryzen mobile will improve on this since it's one area where Intel truly, without argument, has them beat.
 
 
 <br />
 # Gaming <i class="far fa-check-circle"></i>
 
-* Works well for light gaming. Have been playing DotA Underlords, Hollow Knight, Oxenfree
-* Vulkan works well meaning Proton works well. Getting roughly 200%-300% the framerate I got on Intel in Fallout: New Vegas.
-* Performance in higher end games like DotA2 and Counter Strike still below what I expect, but playable.
-* [Upcoming changes to Mesa](https://www.phoronix.com/scan.php?page=news_item&px=Mesa-Radeon-Boost-No-vRAM-Type) in 19.3 may improve the APU's performance by 30% making more games playable
-* Insert some basic Vulkan benchmarks.
+The Vega 8 works well for light gaming. I've been playing DotA Underlords, Hollow Knight, and Oxenfree all with no issues and solid framerates.
+amdgpu's Vulkan implementation is well maintained meaning Proton works well.
+I'm currently getting roughly 200%-300% the framerate I got on Intel in Fallout: New Vegas, though it's still not perfect (but I think that's just the Build Engine in general.)
+
+Performance in higher end games like DotA2 and Counter Strike is still below what I expected, but playable. DotA2 average about 45FPS outside of team fights.
+
+[Upcoming changes to Mesa](https://www.phoronix.com/scan.php?page=news_item&px=Mesa-Radeon-Boost-No-vRAM-Type) in 19.3 may improve the APU's performance by 30%, when this hits primetime I'll do an updated benchmark of the APU.
 
 ### Benchmarks
 
@@ -253,6 +274,16 @@ FPS: 9.9
 Score: 249
 Min FPS: 4.9
 Max FPS: 18.7
+```
+
+[Phoronix Test Suite](https://www.phoronix-test-suite.com/)
+
+**Xonotic @ 1080p, Ultra**
+```
+    Average: 85.65 Frames Per Second
+    Minimum: 26
+    Maximum: 159
+    Deviation: 5.63%
 ```
 
 # Overall <i class="far fa-check-circle"></i>
