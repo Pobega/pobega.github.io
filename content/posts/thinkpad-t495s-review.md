@@ -23,6 +23,8 @@ For the unaware, the AMD Pro CPUs ship with mobile Vega APUs (Vega 8 or 10 depen
 I purchased the laptop to run Linux (specifically Fedora Silverblue) for some dev work and light gaming, so this review will be written with that use case in mind.
 Also note that I am transitioning off of an X1 Carbon Gen3 (*i5-5200u*) so my review will be talking in comparison to that hardware pretty often.
 
+(Most benchmarks were obtained using the [Phoronix Test Suite](https://www.phoronix-test-suite.com/))
+
 <br />
 # Specs <i class="far fa-check-circle"></i>
 
@@ -126,27 +128,48 @@ One thing to note is that I have **yet to experience any trackpoint drift** whic
 <br />
 # Performance <i class="far fa-question-circle"></i>
 
-### CPU <i class="far fa-question-circle"></i>
-* Throttles on battery pretty had
-* Now using TLP so performance is worse on battery, but even with `powersave` the performance seems pretty good.
-* Using BFQ scheduler (which is [now default on ChromeOS](https://www.phoronix.com/scan.php?page=news_item&px=Chromebooks-BFQ-Default-IO) and [coming soon to Fedora](https://www.phoronix.com/scan.php?page=news_item&px=Fedora-Switching-To-BFQ) the application lag on battery with the `powersave` governor is mostly negated.
-* Include some CPU benchmarks
+## CPU <i class="far fa-question-circle"></i>
+My T495s is equipped with the AMD Ryzen 5 PRO 3500U with frequencies of **1.40 GHz to 2.10 GHz**.
+The spec sheet claims that it can 'Turbo Boost' up to *3.70 GHz*, but **turbo boost doesn't seem to be supported** according to `cpufreq frequency-info` (`boost state support: Supported: no`)
+
+The Ryzen 5 **throttles pretty hard on battery** which results in very visible performance differences (even when using the same CPU governor.)
+For day to day use I use TLP for powersaving which results in even worse performance on battery, but even with `powersave` the performance seems pretty good compared to Intel.
+Though I say the difference is noticeable the Ryzen 5 still retains usability on battery, the only time it's visibly different is when gaming, compiling or doing heavy multitasking.
+
+I've switched to using the BFQ scheduler (which is [now default on ChromeOS](https://www.phoronix.com/scan.php?page=news_item&px=Chromebooks-BFQ-Default-IO) and [coming soon to Fedora](https://www.phoronix.com/scan.php?page=news_item&px=Fedora-Switching-To-BFQ) and the multitasking lag on battery with the `powersave` governor is mostly negated.
 
 ### CPU Benchmarks
-https://openbenchmarking.org/result/1909014-SP-THINKPADT29
-[CPU Benchmarks](/benchmarks/thinkpad-t495s-cpu/)
+Benchmarks were gathered using the [Phoronix Test Suite](https://www.phoronix-test-suite.com/), specifically the `pts/cpu` suite.
 
-### GPU/APU <i class="far fa-question-circle"></i>
-* Throttles on battery pretty had
-* Performance is acceptable for day to day use. General desktop compositing is great and gaming performance is far above other integrated solutions.
-* APU throttles more than CPU
+#### [Full Phoronix Test Suite CPU Benchmarks](/benchmarks/thinkpad-t495s/cpu/) ([OpenBenchmarking.org mirror](https://openbenchmarking.org/result/1909014-SP-THINKPADT29))
+
+## GPU/APU <i class="far fa-question-circle"></i>
+For general use the Vega 8 is above average, and definitely well above its' Intel competitors.
+Desktop compositing is no issue and it handles light gaming extremely well.
+
+According to `/sys/kernel/debug/dri/0/amdgpu_pm_info` the supported clocks on the APU are:
+```
+GFX Clocks and Power:
+	933 MHz (MCLK)
+	200 MHz (SCLK)
+	700 MHz (PSTATE_SCLK)
+	933 MHz (PSTATE_MCLK)
+```
+
+Though at it's maximum it is apparently able to hit **1200 MHz**.
+
+Keep in mind that the **APU shares 2GB of system memory** so if you go with the 8GB configuration you will only have 6GB for your operating system.
+
+Unfortunately, similarly to the CPU the **APU throttles on battery** (which makes sense, since it's technically integrated.) Again, similarly to the CPU it's not noticeable during day to day tasks but if you try gaming on the go you will definitely notice a difference in speeds.
 
 *(See the '__Gaming__' section towards the bottom for benchmarks)*
 
 ### Storage <i class="far fa-check-circle"></i>
 The NVMe SSD included in the T495s is very nice. With average **write speeds** of **250 MB/s** and **read speeds** of **1.1 GB/s** it is very rarely your bottleneck.
 
-I've included some benchmarks for those interested:
+#### Benchmarks
+
+#### [Full Phoronix Test Suite Disk Benchmarks](/benchmarks/thinkpad-t495s/disk/) ([OpenBenchmarking.org Mirror](https://openbenchmarking.org/result/1909012-SP-THINKPADT31))
 
 **Write speed test**:
 
@@ -187,6 +210,10 @@ SYNC (Min/Avg/Max)        CLOSE (Min/Avg/Max)       UNLINK (Min/Avg/Max)
 ### Memory <i class="far fa-check-circle"></i>
 The 16GB RAM option is **dual channel 2x 8GB**.
 Below is a benchmark gathered using [STREAM](https://github.com/jeffhammond/STREAM)
+
+#### Benchmarks
+
+#### [Full Phoronix Test Suite Memory Benchmarks](/benchmarks/thinkpad-t495s/memory/)
 
 `$ ./stream_c.exe`
 
@@ -251,6 +278,8 @@ Performance in higher end games like DotA2 and Counter Strike is still below wha
 
 ### Benchmarks
 
+#### [Full Phoronix Test Suite Gaming Benchmarks](/benchmarks/thinkpad-t495s/gaming) ([OpenBenchmarking.org Mirror](https://openbenchmarking.org/result/1909012-SP-THIKNPADT72))
+
 **glmark2 ([Github](https://github.com/glmark2/glmark2)):**
 
 `$ glmark2`
@@ -276,15 +305,6 @@ Min FPS: 4.9
 Max FPS: 18.7
 ```
 
-[Phoronix Test Suite](https://www.phoronix-test-suite.com/)
-
-**Xonotic @ 1080p, Ultra**
-```
-    Average: 85.65 Frames Per Second
-    Minimum: 26
-    Maximum: 159
-    Deviation: 5.63%
-```
 
 # Overall <i class="far fa-check-circle"></i>
 A great machine.
