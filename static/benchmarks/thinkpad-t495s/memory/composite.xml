@@ -2,20 +2,20 @@
 <!--Phoronix Test Suite v8.6.1-->
 <PhoronixTestSuite>
   <Generated>
-    <Title>ThinkPad T495s Memory Benchmarks</Title>
-    <LastModified>2019-09-01 12:01:45</LastModified>
+    <Title>ThinkPad T495s Memory</Title>
+    <LastModified>2019-09-02 03:00:02</LastModified>
     <TestClient>Phoronix Test Suite v8.6.1 (Spydeberg)</TestClient>
     <Description>AMD Ryzen 5 PRO 3500U w/ Radeon Vega Mobile Gfx testing with a LENOVO 20QJCTO1WW (R13ET27W1.01 BIOS) and AMD Picasso 2GB on Fedora 30 via the Phoronix Test Suite.</Description>
   </Generated>
   <System>
-    <Identifier>AMD Ryzen 5 PRO 3500U w</Identifier>
+    <Identifier>ThinkPad T495s Memory</Identifier>
     <Hardware>Processor: AMD Ryzen 5 PRO 3500U w/ Radeon Vega Mobile Gfx @ 2.10GHz (4 Cores / 8 Threads), Motherboard: LENOVO 20QJCTO1WW (R13ET27W1.01 BIOS), Chipset: AMD Raven/Raven2, Memory: 14336MB, Disk: 256GB Western Digital PC SN720 SDAQNTW-256G-1001, Graphics: AMD Picasso 2GB (1200/1200MHz), Audio: AMD Raven/Raven2/Fenghuang, Network: Realtek RTL8111/8168/8411 + Intel-AC 9260</Hardware>
-    <Software>OS: Fedora 30, Kernel: 5.2.9-200.fc30.x86_64 (x86_64), Desktop: GNOME Shell 3.32.2, Display Server: X Server + Wayland, OpenGL: 4.5 Mesa 19.1.4 (LLVM 8.0.0), Vulkan: 1.1.90, Compiler: GCC 9.1.1 20190503, File-System: ext4, Screen Resolution: 1536x864</Software>
+    <Software>OS: Fedora 30, Kernel: 5.2.9-200.fc30.x86_64 (x86_64), Desktop: GNOME Shell 3.32.2, Display Server: X Server + Wayland, OpenGL: 4.5 Mesa 19.1.5 (LLVM 8.0.0), Vulkan: 1.1.90, Compiler: GCC 9.2.1 20190827, File-System: ext4, Screen Resolution: 1920x1080</Software>
     <User>pobega</User>
-    <TimeStamp>2019-09-01 10:37:18</TimeStamp>
+    <TimeStamp>2019-09-02 02:11:20</TimeStamp>
     <TestClientVersion>8.6.1</TestClientVersion>
     <Notes></Notes>
-    <JSON>{"compiler-configuration":"--build=x86_64-redhat-linux --disable-libunwind-exceptions --enable-__cxa_atexit --enable-bootstrap --enable-cet --enable-checking=release --enable-gnu-indirect-function --enable-gnu-unique-object --enable-initfini-array --enable-languages=c,c++,fortran,objc,obj-c++,ada,go,d,lto --enable-multilib --enable-offload-targets=nvptx-none --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-arch_32=i686 --with-gcc-major-version-only --with-isl --with-linker-hash-style=gnu --with-tune=generic --without-cuda-driver","cpu-scaling-governor":"acpi-cpufreq ondemand","security":"SELinux + usercopy\/swapgs barriers and __user pointer sanitization + Full AMD retpoline IBPB: conditional STIBP: disabled RSB filling + SSB disabled via prctl and seccomp"}</JSON>
+    <JSON>{"compiler-configuration":"--build=x86_64-redhat-linux --disable-libunwind-exceptions --enable-__cxa_atexit --enable-bootstrap --enable-cet --enable-checking=release --enable-gnu-indirect-function --enable-gnu-unique-object --enable-initfini-array --enable-languages=c,c++,fortran,objc,obj-c++,ada,go,d,lto --enable-multilib --enable-offload-targets=nvptx-none --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-arch_32=i686 --with-gcc-major-version-only --with-isl --with-linker-hash-style=gnu --with-tune=generic --without-cuda-driver","cpu-scaling-governor":"acpi-cpufreq performance","security":"SELinux + usercopy\/swapgs barriers and __user pointer sanitization + Full AMD retpoline IBPB: conditional STIBP: disabled RSB filling + SSB disabled via prctl and seccomp"}</JSON>
   </System>
   <Result>
     <Identifier>pts/ramspeed-1.4.2</Identifier>
@@ -28,10 +28,10 @@
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
       <Entry>
-        <Identifier>AMD Ryzen 5 PRO 3500U w</Identifier>
-        <Value>17061.51</Value>
+        <Identifier>ThinkPad T495s Memory</Identifier>
+        <Value>15411</Value>
         <RawString></RawString>
-        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"},"test-run-times":"116.62"}</JSON>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"},"test-run-times":"126.89"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -46,10 +46,10 @@
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
       <Entry>
-        <Identifier>AMD Ryzen 5 PRO 3500U w</Identifier>
-        <Value>13135.14</Value>
+        <Identifier>ThinkPad T495s Memory</Identifier>
+        <Value>12787</Value>
         <RawString></RawString>
-        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"},"test-run-times":"121.20"}</JSON>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"},"test-run-times":"127.75"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -64,10 +64,10 @@
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
       <Entry>
-        <Identifier>AMD Ryzen 5 PRO 3500U w</Identifier>
-        <Value>12603.11</Value>
+        <Identifier>ThinkPad T495s Memory</Identifier>
+        <Value>12346</Value>
         <RawString></RawString>
-        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"},"test-run-times":"121.49"}</JSON>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"},"test-run-times":"128.62"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -82,10 +82,10 @@
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
       <Entry>
-        <Identifier>AMD Ryzen 5 PRO 3500U w</Identifier>
-        <Value>16590.06</Value>
+        <Identifier>ThinkPad T495s Memory</Identifier>
+        <Value>15487</Value>
         <RawString></RawString>
-        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"},"test-run-times":"118.82"}</JSON>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"},"test-run-times":"124.60"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -100,10 +100,10 @@
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
       <Entry>
-        <Identifier>AMD Ryzen 5 PRO 3500U w</Identifier>
-        <Value>9526.02</Value>
-        <RawString>13747.7:13735.6:9058.3:9058.2:9057:9057.2:9066.7:9060.8:9055.1:9054.3:9057.7:9055.9:9057.7:9059.3:9060.8:9060.8:9061.1:9052.8:9055.5:9047.9</RawString>
-        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native -fopenmp"},"test-run-times":"57.60:90.25:85.38:85.08:85.05:85.07:85.12:85.04:85.10:85.15:85.19:85.09:85.06:85.17:85.10:85.06:85.16:85.18:85.18:85.23"}</JSON>
+        <Identifier>ThinkPad T495s Memory</Identifier>
+        <Value>13811</Value>
+        <RawString>13769.8:13824.2:13820.3:13828.2:13814.9</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native -fopenmp"},"test-run-times":"56.94:56.89:56.86:56.89:56.93"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -118,9 +118,9 @@
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
       <Entry>
-        <Identifier>AMD Ryzen 5 PRO 3500U w</Identifier>
-        <Value>17842.92</Value>
-        <RawString>22023.7:22015:15046.9:15061.4:15067.6</RawString>
+        <Identifier>ThinkPad T495s Memory</Identifier>
+        <Value>22719</Value>
+        <RawString>22887.3:22856.5:22635:22649.7:22566.4</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native -fopenmp"}}</JSON>
       </Entry>
     </Data>
@@ -136,9 +136,9 @@
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
       <Entry>
-        <Identifier>AMD Ryzen 5 PRO 3500U w</Identifier>
-        <Value>9464.06</Value>
-        <RawString>11776.7:11756.4:7926.4:7929.3:7931.5</RawString>
+        <Identifier>ThinkPad T495s Memory</Identifier>
+        <Value>11764</Value>
+        <RawString>11823.7:11767.7:11750.8:11735.9:11743.7</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native -fopenmp"}}</JSON>
       </Entry>
     </Data>
@@ -154,10 +154,10 @@
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
       <Entry>
-        <Identifier>AMD Ryzen 5 PRO 3500U w</Identifier>
-        <Value>8070.20</Value>
-        <RawString>7935.9:8243.6:8031.1</RawString>
-        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -lm"},"test-run-times":"479.84:477.16:473.09"}</JSON>
+        <Identifier>ThinkPad T495s Memory</Identifier>
+        <Value>11358</Value>
+        <RawString>11258.3:11426.3:11389.2</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -lm"},"test-run-times":"409.13:395.10:393.46"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -172,10 +172,10 @@
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
       <Entry>
-        <Identifier>AMD Ryzen 5 PRO 3500U w</Identifier>
-        <Value>6308.07</Value>
-        <RawString>6260.9:6200.7:6462.6</RawString>
-        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -lm"},"test-run-times":"479.84:477.16:473.09"}</JSON>
+        <Identifier>ThinkPad T495s Memory</Identifier>
+        <Value>7401.23</Value>
+        <RawString>7417.6:7377.4:7408.7</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -lm"},"test-run-times":"409.13:395.10:393.46"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -190,10 +190,10 @@
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
       <Entry>
-        <Identifier>AMD Ryzen 5 PRO 3500U w</Identifier>
-        <Value>9490.44</Value>
-        <RawString>9930.386:9729.053:9229.263:9194.612:9368.888</RawString>
-        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"},"test-run-times":"11.06:11.29:11.97:11.91:11.72"}</JSON>
+        <Identifier>ThinkPad T495s Memory</Identifier>
+        <Value>11240</Value>
+        <RawString>11325.239:11147.518:11248.601</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"},"test-run-times":"9.77:9.87:9.80"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -208,10 +208,10 @@
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
       <Entry>
-        <Identifier>AMD Ryzen 5 PRO 3500U w</Identifier>
-        <Value>5713.62</Value>
-        <RawString>5869.626:5719.033:5552.19</RawString>
-        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"},"test-run-times":"18.17:18.68:19.23"}</JSON>
+        <Identifier>ThinkPad T495s Memory</Identifier>
+        <Value>6207</Value>
+        <RawString>6233.683:6170.842:6215.54</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"},"test-run-times":"17.13:17.31:17.18"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -226,10 +226,10 @@
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
       <Entry>
-        <Identifier>AMD Ryzen 5 PRO 3500U w</Identifier>
-        <Value>2484.14</Value>
-        <RawString>2297.4752765714:2512.0224649524:2514.3976804286:2515.4837860476:2516.724191381:2516.3460202381:2516.5160531429</RawString>
-        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lrt"},"test-run-times":"125.08:125.08:125.08:125.07:125.07:125.07:125.07"}</JSON>
+        <Identifier>ThinkPad T495s Memory</Identifier>
+        <Value>2519</Value>
+        <RawString>2516.9871511429:2519.5412676667:2521.0111189048</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lrt"},"test-run-times":"125.07:125.07:125.07"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -244,10 +244,10 @@
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
       <Entry>
-        <Identifier>AMD Ryzen 5 PRO 3500U w</Identifier>
-        <Value>24093.96</Value>
-        <RawString>24135.454495571:23989.290713048:24157.144074333</RawString>
-        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lrt"},"test-run-times":"125.07:125.08:125.08"}</JSON>
+        <Identifier>ThinkPad T495s Memory</Identifier>
+        <Value>23969</Value>
+        <RawString>23932.116663286:24006.348596381:23967.543401</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lrt"},"test-run-times":"125.07:125.07:125.08"}</JSON>
       </Entry>
     </Data>
   </Result>

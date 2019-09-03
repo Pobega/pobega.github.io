@@ -1,0 +1,35 @@
+k10temp-pci-00c3
+Adapter: PCI adapter
+Tdie:         +78.0°C  (high = +70.0°C)
+Tctl:         +78.0°C  
+
+amdgpu-pci-0500
+Adapter: PCI adapter
+vddgfx:           N/A  
+vddnb:            N/A  
+temp1:        +78.0°C  (crit = +80.0°C, hyst =  +0.0°C)
+
+iwlwifi-virtual-0
+Adapter: Virtual device
+temp1:        +54.0°C  
+
+thinkpad-isa-0000
+Adapter: ISA adapter
+fan1:        4200 RPM
+temp1:        +78.0°C  
+temp2:         +0.0°C  
+temp3:         +0.0°C  
+temp4:         +0.0°C  
+temp5:         +0.0°C  
+temp6:         +0.0°C  
+temp7:         +0.0°C  
+temp8:            N/A  
+temp9:         +0.0°C  
+temp10:        +0.0°C  
+temp11:       +66.0°C  
+temp12:        +0.0°C  
+temp13:        +0.0°C  
+temp14:        +0.0°C  
+temp15:        +0.0°C  
+temp16:        +0.0°C  
+

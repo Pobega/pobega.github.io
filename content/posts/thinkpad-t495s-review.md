@@ -23,14 +23,11 @@ For the unaware, the AMD Pro CPUs ship with mobile Vega APUs (Vega 8 or 10 depen
 I purchased the laptop to run Linux (specifically Fedora Silverblue) for some dev work and light gaming, so this review will be written with that use case in mind.
 Also note that I am transitioning off of an X1 Carbon Gen3 (*i5-5200u*) so my review will be talking in comparison to that hardware pretty often.
 
-(Most benchmarks were obtained using the [Phoronix Test Suite](https://www.phoronix-test-suite.com/))
-
 <br />
 # Specs <i class="far fa-check-circle"></i>
 
 
 My **T495s** came equipped with
-
 
 * AMD Ryzen™ 5 PRO 3500U Processor (2.10GHz, up to 3.70GHz Max Boost, 4 Cores, 4MB Cache)
 * 14" FHD (1920 x 1080) 400 nits, IPS, Low Power, anti-glare
@@ -139,10 +136,10 @@ Though I say the difference is noticeable the Ryzen 5 still retains usability on
 I've switched to using the BFQ scheduler (which is [now default on ChromeOS](https://www.phoronix.com/scan.php?page=news_item&px=Chromebooks-BFQ-Default-IO) and [coming soon to Fedora](https://www.phoronix.com/scan.php?page=news_item&px=Fedora-Switching-To-BFQ) and the multitasking lag on battery with the `powersave` governor is mostly negated.
 
 ### CPU Benchmarks
-Benchmarks were gathered using the [Phoronix Test Suite](https://www.phoronix-test-suite.com/), specifically the `pts/cpu` suite.
+#### [Full CPU Benchmark Results](/benchmarks/thinkpad-t495s/cpu/) ([OpenBenchmarking.org mirror](https://openbenchmarking.org/result/1909014-SP-THINKPADT29))
+{{< svg "static/benchmarks/thinkpad-t495s/cpu/result-graphs/overview.svg" >}}
 
-#### [Full Phoronix Test Suite CPU Benchmarks](/benchmarks/thinkpad-t495s/cpu/) ([OpenBenchmarking.org mirror](https://openbenchmarking.org/result/1909014-SP-THINKPADT29))
-
+<br />
 ## GPU/APU <i class="far fa-question-circle"></i>
 For general use the Vega 8 is above average, and definitely well above its' Intel competitors.
 Desktop compositing is no issue and it handles light gaming extremely well.
@@ -162,69 +159,29 @@ Keep in mind that the **APU shares 2GB of system memory** so if you go with the 
 
 Unfortunately, similarly to the CPU the **APU throttles on battery** (which makes sense, since it's technically integrated.) Again, similarly to the CPU it's not noticeable during day to day tasks but if you try gaming on the go you will definitely notice a difference in speeds.
 
-*(See the '__Gaming__' section towards the bottom for benchmarks)*
+### GlMark2 Benchmark
+{{< svg "static/benchmarks/thinkpad-t495s/glmark2/result-graphs/1.svg" >}}
+*(See the '__Gaming__' section towards the bottom for more benchmarks)*
 
+<br />
 ### Storage <i class="far fa-check-circle"></i>
-The NVMe SSD included in the T495s is very nice. With average **write speeds** of **250 MB/s** and **read speeds** of **1.1 GB/s** it is very rarely your bottleneck.
+The NVMe SSD included in the T495s is very nice. With average **write speeds** of **250 MB/s** and **read speeds** of **1.1 GB/s** it is a pleasure to use.
 
-#### Benchmarks
+### Storage Benchmarks
 
-#### [Full Phoronix Test Suite Disk Benchmarks](/benchmarks/thinkpad-t495s/disk/) ([OpenBenchmarking.org Mirror](https://openbenchmarking.org/result/1909012-SP-THINKPADT31))
-
-**Write speed test**:
-
-`$ time dd bs=16k count=102400 oflag=direct if=/dev/zero of=test_data`
-```
-102400+0 records in
-102400+0 records out
-1677721600 bytes (1.7 GB, 1.6 GiB) copied, 6.54317 s, 256 MB/s
-
-real    0m6.885s
-user    0m0.053s
-sys     0m4.536s
-```
-
-**Read speed test**:
-
-`# hdparm -t /dev/nvme0n1`
-```
-/dev/nvme0n1:
- Timing buffered disk reads: 3472 MB in  3.00 seconds = 1156.78 MB/sec
-```
+#### [Full Disk Benchmark Results](/benchmarks/thinkpad-t495s/disk/) ([OpenBenchmarking.org mirror](https://openbenchmarking.org/result/1909012-SP-THINKPADT31))
+{{< svg "static/benchmarks/thinkpad-t495s/disk/result-graphs/small-overview.svg" >}}
 
 
-**fs_mark ([Github](https://github.com/josefbacik/fs_mark))**:
-
-`$ fs_mark -d test  -s 10240 -n 1000 -v`
-```
-Count       Size         Files/sec        App Overhead
-1000        10240        901.6            21158
-
-CREAT (Min/Avg/Max)        WRITE (Min/Avg/Max)        FSYNC (Min/Avg/Max)
-54      90     265         20      30      95         844     961     6606
-
-SYNC (Min/Avg/Max)        CLOSE (Min/Avg/Max)       UNLINK (Min/Avg/Max)
-0       0        0        2        5       32       10       16      133
-```
-
+<br />
 ### Memory <i class="far fa-check-circle"></i>
 The 16GB RAM option is **dual channel 2x 8GB**.
-Below is a benchmark gathered using [STREAM](https://github.com/jeffhammond/STREAM)
 
-#### Benchmarks
+### Memory Benchmarks
+#### [Full Memory Benchmark Results](/benchmarks/thinkpad-t495s/memory/) ([OpenBenchmarking.org mirror](https://openbenchmarking.org/result/1909024-SP-THINKPADT22))
+{{< svg "static/benchmarks/thinkpad-t495s/memory/result-graphs/small-overview.svg" >}}
 
-#### [Full Phoronix Test Suite Memory Benchmarks](/benchmarks/thinkpad-t495s/memory/)
-
-`$ ./stream_c.exe`
-
-```
-Function    Best Rate MB/s  Avg time     Min time     Max time
-Copy:           11253.3     0.015865     0.014218     0.018171
-Scale:          11174.8     0.015669     0.014318     0.018882
-Add:            13363.0     0.018631     0.017960     0.020059
-Triad:          13321.6     0.019757     0.018016     0.022583
-```
-
+<br />
 ### Wireless <i class="far fa-check-circle"></i>
 The included **Intel 9260 802.11ac** wireless network card works well.
 In comparison to the *7260* in my old X1 Carbon I am now able to get a **consistent 5GHz connection** across my entire apartment, whereas before I needed to switch to 2.4GHz if I was more than 20 feet from my AP.
@@ -276,34 +233,15 @@ Performance in higher end games like DotA2 and Counter Strike is still below wha
 
 [Upcoming changes to Mesa](https://www.phoronix.com/scan.php?page=news_item&px=Mesa-Radeon-Boost-No-vRAM-Type) in 19.3 may improve the APU's performance by 30%, when this hits primetime I'll do an updated benchmark of the APU.
 
-### Benchmarks
+### Gaming Benchmarks
 
-#### [Full Phoronix Test Suite Gaming Benchmarks](/benchmarks/thinkpad-t495s/gaming) ([OpenBenchmarking.org Mirror](https://openbenchmarking.org/result/1909012-SP-THIKNPADT72))
+### Steam Games
+#### [Full Steam Gaming Benchmark Results](/benchmarks/thinkpad-t495s/steam_gaming) ([OpenBenchmarking.org Mirror](https://openbenchmarking.org/result/1909027-SP-THINKPADT40))
+{{< svg "/static/benchmarks/thinkpad-t495s/steam_gaming/result-graphs/small-overview.svg" >}}
 
-**glmark2 ([Github](https://github.com/glmark2/glmark2)):**
-
-`$ glmark2`
-```
-glmark2 Score: 3763
-```
-
-**Ungine Heaven ([Link](https://benchmark.unigine.com/heaven?lang=en))**:
-
-```
-Basic Preset
-FPS: 35.4
-Score: 892
-Min FPS: 10.6
-Max FPS: 54.3
-```
-
-```
-Ultra Preset
-FPS: 9.9
-Score: 249
-Min FPS: 4.9
-Max FPS: 18.7
-```
+### Other Games/Benchmarks
+#### [Full Gaming Benchmark Results](/benchmarks/thinkpad-t495s/gaming) ([OpenBenchmarking.org Mirror](https://openbenchmarking.org/result/1909012-SP-THIKNPADT72))
+{{< svg "/static/benchmarks/thinkpad-t495s/gaming/result-graphs/small-overview.svg" >}}
 
 
 # Overall <i class="far fa-check-circle"></i>
