@@ -46,29 +46,34 @@ enableRobotsTXT = true
     weight = 1
 
 [[menu.icon]]
+    url = "/posts/index.xml"
+    name = "fas fa-rss"
+    weight = 2
+
+[[menu.icon]]
     url = "https://github.com/pobega/"
     name = "fab fa-github"
-    weight = 2
+    weight = 3
 
 [[menu.icon]]
     url = "https://twitter.com/pobega/"
     name = "fab fa-twitter"
-    weight = 3
+    weight = 4
 
 [[menu.icon]]
     url = "https://serverfault.com/users/18474/michael-pobega"
     name = "fab fa-stack-overflow"
-    weight = 4
+    weight = 5
 
 [[menu.icon]]
     url = "https://www.linkedin.com/in/pobega/"
     name = "fab fa-linkedin"
-    weight = 5
+    weight = 6
 
 [[menu.icon]]
     url = "https://pobega.itch.io/"
     name = "fab fa-itch-io"
-    weight = 6
+    weight = 7
 
 [params.info]
     related = true # Includes related articles at the bottom of the article
