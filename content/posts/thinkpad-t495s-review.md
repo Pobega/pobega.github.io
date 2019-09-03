@@ -44,14 +44,20 @@ Lenovo's official T495s platform specification PDF is available [here](https://p
 <br />
 # Design <i class="far fa-check-circle"></i>
 
+
+Lenovo's 2019 ThinkPad redesign trades ports and upgradability for a thinner and lighter body.
+
 <hr />
-![T495s sitting on an X301](/images/thinkpad-t495s.jpg)
+![T495s sitting on an X301](/images/thinkpad-t495s/profile.jpg)
 *T495s profile, apologies for the poor room lighting*
 <hr />
 
-Lenovo's 2019 ThinkPad redesign trades ports and upgradability for thinner and lighter bodies.
-While this may annoy some users, as a cloud-focused developer the tradeoff is OK by me.
+The machine feels light to the touch and is well weighted, it's generally a pleasure to use it on a daily basis.
+The T495s fits the ultrabook form factor more than the laptop one and is more akin to an "X1 Carbon Lite" than a proper successor to the T480s (though without the premium glass touchpad of the X-series.)
 
+While these changes to the T49\*s line may annoy some users, as a cloud-focused developer the tradeoff is OK by me.
+
+*(Note that if you are looking for the successor to the T480s you should look at the T490/T495)*
 
 ### Size & Weight <i class="far fa-check-circle"></i>
 
@@ -61,7 +67,7 @@ This tiny design manages to pack in a **57 Wh battery** which recharges in about
 
 
 <hr />
-![T495s X301 comparison](/images/thinkpad-t495s-sideview.jpg)
+![T495s X301 comparison](/images/thinkpad-t495s/sideview.jpg)
 *T495s on top of a classic X301*
 <hr />
 
@@ -105,7 +111,7 @@ Keep in mind the display is **matte** so very comfortable to use in direct sunli
 This specific panel is the **low power** display, although currently I can't get hard information on the power draw as *powertop* is reporting it as 0 mW usage.
 
 <hr />
-![Display Sideview](/images/thinkpad-t495s-display-sideview.jpg)
+![Display Sideview](/images/thinkpad-t495s/display-sideview.jpg)
 *The 400-nit low power display's viewing angles are fantastic*
 <hr />
 
@@ -192,6 +198,7 @@ The NVMe SSD included in the T495s is very nice. With average **write speeds** o
 ### Memory <i class="far fa-check-circle"></i>
 The 16GB RAM in the T495s is **dual channel**, two sticks of **8GB DDR4 RAM**.
 The memory speed is listed by the BIOS as **2400 MT/s**.
+Unlike the previous generation's T480s the RAM in the T495s is **soldered to the motherboard** and **is not user upgradeable** so keep this in mind when specing your T495s.
 
 ### Memory Benchmarks
 #### [Full Memory Benchmark Results](/benchmarks/thinkpad-t495s/memory/) ([OpenBenchmarking.org mirror](https://openbenchmarking.org/result/1909024-SP-THINKPADT22))
@@ -320,7 +327,7 @@ The T495s takes everything great about ThinkPads (minus the upgradeability) and 
 Also of note is that the new 400-nit 1080p matte panels are seriously fantastic to use, if you do decide to purchase any current-gen ThinkPad make sure to grab one of these displays.
 
 <hr />
-![ThinkPad Logo Closeup](/images/thinkpad-t495s-outro.jpg)
+![ThinkPad Logo Closeup](/images/thinkpad-t495s/outro.jpg)
 *a worthy addition to the ThinkPad lineage*
 <hr />
 
