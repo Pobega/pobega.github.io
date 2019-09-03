@@ -1,0 +1,352 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v8.6.1-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>Thinkpad T495s Disk Benchmarks</Title>
+    <LastModified>2019-09-01 17:49:06</LastModified>
+    <TestClient>Phoronix Test Suite v8.6.1 (Spydeberg)</TestClient>
+    <Description>AMD Ryzen 5 PRO 3500U w/ Radeon Vega Mobile Gfx testing with a LENOVO 20QJCTO1WW (R13ET27W1.01 BIOS) and AMD Picasso 2GB on Fedora 30 via the Phoronix Test Suite.</Description>
+    <Notes></Notes>
+    <InternalTags></InternalTags>
+    <ReferenceID></ReferenceID>
+    <PreSetEnvironmentVariables></PreSetEnvironmentVariables>
+  </Generated>
+  <System>
+    <Identifier>ThinkPad T495s Disk</Identifier>
+    <Hardware>Processor: AMD Ryzen 5 PRO 3500U w/ Radeon Vega Mobile Gfx @ 2.10GHz (4 Cores / 8 Threads), Motherboard: LENOVO 20QJCTO1WW (R13ET27W1.01 BIOS), Chipset: AMD Raven/Raven2, Memory: 14336MB, Disk: 256GB Western Digital PC SN720 SDAQNTW-256G-1001, Graphics: AMD Picasso 2GB (1200/1200MHz), Audio: AMD Raven/Raven2/Fenghuang, Network: Realtek RTL8111/8168/8411 + Intel-AC 9260</Hardware>
+    <Software>OS: Fedora 30, Kernel: 5.2.9-200.fc30.x86_64 (x86_64), Desktop: GNOME Shell 3.32.2, Display Server: X Server + Wayland, OpenGL: 4.5 Mesa 19.1.5 (LLVM 8.0.0), Vulkan: 1.1.90, Compiler: GCC 9.2.1 20190827, File-System: ext4, Screen Resolution: 1536x864</Software>
+    <User>pobega</User>
+    <TimeStamp>2019-09-01 16:08:07</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-redhat-linux --disable-libunwind-exceptions --enable-__cxa_atexit --enable-bootstrap --enable-cet --enable-checking=release --enable-gnu-indirect-function --enable-gnu-unique-object --enable-initfini-array --enable-languages=c,c++,fortran,objc,obj-c++,ada,go,d,lto --enable-multilib --enable-offload-targets=nvptx-none --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-arch_32=i686 --with-gcc-major-version-only --with-isl --with-linker-hash-style=gnu --with-tune=generic --without-cuda-driver","disk-scheduler":"BFQ","disk-mount-options":"relatime,rw,seclabel","cpu-scaling-governor":"acpi-cpufreq performance","python":"Python 2.7.16 + Python 3.7.4","security":"SELinux + usercopy\/swapgs barriers and __user pointer sanitization + Full AMD retpoline IBPB: conditional STIBP: disabled RSB filling + SSB disabled via prctl and seccomp"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/fio-1.11.5</Identifier>
+    <Title>Flexible IO Tester</Title>
+    <AppVersion>3.1</AppVersion>
+    <Arguments>randread sync 1 0 8m</Arguments>
+    <Description>Type: Random Read - IO Engine: Sync - Buffered: Yes - Direct: No - Block Size: 8MB - Disk Target: Default Test Directory</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ThinkPad T495s Disk</Identifier>
+        <Value>5132</Value>
+        <RawString>5097:5175:5123</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-rdynamic -std=gnu99 -ffast-math -include -O3 -U_FORTIFY_SOURCE -lrt -laio -lz -lm -lpthread -ldl"},"test-run-times":"30.41:30.41:30.41"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>ThinkPad T495s Disk</Identifier>
+        <Value>4868</Value>
+        <RawString>5107:4918:4634:4834:4846</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-rdynamic -std=gnu99 -ffast-math -include -O3 -U_FORTIFY_SOURCE -lrt -laio -lz -lm -lpthread -ldl"},"test-run-times":"30.39:30.40:30.39:30.40:30.39"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/fio-1.11.5</Identifier>
+    <Title>Flexible IO Tester</Title>
+    <AppVersion>3.1</AppVersion>
+    <Arguments>randwrite sync 1 0 8m</Arguments>
+    <Description>Type: Random Write - IO Engine: Sync - Buffered: Yes - Direct: No - Block Size: 8MB - Disk Target: Default Test Directory</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ThinkPad T495s Disk</Identifier>
+        <Value>3303</Value>
+        <RawString>3338:3281:3289</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-rdynamic -std=gnu99 -ffast-math -include -O3 -U_FORTIFY_SOURCE -lrt -laio -lz -lm -lpthread -ldl"},"test-run-times":"30.66:30.67:30.64"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>ThinkPad T495s Disk</Identifier>
+        <Value>3020</Value>
+        <RawString>2935:3096:3028</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-rdynamic -std=gnu99 -ffast-math -include -O3 -U_FORTIFY_SOURCE -lrt -laio -lz -lm -lpthread -ldl"},"test-run-times":"30.64:30.66:30.65"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/fio-1.11.5</Identifier>
+    <Title>Flexible IO Tester</Title>
+    <AppVersion>3.1</AppVersion>
+    <Arguments>read sync 1 0 8m</Arguments>
+    <Description>Type: Sequential Read - IO Engine: Sync - Buffered: Yes - Direct: No - Block Size: 8MB - Disk Target: Default Test Directory</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ThinkPad T495s Disk</Identifier>
+        <Value>4938</Value>
+        <RawString>4909:4435:5022:5029:4973:5018:5002:5020:4996:4968:4941</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-rdynamic -std=gnu99 -ffast-math -include -O3 -U_FORTIFY_SOURCE -lrt -laio -lz -lm -lpthread -ldl"},"test-run-times":"30.41:30.42:30.41:30.42:30.42:30.41:30.41:30.42:30.42:30.42:30.41"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>ThinkPad T495s Disk</Identifier>
+        <Value>4790</Value>
+        <RawString>4763:4747:4860</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-rdynamic -std=gnu99 -ffast-math -include -O3 -U_FORTIFY_SOURCE -lrt -laio -lz -lm -lpthread -ldl"},"test-run-times":"30.40:30.41:30.40"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/fio-1.11.5</Identifier>
+    <Title>Flexible IO Tester</Title>
+    <AppVersion>3.1</AppVersion>
+    <Arguments>randread libaio 1 0 8m</Arguments>
+    <Description>Type: Random Read - IO Engine: Linux AIO - Buffered: Yes - Direct: No - Block Size: 8MB - Disk Target: Default Test Directory</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ThinkPad T495s Disk</Identifier>
+        <Value>5121</Value>
+        <RawString>5141:5279:4712:5277:5077:5031:5210:5168:5196</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-rdynamic -std=gnu99 -ffast-math -include -O3 -U_FORTIFY_SOURCE -lrt -laio -lz -lm -lpthread -ldl"},"test-run-times":"30.45:30.46:30.45:30.45:30.45:30.45:30.45:30.44:30.45"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>ThinkPad T495s Disk</Identifier>
+        <Value>4949</Value>
+        <RawString>4984:5193:4719:4969:4682:5079:5102:4977:4837</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-rdynamic -std=gnu99 -ffast-math -include -O3 -U_FORTIFY_SOURCE -lrt -laio -lz -lm -lpthread -ldl"},"test-run-times":"30.44:30.44:30.43:30.43:30.44:30.48:30.43:30.44:30.43"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/fio-1.11.5</Identifier>
+    <Title>Flexible IO Tester</Title>
+    <AppVersion>3.1</AppVersion>
+    <Arguments>write sync 1 0 8m</Arguments>
+    <Description>Type: Sequential Write - IO Engine: Sync - Buffered: Yes - Direct: No - Block Size: 8MB - Disk Target: Default Test Directory</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ThinkPad T495s Disk</Identifier>
+        <Value>2556</Value>
+        <RawString>2581:2390:2621:2505:2432:2631:2630:2645:2529:2651:2522:2532</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-rdynamic -std=gnu99 -ffast-math -include -O3 -U_FORTIFY_SOURCE -lrt -laio -lz -lm -lpthread -ldl"},"test-run-times":"30.64:30.65:30.64:30.65:30.66:30.65:30.66:30.65:30.64:30.64:30.65:30.65"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/fio-1.11.5</Identifier>
+    <Title>Flexible IO Tester</Title>
+    <AppVersion>3.1</AppVersion>
+    <Arguments>randwrite libaio 1 0 8m</Arguments>
+    <Description>Type: Random Write - IO Engine: Linux AIO - Buffered: Yes - Direct: No - Block Size: 8MB - Disk Target: Default Test Directory</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ThinkPad T495s Disk</Identifier>
+        <Value>2978</Value>
+        <RawString>2925:3072:2936</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-rdynamic -std=gnu99 -ffast-math -include -O3 -U_FORTIFY_SOURCE -lrt -laio -lz -lm -lpthread -ldl"},"test-run-times":"30.66:30.65:30.68"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/fio-1.11.5</Identifier>
+    <Title>Flexible IO Tester</Title>
+    <AppVersion>3.1</AppVersion>
+    <Arguments>read libaio 1 0 8m</Arguments>
+    <Description>Type: Sequential Read - IO Engine: Linux AIO - Buffered: Yes - Direct: No - Block Size: 8MB - Disk Target: Default Test Directory</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ThinkPad T495s Disk</Identifier>
+        <Value>4798</Value>
+        <RawString>4776:4868:4751</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-rdynamic -std=gnu99 -ffast-math -include -O3 -U_FORTIFY_SOURCE -lrt -laio -lz -lm -lpthread -ldl"},"test-run-times":"30.44:30.44:30.44"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/fio-1.11.5</Identifier>
+    <Title>Flexible IO Tester</Title>
+    <AppVersion>3.1</AppVersion>
+    <Arguments>write libaio 1 0 8m</Arguments>
+    <Description>Type: Sequential Write - IO Engine: Linux AIO - Buffered: Yes - Direct: No - Block Size: 8MB - Disk Target: Default Test Directory</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ThinkPad T495s Disk</Identifier>
+        <Value>2547</Value>
+        <RawString>2488:2525:2627</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-rdynamic -std=gnu99 -ffast-math -include -O3 -U_FORTIFY_SOURCE -lrt -laio -lz -lm -lpthread -ldl"},"test-run-times":"30.69:30.68:30.67"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/iozone-1.9.5</Identifier>
+    <Title>IOzone</Title>
+    <AppVersion>3.465</AppVersion>
+    <Arguments>-r 1m -s 512M -i0 -i1 #READ</Arguments>
+    <Description>Record Size: 1MB - File Size: 512MB - Disk Test: Read Performance</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ThinkPad T495s Disk</Identifier>
+        <Value>9093</Value>
+        <RawString>9166.59375:7365.751953125:8773.7333984375:8491.57421875:9251.6962890625:9618.8076171875:9444.0625:8710.140625:9616.611328125:9630.0224609375:9461.6630859375:9583.5224609375</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"},"test-run-times":"1.79:1.38:1.43:1.56:1.40:1.35:1.38:1.41:1.35:1.39:1.35:2.51"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/iozone-1.9.5</Identifier>
+    <Title>IOzone</Title>
+    <AppVersion>3.465</AppVersion>
+    <Arguments>-r 4k -s 512M -i0 -i1 #READ</Arguments>
+    <Description>Record Size: 4Kb - File Size: 512MB - Disk Test: Read Performance</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ThinkPad T495s Disk</Identifier>
+        <Value>6414</Value>
+        <RawString>6414.0400390625:6377.4296875:6449.736328125</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"},"test-run-times":"1.39:1.55:1.45"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/iozone-1.9.5</Identifier>
+    <Title>IOzone</Title>
+    <AppVersion>3.465</AppVersion>
+    <Arguments>-r 1m -s 512M -i0 #WRITE</Arguments>
+    <Description>Record Size: 1MB - File Size: 512MB - Disk Test: Write Performance</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ThinkPad T495s Disk</Identifier>
+        <Value>755</Value>
+        <RawString>861.623046875:648.005859375:823.69140625:826.4814453125:842.4912109375:705.45703125:814.8828125:836.9375:828.212890625:620.7880859375:743.1240234375:508.2978515625</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"},"test-run-times":"1.24:1.44:1.23:1.22:1.20:1.35:1.23:1.23:1.25:1.42:2.22:1.63"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/iozone-1.9.5</Identifier>
+    <Title>IOzone</Title>
+    <AppVersion>3.465</AppVersion>
+    <Arguments>-r 4k -s 512M -i0 #WRITE</Arguments>
+    <Description>Record Size: 4Kb - File Size: 512MB - Disk Test: Write Performance</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ThinkPad T495s Disk</Identifier>
+        <Value>797</Value>
+        <RawString>816.0322265625:775.7255859375:800.07421875</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"},"test-run-times":"1.22:1.27:1.23"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/iozone-1.9.5</Identifier>
+    <Title>IOzone</Title>
+    <AppVersion>3.465</AppVersion>
+    <Arguments>-r 64k -s 512M -i0 -i1 #READ</Arguments>
+    <Description>Record Size: 64Kb - File Size: 512MB - Disk Test: Read Performance</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ThinkPad T495s Disk</Identifier>
+        <Value>9001</Value>
+        <RawString>9059.896484375:9015.849609375:8927.470703125</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"},"test-run-times":"1.31:1.28:1.39"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/iozone-1.9.5</Identifier>
+    <Title>IOzone</Title>
+    <AppVersion>3.465</AppVersion>
+    <Arguments>-r 64k -s 512M -i0 #WRITE</Arguments>
+    <Description>Record Size: 64Kb - File Size: 512MB - Disk Test: Write Performance</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ThinkPad T495s Disk</Identifier>
+        <Value>775</Value>
+        <RawString>845.9267578125:769.1884765625:826.1259765625:711.6318359375:691.353515625:745.1279296875:721.7490234375:820.421875:843.9833984375</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"},"test-run-times":"1.22:1.29:1.19:1.30:1.31:1.30:1.29:1.21:1.21"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compilebench-1.0.2</Identifier>
+    <Title>Compile Bench</Title>
+    <AppVersion>0.6</AppVersion>
+    <Arguments>COMPILE</Arguments>
+    <Description>Test: Compile</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ThinkPad T495s Disk</Identifier>
+        <Value>571</Value>
+        <RawString>525.15:574.23:573.76:610.42:570.5:587.42:542.05:588.62:562.39:531.47:605.09:576.96</RawString>
+        <JSON>{"test-run-times":"50.82:44.51:52.41:50.42:47.55:46.69:48.45:45.76:45.70:47.95:48.53:48.28"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compilebench-1.0.2</Identifier>
+    <Title>Compile Bench</Title>
+    <AppVersion>0.6</AppVersion>
+    <Arguments>INITIAL_CREATE</Arguments>
+    <Description>Test: Initial Create</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ThinkPad T495s Disk</Identifier>
+        <Value>201.00</Value>
+        <RawString>206.26:211.06:185.68</RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compilebench-1.0.2</Identifier>
+    <Title>Compile Bench</Title>
+    <AppVersion>0.6</AppVersion>
+    <Arguments>READ_COMPILED_TREE</Arguments>
+    <Description>Test: Read Compiled Tree</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ThinkPad T495s Disk</Identifier>
+        <Value>1073.45</Value>
+        <RawString>915.77:1301.02:1003.56</RawString>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>

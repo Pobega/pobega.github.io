@@ -1,0 +1,124 @@
+Module                  Size  Used by
+ccm                    20480  3
+xt_CHECKSUM            16384  1
+xt_MASQUERADE          20480  3
+tun                    57344  1
+bridge                208896  0
+stp                    16384  1 bridge
+llc                    16384  2 bridge,stp
+rfcomm                 90112  16
+nf_conntrack_netbios_ns    16384  1
+nf_conntrack_broadcast    16384  1 nf_conntrack_netbios_ns
+xt_CT                  16384  1
+ip6t_rpfilter          16384  1
+ip6t_REJECT            16384  2
+nf_reject_ipv6         20480  1 ip6t_REJECT
+ipt_REJECT             16384  4
+nf_reject_ipv4         16384  1 ipt_REJECT
+xt_conntrack           16384  22
+ebtable_nat            16384  1
+ip6table_nat           16384  1
+ip6table_mangle        16384  1
+ip6table_raw           16384  1
+ip6table_security      16384  1
+iptable_nat            16384  1
+nf_nat                 49152  3 ip6table_nat,iptable_nat,xt_MASQUERADE
+iptable_mangle         16384  1
+iptable_raw            16384  1
+iptable_security       16384  1
+nf_conntrack          159744  6 xt_conntrack,nf_nat,nf_conntrack_netbios_ns,nf_conntrack_broadcast,xt_CT,xt_MASQUERADE
+nf_defrag_ipv6         24576  1 nf_conntrack
+nf_defrag_ipv4         16384  1 nf_conntrack
+libcrc32c              16384  2 nf_conntrack,nf_nat
+ip_set                 57344  0
+nfnetlink              16384  1 ip_set
+ebtable_filter         16384  1
+ebtables               40960  2 ebtable_nat,ebtable_filter
+ip6table_filter        16384  1
+ip6_tables             32768  7 ip6table_filter,ip6table_raw,ip6table_nat,ip6table_mangle,ip6table_security
+iptable_filter         16384  1
+ip_tables              32768  5 iptable_filter,iptable_security,iptable_raw,iptable_nat,iptable_mangle
+cmac                   16384  0
+bnep                   28672  2
+sunrpc                454656  1
+vfat                   20480  1
+fat                    86016  1 vfat
+uvcvideo              114688  0
+videobuf2_vmalloc      20480  1 uvcvideo
+videobuf2_memops       20480  1 videobuf2_vmalloc
+videobuf2_v4l2         28672  1 uvcvideo
+videobuf2_common       57344  2 videobuf2_v4l2,uvcvideo
+videodev              237568  3 videobuf2_v4l2,uvcvideo,videobuf2_common
+media                  61440  4 videodev,videobuf2_v4l2,uvcvideo,videobuf2_common
+btusb                  57344  0
+btrtl                  20480  1 btusb
+btbcm                  16384  1 btusb
+btintel                28672  1 btusb
+bluetooth             626688  44 btrtl,btintel,btbcm,bnep,btusb,rfcomm
+ecdh_generic           16384  1 bluetooth
+ecc                    32768  1 ecdh_generic
+arc4                   16384  2
+edac_mce_amd           32768  0
+kvm_amd               106496  0
+ccp                    98304  1 kvm_amd
+iwlmvm                462848  0
+kvm                   753664  1 kvm_amd
+mac80211              974848  1 iwlmvm
+irqbypass              16384  1 kvm
+snd_hda_codec_realtek   126976  1
+snd_hda_codec_generic    90112  1 snd_hda_codec_realtek
+snd_hda_codec_hdmi     65536  1
+crct10dif_pclmul       16384  1
+crc32_pclmul           16384  0
+snd_hda_intel          49152  6
+ghash_clmulni_intel    16384  0
+snd_hda_codec         159744  4 snd_hda_codec_generic,snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec_realtek
+iwlwifi               315392  1 iwlmvm
+snd_hda_core          102400  5 snd_hda_codec_generic,snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec,snd_hda_codec_realtek
+snd_hwdep              16384  1 snd_hda_codec
+joydev                 28672  0
+snd_seq                86016  0
+snd_seq_device         16384  1 snd_seq
+wmi_bmof               16384  0
+snd_pcm               114688  4 snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec,snd_hda_core
+k10temp                16384  0
+cfg80211              831488  3 iwlmvm,iwlwifi,mac80211
+thinkpad_acpi         110592  0
+sp5100_tco             20480  0
+snd_pci_acp3x          16384  0
+i2c_piix4              28672  0
+ipmi_devintf           20480  0
+snd_timer              40960  2 snd_seq,snd_pcm
+ledtrig_audio          16384  3 snd_hda_codec_generic,snd_hda_codec_realtek,thinkpad_acpi
+rtsx_pci_ms            24576  0
+ipmi_msghandler        73728  1 ipmi_devintf
+memstick               20480  1 rtsx_pci_ms
+snd                    94208  23 snd_hda_codec_generic,snd_seq,snd_seq_device,snd_hda_codec_hdmi,snd_hwdep,snd_hda_intel,snd_hda_codec,snd_hda_codec_realtek,snd_timer,thinkpad_acpi,snd_pcm
+ucsi_acpi              16384  0
+typec_ucsi             40960  1 ucsi_acpi
+soundcore              16384  1 snd
+typec                  49152  1 typec_ucsi
+rfkill                 28672  8 bluetooth,thinkpad_acpi,cfg80211
+i2c_scmi               20480  0
+pcc_cpufreq            20480  0
+acpi_cpufreq           28672  0
+uinput                 20480  0
+amdgpu               3960832  95
+amd_iommu_v2           20480  1 amdgpu
+gpu_sched              36864  1 amdgpu
+i2c_algo_bit           16384  1 amdgpu
+ttm                   118784  1 amdgpu
+drm_kms_helper        225280  1 amdgpu
+rtsx_pci_sdmmc         32768  0
+drm                   495616  9 gpu_sched,drm_kms_helper,amdgpu,ttm
+mmc_core              180224  1 rtsx_pci_sdmmc
+crc32c_intel           24576  7
+serio_raw              20480  0
+nvme                   49152  3
+nvme_core              98304  5 nvme
+rtsx_pci               81920  2 rtsx_pci_sdmmc,rtsx_pci_ms
+r8169                  98304  0
+wmi                    36864  1 wmi_bmof
+video                  49152  1 thinkpad_acpi
+pinctrl_amd            32768  0
+fuse                  135168  7

@@ -1,0 +1,272 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v8.6.1-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>Thinkpad T495s CPU Benchmarks</Title>
+    <LastModified>2019-09-01 09:30:30</LastModified>
+    <TestClient>Phoronix Test Suite v8.6.1 (Spydeberg)</TestClient>
+    <Description>AMD Ryzen 5 PRO 3500U w/ Radeon Vega Mobile Gfx testing with a LENOVO 20QJCTO1WW (R13ET27W1.01 BIOS) and AMD Picasso 2GB on Fedora 30 via the Phoronix Test Suite.</Description>
+  </Generated>
+  <System>
+    <Identifier>Thinkpad T495s</Identifier>
+    <Hardware>Processor: AMD Ryzen 5 PRO 3500U w/ Radeon Vega Mobile Gfx @ 2.10GHz (4 Cores / 8 Threads), Motherboard: LENOVO 20QJCTO1WW (R13ET27W1.01 BIOS), Chipset: AMD Raven/Raven2, Memory: 14336MB, Disk: 256GB Western Digital PC SN720 SDAQNTW-256G-1001, Graphics: AMD Picasso 2GB (1200/1200MHz), Audio: AMD Raven/Raven2/Fenghuang, Network: Realtek RTL8111/8168/8411 + Intel-AC 9260</Hardware>
+    <Software>OS: Fedora 30, Kernel: 5.2.9-200.fc30.x86_64 (x86_64), Desktop: GNOME Shell 3.32.2, Display Server: X Server + Wayland, OpenGL: 4.5 Mesa 19.1.4 (LLVM 8.0.0), Vulkan: 1.1.90, Compiler: GCC 9.1.1 20190503, File-System: ext4, Screen Resolution: 1536x864</Software>
+    <User>pobega</User>
+    <TimeStamp>2019-09-01 05:35:56</TimeStamp>
+    <TestClientVersion>8.6.1</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-redhat-linux --disable-libunwind-exceptions --enable-__cxa_atexit --enable-bootstrap --enable-cet --enable-checking=release --enable-gnu-indirect-function --enable-gnu-unique-object --enable-initfini-array --enable-languages=c,c++,fortran,objc,obj-c++,ada,go,d,lto --enable-multilib --enable-offload-targets=nvptx-none --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-arch_32=i686 --with-gcc-major-version-only --with-isl --with-linker-hash-style=gnu --with-tune=generic --without-cuda-driver","cpu-scaling-governor":"acpi-cpufreq performance","security":"SELinux + usercopy\/swapgs barriers and __user pointer sanitization + Full AMD retpoline IBPB: conditional STIBP: disabled RSB filling + SSB disabled via prctl and seccomp"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/rodinia-1.2.2</Identifier>
+    <Title>Rodinia</Title>
+    <AppVersion>2.4</AppVersion>
+    <Arguments>OMP_LAVAMD</Arguments>
+    <Description>Test: OpenMP LavaMD</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Thinkpad T495s CPU</Identifier>
+        <Value>98.84</Value>
+        <RawString>89.678529977798:99.188402891159:99.753148078918:99.82581281662:99.97655916214:99.983518838882:100.13881897926:100.34450888634:100.63061285019</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lOpenCL"},"test-run-times":"89.68:99.19:99.75:99.83:99.98:99.98:100.14:100.34:100.63"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/rodinia-1.2.2</Identifier>
+    <Title>Rodinia</Title>
+    <AppVersion>2.4</AppVersion>
+    <Arguments>OMP_CFD</Arguments>
+    <Description>Test: OpenMP CFD Solver</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Thinkpad T495s</Identifier>
+        <Value>67.33</Value>
+        <RawString>65.855882883072:67.957617044449:68.16254401207</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -lOpenCL"},"test-run-times":"65.86:67.96:68.16"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/namd-1.0.1</Identifier>
+    <Title>NAMD</Title>
+    <AppVersion>2.13b1</AppVersion>
+    <Arguments></Arguments>
+    <Description>ATPase Simulation - 327,506 Atoms</Description>
+    <Scale>days/ns</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Thinkpad T495s</Identifier>
+        <Value>7.87774</Value>
+        <RawString>7.86277:7.87397:7.89649</RawString>
+        <JSON>{"test-run-times":"354.78:356.16:361.32"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-7zip-1.7.0</Identifier>
+    <Title>7-Zip Compression</Title>
+    <AppVersion>16.02</AppVersion>
+    <Arguments></Arguments>
+    <Description>Compress Speed Test</Description>
+    <Scale>MIPS</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Thinkpad T495s</Identifier>
+        <Value>13941</Value>
+        <RawString>14216:13937:13670</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -lpthread"},"test-run-times":"58.34:55.83:56.58"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/stockfish-1.1.1</Identifier>
+    <Title>Stockfish</Title>
+    <AppVersion>9</AppVersion>
+    <Arguments></Arguments>
+    <Description>Total Time</Description>
+    <Scale>Nodes Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Thinkpad T495s</Identifier>
+        <Value>7326738</Value>
+        <RawString>7362892:7355829:7261494</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-m64 -lpthread -fno-exceptions -std=c++11 -pedantic -O3 -msse -msse3 -mpopcnt -flto"},"test-run-times":"184.05:190.16:187.83"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/asmfish-1.1.1</Identifier>
+    <Title>asmFish</Title>
+    <AppVersion>2018-07-23</AppVersion>
+    <Arguments></Arguments>
+    <Description>1024 Hash Memory, 26 Depth</Description>
+    <Scale>Nodes/second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Thinkpad T495s</Identifier>
+        <Value>7619240</Value>
+        <RawString>7664783:7700488:7492450</RawString>
+        <JSON>{"test-run-times":"365.61:350.25:329.85"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/build-gcc-1.1.1</Identifier>
+    <Title>Timed GCC Compilation</Title>
+    <AppVersion>8.2</AppVersion>
+    <Arguments></Arguments>
+    <Description>Time To Compile</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Thinkpad T495s</Identifier>
+        <Value>2441</Value>
+        <RawString>2441.0811710358</RawString>
+        <JSON>{"test-run-times":"2441.08"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/build-linux-kernel-1.9.1</Identifier>
+    <Title>Timed Linux Kernel Compilation</Title>
+    <AppVersion>4.18</AppVersion>
+    <Arguments></Arguments>
+    <Description>Time To Compile</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Thinkpad T495s</Identifier>
+        <Value>287.58</Value>
+        <RawString>278.3456299305:335.90121412277:334.4762570858:274.4890229702:283.738904953:269.32631707191:271.41662406921:269.98786187172:270.5365550518</RawString>
+        <JSON>{"test-run-times":"278.35:335.90:334.48:274.49:283.74:269.33:271.42:269.99:270.54"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/povray-1.2.1</Identifier>
+    <Title>POV-Ray</Title>
+    <AppVersion>3.7.0.7</AppVersion>
+    <Arguments></Arguments>
+    <Description>Trace Time</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Thinkpad T495s</Identifier>
+        <Value>180.03</Value>
+        <RawString>185.917:177.36:176.819</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -O3 -ffast-math -march=native -pthread -lSDL -lpthread -lSM -lICE -lX11 -ltiff -ljpeg -lpng -lz -lrt -lm -lboost_thread -lboost_system"},"test-run-times":"188.72:180.21:179.72"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/radiance-1.0.0</Identifier>
+    <Title>Radiance Benchmark</Title>
+    <AppVersion>5.0</AppVersion>
+    <Arguments>make all</Arguments>
+    <Description>Test: Serial</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Thinkpad T495s</Identifier>
+        <Value>884</Value>
+        <RawString>883.90382409096</RawString>
+        <JSON>{"test-run-times":"883.90"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/radiance-1.0.0</Identifier>
+    <Title>Radiance Benchmark</Title>
+    <AppVersion>5.0</AppVersion>
+    <Arguments>make smp</Arguments>
+    <Description>Test: SMP Parallel</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Thinkpad T495s</Identifier>
+        <Value>402.15</Value>
+        <RawString>402.1473698616</RawString>
+        <JSON>{"test-run-times":"402.15"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/openssl-1.11.0</Identifier>
+    <Title>OpenSSL</Title>
+    <AppVersion>1.1.1</AppVersion>
+    <Arguments></Arguments>
+    <Description>RSA 4096-bit Performance</Description>
+    <Scale>Signs Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Thinkpad T495s</Identifier>
+        <Value>535.86</Value>
+        <RawString>672.3:555.2:534.6:528.9:523.8:525.2:518:518:515.5:514.5:512:512.3</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -m64 -O3 -lssl -lcrypto -ldl"},"test-run-times":"20.05:20.05:20.05:20.05:20.05:20.09:20.05:20.05:20.05:20.05:20.05:20.05"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/ctx-clock-1.0.0</Identifier>
+    <Title>ctx_clock</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Context Switch Time</Description>
+    <Scale>Clocks</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Thinkpad T495s</Identifier>
+        <Value>105</Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"0.83:0.83:0.84"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/sysbench-1.0.0</Identifier>
+    <Title>Sysbench</Title>
+    <AppVersion>2018-07-28</AppVersion>
+    <Arguments>cpu run</Arguments>
+    <Description>Test: CPU</Description>
+    <Scale>Events Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Thinkpad T495s</Identifier>
+        <Value>6565.61</Value>
+        <RawString>6595.3664:6561.0401:6540.4279</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -O3 -funroll-loops -ggdb3 -march=amdfam10 -rdynamic -ldl -laio -lm"},"test-run-times":"10.02:10.02:10.02"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>

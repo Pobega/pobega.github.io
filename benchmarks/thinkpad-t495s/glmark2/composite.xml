@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v8.6.1-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>ThinkPad T495s GlMark2</Title>
+    <LastModified>2019-09-02 01:12:46</LastModified>
+    <TestClient>Phoronix Test Suite v8.6.1 (Spydeberg)</TestClient>
+    <Description>AMD Ryzen 5 PRO 3500U w/ Radeon Vega Mobile Gfx testing with a LENOVO 20QJCTO1WW (R13ET27W1.01 BIOS) and AMD Picasso 2GB on Fedora 30 via the Phoronix Test Suite.</Description>
+  </Generated>
+  <System>
+    <Identifier>ThinkPad T495s GlMark2</Identifier>
+    <Hardware>Processor: AMD Ryzen 5 PRO 3500U w/ Radeon Vega Mobile Gfx @ 2.10GHz (4 Cores / 8 Threads), Motherboard: LENOVO 20QJCTO1WW (R13ET27W1.01 BIOS), Chipset: AMD Raven/Raven2, Memory: 14336MB, Disk: 256GB Western Digital PC SN720 SDAQNTW-256G-1001, Graphics: AMD Picasso 2GB (1200/1200MHz), Audio: AMD Raven/Raven2/Fenghuang, Network: Realtek RTL8111/8168/8411 + Intel-AC 9260</Hardware>
+    <Software>OS: Fedora 30, Kernel: 5.2.9-200.fc30.x86_64 (x86_64), Desktop: GNOME Shell 3.32.2, Display Server: X Server + Wayland, OpenGL: 4.5 Mesa 19.1.5 (LLVM 8.0.0), Vulkan: 1.1.90, Compiler: GCC 9.2.1 20190827, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <User>pobega</User>
+    <TimeStamp>2019-09-02 01:07:12</TimeStamp>
+    <TestClientVersion>8.6.1</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"cpu-scaling-governor":"acpi-cpufreq performance","python":"Python 2.7.16 + Python 3.7.4","security":"SELinux + usercopy\/swapgs barriers and __user pointer sanitization + Full AMD retpoline IBPB: conditional STIBP: disabled RSB filling + SSB disabled via prctl and seccomp"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/glmark2-1.1.0</Identifier>
+    <Title>GLmark2</Title>
+    <AppVersion>276</AppVersion>
+    <Arguments>-s 1920x1080</Arguments>
+    <Description>Resolution: 1920 x 1080</Description>
+    <Scale>Score</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ThinkPad T495s GlMark2</Identifier>
+        <Value>1323</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"331.64"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>
