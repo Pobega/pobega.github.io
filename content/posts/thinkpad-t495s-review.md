@@ -62,7 +62,7 @@ While these changes to the T49\*s line may annoy some users, as a cloud-focused 
 ### Size & Weight <i class="far fa-check-circle"></i>
 
 
-The ThinkPad T495s shares it's chassis with the T490s, coming in at **16.1 mm** thick and weighing **2.81 lbs**.
+The ThinkPad T495s shares it's chassis with the T490s, coming in at **16.1 mm** thick and weighing **2.81 lbs/1.27 kg**.
 This tiny design manages to pack in a **57 Wh battery** which recharges in about an hour with the included 65W AC adapter.
 
 
@@ -72,10 +72,10 @@ This tiny design manages to pack in a **57 Wh battery** which recharges in about
 <hr />
 
 
-Compared to last year's T480s Lenovo has managed to shave off *2.3 mm* and *.09 lbs* which is pretty respectable.
+Compared to last year's T480s Lenovo has managed to shave off *2.3 mm* and *.09 lbs/0.4 kg* which is pretty respectable.
 
 
-In day-to-day use I barely notice the machine in my backpack. Coming from the X1 Carbon Gen 3 (*19.65 mm* / *2.99 lbs*) this is actually a noticeable improvement.
+In day-to-day use I barely notice the machine in my backpack. Coming from the X1 Carbon Gen 3 (*19.65 mm* / *2.99 lbs/1.35 kg*) this is actually a noticeable improvement.
 
 
 ### Ports <i class="far fa-question-circle"></i>
@@ -88,7 +88,7 @@ The **RJ-45** jack on the T480s is **gone** in favor of an adapter port on the l
 On the USB side of things it has two **USB-A 3.1** ports (one powered), a **USB-C** charger port and a spare **USB-C** port for connecting devices such as headphones or docks. I have tried to use the USB-C charger port to connect devices when on battery but it doesn't seem to be wired for data transfer, only charging.
 
 
-Curiously, Lenovo decided to leave out *Thunderbolt* on the T495s (even though it is on the T490s,) which means if you are trying to use an eGPU or Thunderbolt dock you may be out of luck with this year's AMD ThinkPad offerings.
+Unfortunately AMD laptops do not support *Thunderbolt* at the current time (it's Intel exclusive,) which means if you are trying to use an eGPU or Thunderbolt dock you are out of luck with this year's AMD ThinkPad offerings.
 
 
 For display connectivity the T495s does still manage to pack in a **full-size HDMI 2.0** port which on top of the aforementioned **USB-C** port can be used to power multiple external displays.
