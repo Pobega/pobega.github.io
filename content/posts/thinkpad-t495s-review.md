@@ -44,10 +44,10 @@ Lenovo's official T495s platform specification PDF is available [here](https://p
 <br />
 # Design <i class="far fa-check-circle"></i>
 
+<hr />
 ![T495s sitting on an X301](/images/thinkpad-t495s.jpg)
 *T495s profile, apologies for the poor room lighting*
-
-<br />
+<hr />
 
 Lenovo's 2019 ThinkPad redesign trades ports and upgradability for thinner and lighter bodies.
 While this may annoy some users, as a cloud-focused developer the tradeoff is OK by me.
@@ -59,10 +59,12 @@ While this may annoy some users, as a cloud-focused developer the tradeoff is OK
 The ThinkPad T495s shares it's chassis with the T490s, coming in at **16.1 mm** thick and weighing **2.81 lbs**.
 This tiny design manages to pack in a **57 Wh battery** which recharges in about an hour with the included 65W AC adapter.
 
+
+<hr />
 ![T495s X301 comparison](/images/thinkpad-t495s-sideview.jpg)
 *T495s on top of a classic X301*
+<hr />
 
-<br />
 
 Compared to last year's T480s Lenovo has managed to shave off *2.3 mm* and *.09 lbs* which is pretty respectable.
 
@@ -102,6 +104,10 @@ The display is **bright**, **vibrant** and the **viewing angles are wide**.
 Keep in mind the display is **matte** so very comfortable to use in direct sunlight.
 This specific panel is the **low power** display, although currently I can't get hard information on the power draw as *powertop* is reporting it as 0 mW usage.
 
+<hr />
+![Display Sideview](/images/thinkpad-t495s-display-sideview.jpg)
+*The 400-nit low power display's viewing angles are fantastic*
+<hr />
 
 My specific machine has the *N140HCG-GQ2* made by *Innolux* which apparently is the [winner of the IPS lottery](https://www.notebookcheck.net/Lenovo-s-Panel-Lottery-continues-with-3-different-14-inch-LowPower-displays.426538.0.html) for this line of ThinkPads.
 Speaking for the Innolux panel I can say that the ghosting and input delay reported by other users with the FHD low-power IPS panel aren't an issue.
