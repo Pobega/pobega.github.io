@@ -116,8 +116,8 @@ The standard 14" ThinkPad keyboard is as **great as ever**.
 It uses a **standard ThinkPad layout** with smile-shaped keycaps, though the **capslock key light** is a much appreciated addition compared to previous iterations.
 
 Compared to my X1 Carbon Gen3 the **keys feel a bit heavy**.
-It could just be me but sometimes I feel like the heaviness causes me to miss keypresses.
-I think over time my fingers will adapt so I find it hard to take away points from the overall machine from this but if you're a light typist this could be an issue for you.
+It could just be me but sometimes I feel like the weight of the keys causes me to miss keystrokes.
+I think over time my fingers will adapt but if you're a light typist this could be an issue for you.
 
 
 ### Touchpad <i class="far fa-check-circle"></i>
