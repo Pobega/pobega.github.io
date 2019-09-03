@@ -44,6 +44,10 @@ Lenovo's official T495s platform specification PDF is available [here](https://p
 <br />
 # Design <i class="far fa-check-circle"></i>
 
+![T495s sitting on an X301](/images/thinkpad-t495s.jpg)
+*T495s profile, apologies for the poor room lighting*
+
+<br />
 
 Lenovo's 2019 ThinkPad redesign trades ports and upgradability for thinner and lighter bodies.
 While this may annoy some users, as a cloud-focused developer the tradeoff is OK by me.
@@ -55,6 +59,10 @@ While this may annoy some users, as a cloud-focused developer the tradeoff is OK
 The ThinkPad T495s shares it's chassis with the T490s, coming in at **16.1 mm** thick and weighing **2.81 lbs**.
 This tiny design manages to pack in a **57 Wh battery** which recharges in about an hour with the included 65W AC adapter.
 
+![T495s X301 comparison](/images/thinkpad-t495s-sideview.jpg)
+*T495s on top of a classic X301*
+
+<br />
 
 Compared to last year's T480s Lenovo has managed to shave off *2.3 mm* and *.09 lbs* which is pretty respectable.
 
