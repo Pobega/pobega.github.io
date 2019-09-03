@@ -319,6 +319,11 @@ The T495s takes everything great about ThinkPads (minus the upgradeability) and 
 
 Also of note is that the new 400-nit 1080p matte panels are seriously fantastic to use, if you do decide to purchase any current-gen ThinkPad make sure to grab one of these displays.
 
+<hr />
+![ThinkPad Logo Closeup](/images/thinkpad-t495s-outro.jpg)
+*a worthy addition to the ThinkPad lineage*
+<hr />
+
 The biggest **downsides** to AMD's 2019 mobile offerings is the **thermal throttling** of the CPU & APU and the **weak battery life** of the Ryzen Pro compared to comparable Intel configurations.
 
 But if you're a Linux-head looking for a compatible laptop and want to move away from Intel (or want an integrated graphics solution that can handle light gaming) and don't care about getting more than 5 hours of battery life the ThinkPad T495s may be exactly the upgrade you've been waiting for.
