@@ -134,7 +134,7 @@ I think over time my fingers will adapt but if you're a light typist this could 
 
 ### Touchpad <i class="far fa-check-circle"></i>
 The touchpad on the T495s is **nice and large**, though the material leaves a bit to be desired.
-Unlike the higher-end X1 Carbon (which uses *glass* for its touchpad) the T495s touchpad is made of a **Mylar material** which at times can feel less fluid and even a bit sticky compared to its' glass contemporaries.
+Unlike the higher-end X1 Carbon (which uses *glass* for its touchpad) the T495s touchpad is made of a **Mylar material** which at times can feel less fluid and even a bit sticky compared to its glass contemporaries.
 
 
 ### Trackpoint <i class="far fa-check-circle"></i>
@@ -162,7 +162,7 @@ I've switched to using the BFQ scheduler (which is [now default on ChromeOS](htt
 
 <br />
 ## GPU/APU <i class="far fa-question-circle"></i>
-For general use the Vega 8 is above average, and definitely well above its' Intel competitors.
+For general use the Vega 8 is above average, and definitely well above its Intel competitors.
 Desktop compositing is no issue and it handles light gaming extremely well.
 
 According to `/sys/kernel/debug/dri/0/amdgpu_pm_info` the supported clocks on the APU are:
