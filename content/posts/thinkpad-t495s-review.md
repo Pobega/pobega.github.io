@@ -75,14 +75,14 @@ On the USB side of things it has two **USB-A 3.1** ports (one powered), a **USB-
 Curiously, Lenovo decided to leave out *Thunderbolt* on the T495s (even though it is on the T490s,) which means if you are trying to use an eGPU or Thunderbolt dock you may be out of luck with this year's AMD ThinkPad offerings.
 
 
-For display connectivity the T495s does still manage to pack in a **full-size HDMI 2.0** port, which on top of the aforementioned **USB-C** port can be used to power multiple external displays.
+For display connectivity the T495s does still manage to pack in a **full-size HDMI 2.0** port which on top of the aforementioned **USB-C** port can be used to power multiple external displays.
 
 
-The T495s still sports the old faithful **3.5mm combo headphone/mic jack**, which works exactly as you'd expect.
+The T495s still sports the old faithful **3.5mm combo headphone/mic jack** which works exactly as you'd expect.
 
 
-The loss of the *RJ-45* and *SDHC* are definitely overall cons to the new design, but the tradeoff for slimness and lightness may just be worth it overall.
-While I'll need to invest in an external SDHC reader to get pictures off my camera I don't need the SDHC card every moment of every day, and I've personally never found the performance of SD to be good enough to use as a dedicated storage device.
+The loss of the *RJ-45* and *SDHC* are definitely overall cons to the new design but the tradeoff for slimness and lightness may just be worth it overall.
+While I'll need to invest in an external SDHC reader to get pictures off my camera I don't need the SDHC card every moment of every day and I've personally never found the performance of SD to be good enough to use as a dedicated storage device.
 
 
 <br />
@@ -95,7 +95,7 @@ Keep in mind the display is **matte** so very comfortable to use in direct sunli
 This specific panel is the **low power** display, although currently I can't get hard information on the power draw as *powertop* is reporting it as 0 mW usage.
 
 
-My specific machine has the *N140HCG-GQ2* made by *Innolux*, which apparently is the [winner of the IPS lottery](https://www.notebookcheck.net/Lenovo-s-Panel-Lottery-continues-with-3-different-14-inch-LowPower-displays.426538.0.html) for this line of ThinkPads.
+My specific machine has the *N140HCG-GQ2* made by *Innolux* which apparently is the [winner of the IPS lottery](https://www.notebookcheck.net/Lenovo-s-Panel-Lottery-continues-with-3-different-14-inch-LowPower-displays.426538.0.html) for this line of ThinkPads.
 Speaking for the Innolux panel I can say that the ghosting and input delay reported by other users with the FHD low-power IPS panel aren't an issue.
 I've done some very basic measurements (playing fighting games) and haven't noticed any appreciable input delay, so for day-to-day use the Innolux panel is perfect.
 
@@ -107,18 +107,18 @@ I've done some very basic measurements (playing fighting games) and haven't noti
 The standard 14" ThinkPad keyboard is as **great as ever**.
 It uses a **standard ThinkPad layout** with smile-shaped keycaps, though the **capslock key light** is a much appreciated addition compared to previous iterations.
 
-Compared to my X1 Carbon Gen3, the **keys feel a bit heavy**.
+Compared to my X1 Carbon Gen3 the **keys feel a bit heavy**.
 It could just be me but sometimes I feel like the heaviness causes me to miss keypresses.
-I think over time my fingers will adapt so I find it hard to take away points from the overall machine from this, but if you're a light typist this could be an issue for you.
+I think over time my fingers will adapt so I find it hard to take away points from the overall machine from this but if you're a light typist this could be an issue for you.
 
 
 ### Touchpad <i class="far fa-check-circle"></i>
 The touchpad on the T495s is **nice and large**, though the material leaves a bit to be desired.
-Unlike the higher-end X1 Carbon (which uses *glass* for its touchpad), the T495s touchpad is made of a **Mylar material** which at times can feel less fluid and even a bit sticky compared to its' glass contemporaries.
+Unlike the higher-end X1 Carbon (which uses *glass* for its touchpad) the T495s touchpad is made of a **Mylar material** which at times can feel less fluid and even a bit sticky compared to its' glass contemporaries.
 
 
 ### Trackpoint <i class="far fa-check-circle"></i>
-Ol' faithful ThinkPad trackpoint. The buttons feel **nice and clicky** as always, it's a pleasure to use.
+Ol' faithful ThinkPad trackpoint. The buttons feel **nice and clicky** as always it's a pleasure to use.
 
 One thing to note is that I have **yet to experience any trackpoint drift** which is a huge improvement over previous iterations of the hardware.
 
@@ -134,7 +134,7 @@ The Ryzen 5 **throttles pretty hard on battery** which results in very visible p
 For day to day use I use TLP for powersaving which results in even worse performance on battery, but even with `powersave` the performance seems good compared to Intel.
 Though I say the difference is noticeable the Ryzen 5 still retains usability on battery, the only time it's visibly different is when gaming, compiling or doing heavy multitasking.
 
-I've switched to using the BFQ scheduler (which is [now default on ChromeOS](https://www.phoronix.com/scan.php?page=news_item&px=Chromebooks-BFQ-Default-IO) and [coming soon to Fedora](https://www.phoronix.com/scan.php?page=news_item&px=Fedora-Switching-To-BFQ) and the multitasking lag on battery with the `powersave` governor is mostly negated.
+I've switched to using the BFQ scheduler (which is [now default on ChromeOS](https://www.phoronix.com/scan.php?page=news_item&px=Chromebooks-BFQ-Default-IO) and [coming soon to Fedora](https://www.phoronix.com/scan.php?page=news_item&px=Fedora-Switching-To-BFQ)) and the multitasking lag on battery with the `powersave` governor is mostly negated.
 
 ### CPU Benchmarks
 #### [Full CPU Benchmark Results](/benchmarks/thinkpad-t495s/cpu/) ([OpenBenchmarking.org mirror](https://openbenchmarking.org/result/1909014-SP-THINKPADT29))
