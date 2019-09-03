@@ -1,7 +1,7 @@
 ---
 title: "Lenovo Thinkpad T495s Review"
-date: 2019-08-30T11:37:10-04:00
-draft: true
+date: 2019-09-02T22:37:10-04:00
+draft: false
 tags: ["hardware","review","linux","amd"]
 ---
 
@@ -14,7 +14,7 @@ tags: ["hardware","review","linux","amd"]
 
 Earlier in 2019 [Lenovo announced](https://www.theverge.com/circuitbreaker/2017/9/7/16267428/lenovo-a275-a475-thinkpad-amd-pro-processors) that they were adding new ThinkPads with AMD Pro processors to their lineup.
 As someone who's spent the last few years trying to migrate away from Intel this appealed to me.
-After waiting months Lenovo finally dropped three new laptops; The ThinkPad [T495](https://www.lenovo.com/us/en/laptops/thinkpad/thinkpad-t-series/T495/p/22TP2TTT495), [T495s](https://www.lenovo.com/us/en/laptops/thinkpad/thinkpad-t-series/T495s/p/22TP2TT495S) and [X395](https://www.lenovo.com/us/en/laptops/thinkpad/thinkpad-x/X395/p/22TP2TXX395).
+After waiting months Lenovo finally dropped three new laptops: The ThinkPad [T495](https://www.lenovo.com/us/en/laptops/thinkpad/thinkpad-t-series/T495/p/22TP2TTT495), [T495s](https://www.lenovo.com/us/en/laptops/thinkpad/thinkpad-t-series/T495s/p/22TP2TT495S) and [X395](https://www.lenovo.com/us/en/laptops/thinkpad/thinkpad-x/X395/p/22TP2TXX395).
 
 
 For the unaware, the AMD Pro CPUs ship with mobile Vega APUs (Vega 8 or 10 depending on the CPU configuration) which are integrated cards that pack a little more 'oomph' than Intel's offerings.
@@ -91,6 +91,7 @@ While I'll need to invest in an external SDHC reader to get pictures off my came
 
 The **FHD 400-nit Low Power IPS** display offered on the T495s is a really fantastic panel.
 The display is **bright**, **vibrant** and the **viewing angles are wide**.
+Keep in mind the display is **matte** so very comfortable to use in direct sunlight.
 This specific panel is the **low power** display, although currently I can't get hard information on the power draw as *powertop* is reporting it as 0 mW usage.
 
 
@@ -130,7 +131,7 @@ My T495s is equipped with the AMD Ryzen 5 PRO 3500U with frequencies of **1.40 G
 The spec sheet claims that it can 'Turbo Boost' up to *3.70 GHz*, but **turbo boost doesn't seem to be supported** according to `cpufreq frequency-info` (`boost state support: Supported: no`)
 
 The Ryzen 5 **throttles pretty hard on battery** which results in very visible performance differences (even when using the same CPU governor.)
-For day to day use I use TLP for powersaving which results in even worse performance on battery, but even with `powersave` the performance seems pretty good compared to Intel.
+For day to day use I use TLP for powersaving which results in even worse performance on battery, but even with `powersave` the performance seems good compared to Intel.
 Though I say the difference is noticeable the Ryzen 5 still retains usability on battery, the only time it's visibly different is when gaming, compiling or doing heavy multitasking.
 
 I've switched to using the BFQ scheduler (which is [now default on ChromeOS](https://www.phoronix.com/scan.php?page=news_item&px=Chromebooks-BFQ-Default-IO) and [coming soon to Fedora](https://www.phoronix.com/scan.php?page=news_item&px=Fedora-Switching-To-BFQ) and the multitasking lag on battery with the `powersave` governor is mostly negated.
@@ -175,7 +176,8 @@ The NVMe SSD included in the T495s is very nice. With average **write speeds** o
 
 <br />
 ### Memory <i class="far fa-check-circle"></i>
-The 16GB RAM option is **dual channel 2x 8GB**.
+The 16GB RAM in the T495s is **dual channel**, two sticks of **8GB DDR4 RAM**.
+The memory speed is listed by the BIOS as **2400 MT/s**.
 
 ### Memory Benchmarks
 #### [Full Memory Benchmark Results](/benchmarks/thinkpad-t495s/memory/) ([OpenBenchmarking.org mirror](https://openbenchmarking.org/result/1909024-SP-THINKPADT22))
@@ -197,7 +199,7 @@ I'm currently running `kernel 5.2.9` and `systemd 241 (v241-10.git511646b.fc30)`
 Unfortunately the **validity fingerprint scanner is still unsupported in Linux**. The community is currently attempting to reverse engineer a driver, see the [Validity90 Github project](https://github.com/nmikhailov/Validity90)
 
 `amdgpu` works using the open source drivers which utilizes `RADV` for Vulkan, and the performance is fantastic.
-Gnome desktop compositing is very snappy on the Vega 8 in places where my old Intel HD would lag.
+**Gnome desktop compositing is snappy** on the Vega 8 in places where my old Intel HD would lag.
 Gaming is also pretty good for an integrated APU, though see the **'Gaming'** section towards the bottom for more information on that.
 
 Keep in mind that a **minimum of kernel 5.1** (or 5.0.9) is required as previous kernels required boot arguments to workaround some hard locks caused by the AMD CPU.
@@ -235,14 +237,74 @@ Performance in higher end games like DotA2 and Counter Strike is still below wha
 
 ### Gaming Benchmarks
 
+For consistency sake (due to offered resolutions in the benchmarking tools) I benchmarked both 1920x1080 and 1024x768 at different graphics presets.
+Click the links to the full benchmark results to see additional benchmarks and settings not included in the review for brevity's sake.
+
 ### Steam Games
+For additional benchmarks check the full results:
 #### [Full Steam Gaming Benchmark Results](/benchmarks/thinkpad-t495s/steam_gaming) ([OpenBenchmarking.org Mirror](https://openbenchmarking.org/result/1909027-SP-THINKPADT40))
-{{< svg "/static/benchmarks/thinkpad-t495s/steam_gaming/result-graphs/small-overview.svg" >}}
+
+{{< svg "/static/benchmarks/thinkpad-t495s/steam_gaming/result-graphs/7.svg" >}}
+
+Counter Strike seems to run the best of all the games with good performance on average at 1080p.
+For real world use I don't recommend playing at anything less than 60 FPS though, which is achievable in 1920x1080 without sacrificing too much quality.
+
+<hr />
+
+{{< svg "/static/benchmarks/thinkpad-t495s/steam_gaming/result-graphs/17.svg" >}}
+{{< svg "/static/benchmarks/thinkpad-t495s/steam_gaming/result-graphs/18.svg" >}}
+
+DotA interestingly gets slightly better performance in the Vulkan benchmark though in my experience during real world play is that OpenGL performs a bit better during hectic moments.
+
+This is a benchmark that I'm hoping improves with the changes coming to Vega APUs in Mesa 19.3
+
+<hr />
+
+{{< svg "/static/benchmarks/thinkpad-t495s/steam_gaming/result-graphs/14.svg" >}}
+{{< svg "/static/benchmarks/thinkpad-t495s/steam_gaming/result-graphs/12.svg" >}}
+{{< svg "/static/benchmarks/thinkpad-t495s/steam_gaming/result-graphs/10.svg" >}}
+
+DiRT Rally on Medium at 1080p seems to be the sweet spot.
+If you can stomach a lower rendering resolution then you should be able to easily play on the high preset at a consistent 30FPS.
+Ultra Low gets fantastic performance and still looks pretty great, too.
+
+<hr />
+
+{{< svg "/static/benchmarks/thinkpad-t495s/steam_gaming/result-graphs/2.svg" >}}
+{{< svg "/static/benchmarks/thinkpad-t495s/steam_gaming/result-graphs/4.svg" >}}
+
+<hr />
 
 ### Other Games/Benchmarks
+For additional benchmarks check the full results:
 #### [Full Gaming Benchmark Results](/benchmarks/thinkpad-t495s/gaming) ([OpenBenchmarking.org Mirror](https://openbenchmarking.org/result/1909012-SP-THIKNPADT72))
-{{< svg "/static/benchmarks/thinkpad-t495s/gaming/result-graphs/small-overview.svg" >}}
 
+{{< svg "/static/benchmarks/thinkpad-t495s/gaming/result-graphs/3.svg" >}}
+{{< svg "/static/benchmarks/thinkpad-t495s/gaming/result-graphs/4.svg" >}}
 
+{{< svg "/static/benchmarks/thinkpad-t495s/gaming/result-graphs/30.svg" >}}
+{{< svg "/static/benchmarks/thinkpad-t495s/gaming/result-graphs/32.svg" >}}
+
+These old Quake3-like games work like a charm, even with the more modern lighting effects and shaders.
+
+<hr />
+
+{{< svg "/static/benchmarks/thinkpad-t495s/gaming/result-graphs/20.svg" >}}
+{{< svg "/static/benchmarks/thinkpad-t495s/gaming/result-graphs/26.svg" >}}
+{{< svg "/static/benchmarks/thinkpad-t495s/gaming/result-graphs/28.svg" >}}
+
+While these Ungine Benchmarks might read poorly, they actually aren't half bad!
+The Ungine benchmarks are a little bit inconsistent especially with the thermal throttling of the APU after running the previous tests.
+
+Messing with these benchmarks manually and changing options results in a respectable score for an integrated APU, especially when compared to Intel integrated.
+
+<br />
 # Overall <i class="far fa-check-circle"></i>
-A great machine.
+The ThinkPad T495s is a great machine for someone looking for an **ultrabook with great Linux compatibility** or someone just looking to migrate away from the monopoly of Intel in mobile.
+The T495s takes everything great about ThinkPads (minus the upgradeability) and fits it into a nice tiny form factor which is great for both travel and play.
+
+Also of note is that the new 400-nit 1080p matte panels are seriously fantastic to use, if you do decide to purchase any current-gen ThinkPad make sure to grab one of these displays.
+
+The biggest **downsides** to AMD's 2019 mobile offerings is the **thermal throttling** of the CPU & APU and the **weak battery life** of the Ryzen Pro compared to comparable Intel configurations.
+
+But if you're a Linux-head looking for a compatible laptop and want to move away from Intel (or want an integrated graphics solution that can handle light gaming) and don't care about getting more than 5 hours of battery life the ThinkPad T495s may be exactly the upgrade you've been waiting for.
