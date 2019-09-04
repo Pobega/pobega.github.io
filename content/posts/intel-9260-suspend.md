@@ -6,7 +6,15 @@ tags: ["linux","intel","suspend"]
 ---
 Last week I received my Lenovo ThinkPad T495s, a new T-series line of ThinkPads from Lenovo that uses AMD processors instead of Intel. Everything so far is working perfectly (after getting a patched Systemd) except suspend.
 
-It seems to be caused by the Intel 9260's bluetooth device waking the machine up after it enters hibernation. If you own a device with an Intel 9260 you can verify yourself that the wakeup of this device is set to 'enabled' by doing `cat /sys/bus/usb/devices/*/power/wakeup`.
+It seems to be caused by the Intel 9260's bluetooth device waking the machine up after it enters hibernation resulting in some weird video corruption.
+At this point your only option is to power the machine off.
+
+<hr />
+!["Corruption"](/images/thinkpad-t495s/corruption.jpg)
+*video corruption caused by bluetooth blocking suspend*
+<hr />
+
+If you own a device with an Intel 9260 you can verify yourself that the wakeup of this device is set to 'enabled' by doing `cat /sys/bus/usb/devices/*/power/wakeup`.
 
 You can temporarily fix this by changing the value to disabled by running `echo disabled > /sys/bus/usb/devices/<DEVICE-HERE>/power/wakeup` (obviously switch out <DEVICE-HERE> with your device, mine was 4-1 but this could be different based on your machine's config). After a sleep resume cycle it will re-enable itself, though.
 
