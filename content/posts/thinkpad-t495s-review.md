@@ -158,7 +158,7 @@ I've switched to using the BFQ scheduler (which is [now default on ChromeOS](htt
 
 ### CPU Benchmarks
 #### [Full CPU Benchmark Results](/benchmarks/thinkpad-t495s/cpu/) ([OpenBenchmarking.org mirror](https://openbenchmarking.org/result/1909014-SP-THINKPADT29))
-{{< svg "static/benchmarks/thinkpad-t495s/cpu/result-graphs/overview.svg" >}}
+![CPU Benchmark Overview](/benchmarks/thinkpad-t495s/cpu/result-graphs/overview.png)
 
 <br />
 ## GPU/APU <i class="far fa-question-circle"></i>
@@ -181,7 +181,8 @@ Keep in mind that the **APU shares 2GB of system memory** so if you go with the 
 Unfortunately, similarly to the CPU the **APU throttles on battery** (which makes sense, since it's technically integrated.) Again, similarly to the CPU it's not noticeable during day to day tasks but if you try gaming on the go you will definitely notice a difference in speeds.
 
 ### GlMark2 Benchmark
-{{< svg "static/benchmarks/thinkpad-t495s/glmark2/result-graphs/1.svg" >}}
+![GlMark2 Benchmark](/benchmarks/thinkpad-t495s/glmark2/result-graphs/1.png)
+
 *(See the '__Gaming__' section towards the bottom for more benchmarks)*
 
 <br />
@@ -191,7 +192,7 @@ The NVMe SSD included in the T495s is very nice. With average **write speeds** o
 ### Storage Benchmarks
 
 #### [Full Disk Benchmark Results](/benchmarks/thinkpad-t495s/disk/) ([OpenBenchmarking.org mirror](https://openbenchmarking.org/result/1909012-SP-THINKPADT31))
-{{< svg "static/benchmarks/thinkpad-t495s/disk/result-graphs/small-overview.svg" >}}
+![Disk Benchmark Overview](/benchmarks/thinkpad-t495s/disk/result-graphs/small-overview.png)
 
 
 <br />
@@ -202,7 +203,7 @@ Unlike the previous generation's T480s the RAM in the T495s is **soldered to the
 
 ### Memory Benchmarks
 #### [Full Memory Benchmark Results](/benchmarks/thinkpad-t495s/memory/) ([OpenBenchmarking.org mirror](https://openbenchmarking.org/result/1909024-SP-THINKPADT22))
-{{< svg "static/benchmarks/thinkpad-t495s/memory/result-graphs/small-overview.svg" >}}
+![Memory Benchmark Overview](/benchmarks/thinkpad-t495s/memory/result-graphs/small-overview.png)
 
 <br />
 ### Wireless <i class="far fa-check-circle"></i>
@@ -265,15 +266,15 @@ Click the links to the full benchmark results to see additional benchmarks and s
 For additional benchmarks check the full results:
 #### [Full Steam Gaming Benchmark Results](/benchmarks/thinkpad-t495s/steam_gaming) ([OpenBenchmarking.org Mirror](https://openbenchmarking.org/result/1909027-SP-THINKPADT40))
 
-{{< svg "/static/benchmarks/thinkpad-t495s/steam_gaming/result-graphs/7.svg" >}}
+![CSGO Benchmark](/benchmarks/thinkpad-t495s/steam_gaming/result-graphs/7.png)
 
 Counter Strike seems to run the best of all the games with good performance on average at 1080p.
 For real world use I don't recommend playing at anything less than 60 FPS though, which is achievable in 1920x1080 without sacrificing too much quality.
 
 <hr />
 
-{{< svg "/static/benchmarks/thinkpad-t495s/steam_gaming/result-graphs/17.svg" >}}
-{{< svg "/static/benchmarks/thinkpad-t495s/steam_gaming/result-graphs/18.svg" >}}
+![DotA OpenGL Benchmark](/benchmarks/thinkpad-t495s/steam_gaming/result-graphs/17.png)
+![DotA Vulkan Benchmark](/benchmarks/thinkpad-t495s/steam_gaming/result-graphs/18.png)
 
 DotA interestingly gets slightly better performance in the Vulkan benchmark though in my experience during real world play is that OpenGL performs a bit better during hectic moments.
 
@@ -281,9 +282,9 @@ This is a benchmark that I'm hoping improves with the changes coming to Vega APU
 
 <hr />
 
-{{< svg "/static/benchmarks/thinkpad-t495s/steam_gaming/result-graphs/14.svg" >}}
-{{< svg "/static/benchmarks/thinkpad-t495s/steam_gaming/result-graphs/12.svg" >}}
-{{< svg "/static/benchmarks/thinkpad-t495s/steam_gaming/result-graphs/10.svg" >}}
+![DiRT Rally Ultra Low Benchmark](/benchmarks/thinkpad-t495s/steam_gaming/result-graphs/14.png)
+![DiRT Rally Medium Benchmark](/benchmarks/thinkpad-t495s/steam_gaming/result-graphs/12.png)
+![DiRT Rally High Benchmark](/benchmarks/thinkpad-t495s/steam_gaming/result-graphs/10.png)
 
 DiRT Rally on Medium at 1080p seems to be the sweet spot.
 If you can stomach a lower rendering resolution then you should be able to easily play on the high preset at a consistent 30FPS.
@@ -291,8 +292,8 @@ Ultra Low gets fantastic performance and still looks pretty great, too.
 
 <hr />
 
-{{< svg "/static/benchmarks/thinkpad-t495s/steam_gaming/result-graphs/2.svg" >}}
-{{< svg "/static/benchmarks/thinkpad-t495s/steam_gaming/result-graphs/4.svg" >}}
+![BioShock Infinite Medium Benchmark](/benchmarks/thinkpad-t495s/steam_gaming/result-graphs/2.png)
+![BioShock Infinite Very High Benchmark](/benchmarks/thinkpad-t495s/steam_gaming/result-graphs/4.png)
 
 <hr />
 
@@ -300,19 +301,19 @@ Ultra Low gets fantastic performance and still looks pretty great, too.
 For additional benchmarks check the full results:
 #### [Full Gaming Benchmark Results](/benchmarks/thinkpad-t495s/gaming) ([OpenBenchmarking.org Mirror](https://openbenchmarking.org/result/1909012-SP-THIKNPADT72))
 
-{{< svg "/static/benchmarks/thinkpad-t495s/gaming/result-graphs/3.svg" >}}
-{{< svg "/static/benchmarks/thinkpad-t495s/gaming/result-graphs/4.svg" >}}
+![OpenArena Benchmark](/benchmarks/thinkpad-t495s/gaming/result-graphs/3.png)
+![OpenArena Benchmark](/benchmarks/thinkpad-t495s/gaming/result-graphs/4.png)
 
-{{< svg "/static/benchmarks/thinkpad-t495s/gaming/result-graphs/30.svg" >}}
-{{< svg "/static/benchmarks/thinkpad-t495s/gaming/result-graphs/32.svg" >}}
+![Xonotic Benchmark](/benchmarks/thinkpad-t495s/gaming/result-graphs/30.png)
+![Xonotic Benchmark](/benchmarks/thinkpad-t495s/gaming/result-graphs/32.png)
 
 These old Quake3-like games work like a charm, even with the more modern lighting effects and shaders.
 
 <hr />
 
-{{< svg "/static/benchmarks/thinkpad-t495s/gaming/result-graphs/20.svg" >}}
-{{< svg "/static/benchmarks/thinkpad-t495s/gaming/result-graphs/26.svg" >}}
-{{< svg "/static/benchmarks/thinkpad-t495s/gaming/result-graphs/28.svg" >}}
+![Ungine Heaven Benchmark](/benchmarks/thinkpad-t495s/gaming/result-graphs/20.png)
+![Ungine Superposition Benchmark](/benchmarks/thinkpad-t495s/gaming/result-graphs/26.png)
+![Ungine Valley Benchmark](/benchmarks/thinkpad-t495s/gaming/result-graphs/28.png)
 
 While these Ungine Benchmarks might read poorly, they actually aren't half bad!
 The Ungine benchmarks are a little bit inconsistent especially with the thermal throttling of the APU after running the previous tests.
