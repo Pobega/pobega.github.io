@@ -28,7 +28,8 @@ For the unaware, the AMD Pro CPUs ship with mobile Vega APUs (Vega 8 or 10 depen
       
       <guid>https://pobe.ga/posts/intel-9260-suspend/</guid>
       <description>Last week I received my Lenovo ThinkPad T495s, a new T-series line of ThinkPads from Lenovo that uses AMD processors instead of Intel. Everything so far is working perfectly (after getting a patched Systemd) except suspend.
-It seems to be caused by the Intel 9260&amp;rsquo;s bluetooth device waking the machine up after it enters hibernation resulting in some weird video corruption. At this point your only option is to power the machine off.</description>
+(Update: see my full T495s review if you&amp;rsquo;re interested in reading more about the laptop.)
+It seems to be caused by the Intel 9260&amp;rsquo;s bluetooth device waking the machine up after it enters hibernation resulting in some weird video corruption.</description>
     </item>
     
     <item>
@@ -37,7 +38,7 @@ It seems to be caused by the Intel 9260&amp;rsquo;s bluetooth device waking the 
       <pubDate>Sun, 25 Aug 2019 11:22:19 -0400</pubDate>
       
       <guid>https://pobe.ga/posts/quicknote-migration/</guid>
-      <description>I&amp;rsquo;ve migrated all my old blog posts from my teenage years to be archived here. Future posts will be Linux dev focused. The old posts are all tagged #archive</description>
+      <description>I&amp;rsquo;ve migrated all my old blog posts from my teenage years to be archived here. Future posts will be Linux dev focused. The migrated posts are all tagged #archive</description>
     </item>
     
     <item>
