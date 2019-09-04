@@ -4,7 +4,10 @@ date: 2019-08-26T11:15:13-04:00
 draft: false
 tags: ["linux","intel","suspend"]
 ---
-Last week I received my Lenovo ThinkPad T495s, a new T-series line of ThinkPads from Lenovo that uses AMD processors instead of Intel. Everything so far is working perfectly (after getting a patched Systemd) except suspend.
+Last week I received my Lenovo ThinkPad T495s, a new T-series line of ThinkPads from Lenovo that uses AMD processors instead of Intel.
+Everything so far is working perfectly (after getting a patched Systemd) except suspend.
+
+*(Update: see my [full T495s review](/posts/thinkpad-t495s-review) if you're interested in reading more about the laptop.)*
 
 It seems to be caused by the Intel 9260's bluetooth device waking the machine up after it enters hibernation resulting in some weird video corruption.
 At this point your only option is to power the machine off.
