@@ -28,7 +28,7 @@ For the unaware, the AMD Pro CPUs ship with mobile Vega APUs (Vega 8 or 10 depen
       
       <guid>https://pobe.ga/posts/intel-9260-suspend/</guid>
       <description>Last week I received my Lenovo ThinkPad T495s, a new T-series line of ThinkPads from Lenovo that uses AMD processors instead of Intel. Everything so far is working perfectly (after getting a patched Systemd) except suspend.
-It seems to be caused by the Intel 9260&amp;rsquo;s bluetooth device waking the machine up after it enters hibernation. If you own a device with an Intel 9260 you can verify yourself that the wakeup of this device is set to &amp;lsquo;enabled&amp;rsquo; by doing cat /sys/bus/usb/devices/*/power/wakeup.</description>
+It seems to be caused by the Intel 9260&amp;rsquo;s bluetooth device waking the machine up after it enters hibernation resulting in some weird video corruption. At this point your only option is to power the machine off.</description>
     </item>
     
     <item>
