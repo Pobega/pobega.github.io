@@ -4,6 +4,9 @@ date: 2019-08-26T11:15:13-04:00
 draft: false
 tags: ["linux","intel","suspend"]
 ---
+
+*__Note__: This seems to have been fixed by upstream between 5.2.7 and 5.2.11 on Fedora 30 so this workaround is no longer needed.*
+
 Last week I received my Lenovo ThinkPad T495s, a new T-series line of ThinkPads from Lenovo that uses AMD processors instead of Intel.
 Everything so far is working perfectly (after getting a patched Systemd) except suspend.
 
