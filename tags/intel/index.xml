@@ -17,9 +17,9 @@
       <pubDate>Mon, 26 Aug 2019 11:15:13 -0400</pubDate>
       
       <guid>https://pobe.ga/posts/intel-9260-suspend/</guid>
-      <description>Last week I received my Lenovo ThinkPad T495s, a new T-series line of ThinkPads from Lenovo that uses AMD processors instead of Intel. Everything so far is working perfectly (after getting a patched Systemd) except suspend.
-(Update: see my full T495s review if you&amp;rsquo;re interested in reading more about the laptop.)
-It seems to be caused by the Intel 9260&amp;rsquo;s bluetooth device waking the machine up after it enters hibernation resulting in some weird video corruption.</description>
+      <description>Note: This seems to have been fixed by upstream between 5.2.7 and 5.2.11 on Fedora 30 so this workaround is no longer needed.
+Last week I received my Lenovo ThinkPad T495s, a new T-series line of ThinkPads from Lenovo that uses AMD processors instead of Intel. Everything so far is working perfectly (after getting a patched Systemd) except suspend.
+(Update: see my full T495s review if you&amp;rsquo;re interested in reading more about the laptop.</description>
     </item>
     
     <item>
