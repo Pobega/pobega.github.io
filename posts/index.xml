@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Michael Pobega</title>
@@ -6,10 +6,21 @@
     <description>Recent content in Posts on Michael Pobega</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Sep 2019 22:37:10 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 07 Apr 2020 14:31:04 -0400</lastBuildDate>
     
 	<atom:link href="https://pobe.ga/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Firefox Flatpak hits Flathub stable</title>
+      <link>https://pobe.ga/posts/firefox-flatpak-stable/</link>
+      <pubDate>Tue, 07 Apr 2020 14:31:04 -0400</pubDate>
+      
+      <guid>https://pobe.ga/posts/firefox-flatpak-stable/</guid>
+      <description>Distro wars time: I&amp;rsquo;m a Fedora Silverblue user. I use it for both the ease of administration as well as the security benefits a completely containerized workflow provides.
+One common issue folks trying to make the switch run into is packages being wholly unavailable - this can be resolved in three ways.
+ Fedora Toolbox to create a Fedora container and dnf install tools. Flatpak to install graphical tools to be used on the desktop-side of the OS.</description>
+    </item>
     
     <item>
       <title>Lenovo Thinkpad T495s Review</title>

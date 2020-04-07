@@ -4,7 +4,7 @@
          
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Eee-Control and snd_hda_intel Troubles</title>
+        <title>Tags</title>
         
         <style>
 
@@ -61,6 +61,9 @@
 <script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
  <meta name="generator" content="Hugo 0.59.1" />
         
+        <link href="/tags/index.xml" rel="alternate" type="application/rss&#43;xml" title="Michael Pobega" />
+        <link href="/tags/index.xml" rel="feed" type="application/rss&#43;xml" title="Michael Pobega" />
+        
 
         
 
@@ -80,7 +83,7 @@
 
                 <div class="navbar-header">
 
-                    <a class="navbar-brand visible-xs" href="#">Eee-Control and snd_hda_intel Troubles</a>
+                    <a class="navbar-brand visible-xs" href="#">Tags</a>
 
                     <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
                         <span class="icon-bar"></span>
@@ -133,7 +136,9 @@
 
 <main>
 
-    <div class="item">
+    <h2>Tags</h2>
+
+     <div class="item">
 
     
     
@@ -142,59 +147,28 @@
     
     
 
-    <h4><a href="/posts/eeecontrol-snd_hda_intel-troubles/">Eee-Control and snd_hda_intel Troubles</a></h4>
-    <h5>February 3, 2009</h5>
-    
-    <a href="https://pobe.ga/tags/archive"><kbd class="item-tag">archive</kbd></a>
-    
-    <a href="https://pobe.ga/tags/linux"><kbd class="item-tag">linux</kbd></a>
+    <h4><a href="/tags/bug/">bug</a></h4>
+    <h5>December 14, 2008</h5>
     
 
 </div>
-
-
-    <br> <div class="text-justify"><p>Ever since I bought my Eee PC 901 I&rsquo;ve been trying to find a way to manually control the fan; all of the tools that worked on my Celeron-powered 900 don&rsquo;t work at all on my Atom-powered 901.</p>
-
-<p>After a bit of Googling I found a program called Eee-Control, which claimed that it could control the Atom&rsquo;s clock and fan speed. After trying and disliking the software I removed it from my system, but then I noticed a weird problem with my speakers &ndash; they kept popping every time I initialized the sound! So after recompiling the drivers and my kernel (and completely borking 2.6.28.2) I found that the problem was a silly script that EeeControl put in /etc/modprobe.d/ setting snd_hda_intel&rsquo;s power_save parameter to 1.</p>
-
-<p>According to modinfo, parm: power_save:Automatic power-saving timeout (in second, 0 = disable). (int), so the script was turning off my speakers after one second of inactivity. I can only assume that the upstream author thought it was a boolean argument.</p>
-
-<p>Anyway, I contacted upstream and hope to have it fixed &hellip; Even a value of 30 would be better.</p>
-</div>
-
-    
-    
-
-    
-
-    
-
-        <h4 class="page-header">Comments</h4>
-
-        <div id="disqus_thread"></div>
-<script type="application/javascript">
-    var disqus_config = function () {
-    
-    
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-        }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "pobega" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-
-    
+ 
 
 </main>
+
+
+
+<div class="pages">
+
+    
+    <a class="icon pages-icon" href="/tags/page/3/" rel="prev">
+        <i class="fa fa-arrow-left"></i>
+    </a>
+     
+
+</div>
+
+
 
         <footer>
 

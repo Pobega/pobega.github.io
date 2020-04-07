@@ -1,6 +1,51 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://pobe.ga/posts/firefox-flatpak-stable/</loc>
+    <lastmod>2020-04-07T14:31:04-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pobe.ga/tags/flatpak/</loc>
+    <lastmod>2020-04-07T14:31:04-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pobe.ga/tags/linux/</loc>
+    <lastmod>2020-04-07T14:31:04-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pobe.ga/</loc>
+    <lastmod>2020-04-07T14:31:04-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pobe.ga/posts/</loc>
+    <lastmod>2020-04-07T14:31:04-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pobe.ga/tags/silverblue/</loc>
+    <lastmod>2020-04-07T14:31:04-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pobe.ga/tags/</loc>
+    <lastmod>2020-04-07T14:31:04-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pobe.ga/tags/amd/</loc>
+    <lastmod>2019-09-02T22:37:10-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pobe.ga/tags/hardware/</loc>
+    <lastmod>2019-09-02T22:37:10-04:00</lastmod>
+  </url>
   
   <url>
     <loc>https://pobe.ga/posts/thinkpad-t495s-review/</loc>
@@ -8,45 +53,8 @@
   </url>
   
   <url>
-    <loc>https://pobe.ga/</loc>
-    <lastmod>2019-09-02T22:37:10-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://pobe.ga/posts/</loc>
-    <lastmod>2019-09-02T22:37:10-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://pobe.ga/tags/</loc>
-    <lastmod>2019-09-02T22:37:10-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://pobe.ga/tags/amd/</loc>
-    <lastmod>2019-09-02T22:37:10-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://pobe.ga/tags/hardware/</loc>
-    <lastmod>2019-09-02T22:37:10-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://pobe.ga/tags/linux/</loc>
-    <lastmod>2019-09-02T22:37:10-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://pobe.ga/tags/review/</loc>
     <lastmod>2019-09-02T22:37:10-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -57,13 +65,11 @@
   <url>
     <loc>https://pobe.ga/tags/intel/</loc>
     <lastmod>2019-08-26T11:15:13-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://pobe.ga/tags/suspend/</loc>
     <lastmod>2019-08-26T11:15:13-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -72,14 +78,13 @@
   </url>
   
   <url>
-    <loc>https://pobe.ga/posts/clevo-w740su/</loc>
+    <loc>https://pobe.ga/tags/archive/</loc>
     <lastmod>2013-09-08T11:44:15-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://pobe.ga/tags/archive/</loc>
+    <loc>https://pobe.ga/posts/clevo-w740su/</loc>
     <lastmod>2013-09-08T11:44:15-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -93,14 +98,13 @@
   </url>
   
   <url>
-    <loc>https://pobe.ga/posts/tunneling-through-ssh/</loc>
+    <loc>https://pobe.ga/tags/college/</loc>
     <lastmod>2009-02-01T14:23:15-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://pobe.ga/tags/college/</loc>
+    <loc>https://pobe.ga/posts/tunneling-through-ssh/</loc>
     <lastmod>2009-02-01T14:23:15-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -121,30 +125,26 @@
   <url>
     <loc>https://pobe.ga/tags/vim/</loc>
     <lastmod>2008-12-21T18:08:27-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://pobe.ga/posts/wget-and-post-data/</loc>
-    <lastmod>2008-12-21T16:41:36-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://pobe.ga/tags/automation/</loc>
     <lastmod>2008-12-21T16:41:36-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://pobe.ga/tags/gaming/</loc>
     <lastmod>2008-12-21T16:41:36-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://pobe.ga/tags/web/</loc>
     <lastmod>2008-12-21T16:41:36-04:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://pobe.ga/posts/wget-and-post-data/</loc>
+    <lastmod>2008-12-21T16:41:36-04:00</lastmod>
   </url>
   
   <url>
@@ -168,20 +168,18 @@
   </url>
   
   <url>
-    <loc>https://pobe.ga/posts/flashplayer-bug/</loc>
-    <lastmod>2008-12-14T19:52:15-04:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://pobe.ga/tags/adobeflash/</loc>
     <lastmod>2008-12-14T19:52:15-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://pobe.ga/tags/bug/</loc>
     <lastmod>2008-12-14T19:52:15-04:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://pobe.ga/posts/flashplayer-bug/</loc>
+    <lastmod>2008-12-14T19:52:15-04:00</lastmod>
   </url>
   
 </urlset>

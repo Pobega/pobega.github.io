@@ -4,7 +4,7 @@
          
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Eee-Control and snd_hda_intel Troubles</title>
+        <title>Firefox Flatpak hits Flathub stable</title>
         
         <style>
 
@@ -80,7 +80,7 @@
 
                 <div class="navbar-header">
 
-                    <a class="navbar-brand visible-xs" href="#">Eee-Control and snd_hda_intel Troubles</a>
+                    <a class="navbar-brand visible-xs" href="#">Firefox Flatpak hits Flathub stable</a>
 
                     <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
                         <span class="icon-bar"></span>
@@ -142,24 +142,43 @@
     
     
 
-    <h4><a href="/posts/eeecontrol-snd_hda_intel-troubles/">Eee-Control and snd_hda_intel Troubles</a></h4>
-    <h5>February 3, 2009</h5>
-    
-    <a href="https://pobe.ga/tags/archive"><kbd class="item-tag">archive</kbd></a>
+    <h4><a href="/posts/firefox-flatpak-stable/">Firefox Flatpak hits Flathub stable</a></h4>
+    <h5>April 7, 2020</h5>
     
     <a href="https://pobe.ga/tags/linux"><kbd class="item-tag">linux</kbd></a>
+    
+    <a href="https://pobe.ga/tags/silverblue"><kbd class="item-tag">silverblue</kbd></a>
+    
+    <a href="https://pobe.ga/tags/flatpak"><kbd class="item-tag">flatpak</kbd></a>
     
 
 </div>
 
 
-    <br> <div class="text-justify"><p>Ever since I bought my Eee PC 901 I&rsquo;ve been trying to find a way to manually control the fan; all of the tools that worked on my Celeron-powered 900 don&rsquo;t work at all on my Atom-powered 901.</p>
+    <br> <div class="text-justify"><p>Distro wars time: I&rsquo;m a <a href="https://silverblue.fedoraproject.org">Fedora Silverblue</a> user. I use it for both the ease of administration as well as the security benefits a completely containerized workflow provides.</p>
 
-<p>After a bit of Googling I found a program called Eee-Control, which claimed that it could control the Atom&rsquo;s clock and fan speed. After trying and disliking the software I removed it from my system, but then I noticed a weird problem with my speakers &ndash; they kept popping every time I initialized the sound! So after recompiling the drivers and my kernel (and completely borking 2.6.28.2) I found that the problem was a silly script that EeeControl put in /etc/modprobe.d/ setting snd_hda_intel&rsquo;s power_save parameter to 1.</p>
+<p>One common issue folks trying to make the switch run into is packages being wholly unavailable - this can be resolved in three ways.</p>
 
-<p>According to modinfo, parm: power_save:Automatic power-saving timeout (in second, 0 = disable). (int), so the script was turning off my speakers after one second of inactivity. I can only assume that the upstream author thought it was a boolean argument.</p>
+<ol>
+<li><a href="https://docs.fedoraproject.org/en-US/fedora-silverblue/toolbox/">Fedora Toolbox</a> to create a Fedora container and <code>dnf install</code> tools.</li>
+<li><a href="https://flatpak.org/">Flatpak</a> to install graphical tools to be used on the desktop-side of the OS.</li>
+<li><a href="https://rpm-ostree.readthedocs.io/en/latest/">rpm-ostree layering</a> is the easiest method since it allows you to install from the Fedora repositories, but it&rsquo;s a pain to maintain and defeats the purpose of using Silverblue in the first place.</li>
+</ol>
 
-<p>Anyway, I contacted upstream and hope to have it fixed &hellip; Even a value of 30 would be better.</p>
+<p>Of course each of these options comes with their issues. Firstly for <em>Toolbox</em> it is hard to get graphical applications to work as expected since piping <em>Pulseaudio</em> into a container is a lot of extra work. As for Flatpak you&rsquo;re really at the whim of whether or not the package exists on Flathub.</p>
+
+<p>Previously if you wanted Firefox with <code>ffmpeg-libs</code> you had to layer <code>ffmpeg-libs</code> from the <a href="https://rpmfusion.org/">rpmfusion repositories</a>. This worked but (not to repeat) is anti-Silverblue in nature.</p>
+
+<p>Thankfully as of <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1441922#c62">6 hours ago</a> the <a href="https://flathub.org/apps/details/org.mozilla.firefox">Firefox Flatpak has been pushed to Flathub stable</a>(Flathub link). To install,</p>
+
+<pre><code>flatpak install flathub org.mozilla.firefox
+</code></pre>
+
+<p>Unfortunately it currently defaults to using X11, but this can be overridden by changing the Flatpak args:</p>
+
+<pre><code>$ flatpak override --user --env=GDK_BACKEND=wayland org.mozilla.firefox
+$ flatpak override --user --socket=wayland org.mozilla.firefox
+</code></pre>
 </div>
 
     
