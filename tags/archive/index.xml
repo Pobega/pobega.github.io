@@ -87,7 +87,7 @@ Vimpress supports categories and tags, as well as the ability to edit previous p
       
       <guid>https://pobe.ga/posts/wget-and-post-data/</guid>
       <description>I had an idea for a script to automatically log me in to Advance Wars by Web and grab the number of games which it is my turn in, but Wget seems to have a lot of trouble with post-data and cookies while accessing pages. Currently, this is how my script looks:
-#! /bin/sh # Script for grabbing &amp;quot;Your Turn Games&amp;quot; from AWBW (http://awbw.amarriner.com) # Written and maintained by Michael Pobega # Special thanks to the GNU Wget manpage for help with cookie sessions wget --keep-session-cookies --save-cookies cookies.</description>
+#! /bin/sh # Script for grabbing &amp;#34;Your Turn Games&amp;#34; from AWBW (http://awbw.amarriner.com) # Written and maintained by Michael Pobega # Special thanks to the GNU Wget manpage for help with cookie sessions wget --keep-session-cookies --save-cookies cookies.</description>
     </item>
     
     <item>
