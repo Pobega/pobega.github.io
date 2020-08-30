@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>flatpak on Michael Pobega</title>
-    <link>https://pobe.ga/tags/flatpak/</link>
-    <description>Recent content in flatpak on Michael Pobega</description>
+    <title>firefox on Michael Pobega</title>
+    <link>https://pobe.ga/tags/firefox/</link>
+    <description>Recent content in firefox on Michael Pobega</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 30 Aug 2020 16:58:29 -0400</lastBuildDate>
     
-	<atom:link href="https://pobe.ga/tags/flatpak/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://pobe.ga/tags/firefox/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -20,17 +20,6 @@
       <description>Hardware video decoding is now available in Firefox (version 80 at the time of writing.) While there seems to be some experimental X11 support in testing (via the MOZ_X11_EGL=1 env var) it has been working (mostly) consistently for me in Wayland via the official Flatpak on Flathub.
 The settings you&amp;rsquo;ll need in about:config are:
 gfx.webrender.enabled=true gfx.webrender.all=true media.ffmpeg.vaapi.enabled=true media.ffmpeg.dmabuf-textures.enabled=true Optionally if you&amp;rsquo;d like to use system ffmpeg for VP8/VP9 video decoding as well:</description>
-    </item>
-    
-    <item>
-      <title>Firefox Flatpak hits Flathub stable</title>
-      <link>https://pobe.ga/posts/firefox-flatpak-stable/</link>
-      <pubDate>Tue, 07 Apr 2020 14:31:04 -0400</pubDate>
-      
-      <guid>https://pobe.ga/posts/firefox-flatpak-stable/</guid>
-      <description>Distro wars time: I&amp;rsquo;m a Fedora Silverblue user. I use it for both the ease of administration as well as the security benefits a completely containerized workflow provides.
-One common issue folks trying to make the switch run into is packages being wholly unavailable - this can be resolved in three ways.
- Fedora Toolbox to create a Fedora container and dnf install tools. Flatpak to install graphical tools to be used on the desktop-side of the OS.</description>
     </item>
     
   </channel>

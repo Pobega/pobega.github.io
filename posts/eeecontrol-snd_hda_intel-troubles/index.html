@@ -59,7 +59,7 @@
 
 
 <script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
- <meta name="generator" content="Hugo 0.59.1" />
+ <meta name="generator" content="Hugo 0.69.0" />
         
 
         
@@ -154,11 +154,8 @@
 
 
     <br> <div class="text-justify"><p>Ever since I bought my Eee PC 901 I&rsquo;ve been trying to find a way to manually control the fan; all of the tools that worked on my Celeron-powered 900 don&rsquo;t work at all on my Atom-powered 901.</p>
-
 <p>After a bit of Googling I found a program called Eee-Control, which claimed that it could control the Atom&rsquo;s clock and fan speed. After trying and disliking the software I removed it from my system, but then I noticed a weird problem with my speakers &ndash; they kept popping every time I initialized the sound! So after recompiling the drivers and my kernel (and completely borking 2.6.28.2) I found that the problem was a silly script that EeeControl put in /etc/modprobe.d/ setting snd_hda_intel&rsquo;s power_save parameter to 1.</p>
-
 <p>According to modinfo, parm: power_save:Automatic power-saving timeout (in second, 0 = disable). (int), so the script was turning off my speakers after one second of inactivity. I can only assume that the upstream author thought it was a boolean argument.</p>
-
 <p>Anyway, I contacted upstream and hope to have it fixed &hellip; Even a value of 30 would be better.</p>
 </div>
 

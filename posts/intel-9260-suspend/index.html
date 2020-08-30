@@ -59,7 +59,7 @@
 
 
 <script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
- <meta name="generator" content="Hugo 0.59.1" />
+ <meta name="generator" content="Hugo 0.69.0" />
         
 
         
@@ -156,57 +156,37 @@
 
 
     <br> <div class="text-justify"><p><em><strong>Note</strong>: This seems to have been fixed by upstream between 5.2.7 and 5.2.11 on Fedora 30 so this workaround is no longer needed.</em></p>
-
 <p>Last week I received my Lenovo ThinkPad T495s, a new T-series line of ThinkPads from Lenovo that uses AMD processors instead of Intel.
 Everything so far is working perfectly (after getting a patched Systemd) except suspend.</p>
-
 <p><em>(Update: see my <a href="/posts/thinkpad-t495s-review">full T495s review</a> if you&rsquo;re interested in reading more about the laptop.)</em></p>
-
 <p>It seems to be caused by the Intel 9260&rsquo;s bluetooth device waking the machine up after it enters hibernation resulting in some weird video corruption.
 At this point your only option is to power the machine off.</p>
-
-<hr />
-
-<p><img src="/images/thinkpad-t495s/corruption.jpg" alt="&quot;Corruption&quot;" />
-<em>video corruption caused by bluetooth blocking suspend</em>
-<hr /></p>
-
+<!-- raw HTML omitted -->
 <p>If you own a device with an Intel 9260 you can verify yourself that the wakeup of this device is set to &lsquo;enabled&rsquo; by doing <code>cat /sys/bus/usb/devices/*/power/wakeup</code>.</p>
-
-<p>You can temporarily fix this by changing the value to disabled by running <code>echo disabled &gt; /sys/bus/usb/devices/&lt;DEVICE-HERE&gt;/power/wakeup</code> (obviously switch out <DEVICE-HERE> with your device, mine was 4-1 but this could be different based on your machine&rsquo;s config). After a sleep resume cycle it will re-enable itself, though.</p>
-
+<p>You can temporarily fix this by changing the value to disabled by running <code>echo disabled &gt; /sys/bus/usb/devices/&lt;DEVICE-HERE&gt;/power/wakeup</code> (obviously switch out <!-- raw HTML omitted --> with your device, mine was 4-1 but this could be different based on your machine&rsquo;s config). After a sleep resume cycle it will re-enable itself, though.</p>
 <p>You can make this semi-permanent using udev by adding this rule to a new file in <code>/etc/udev/rules.d/</code>:</p>
-
 <pre><code># Disable wakeup on Intel 9260 bluetooth to allow suspend/resume
 SUBSYSTEM==&quot;usb&quot; ATTR{idVendor}==&quot;8087&quot;, ATTR{idProduct}==&quot;0025&quot; \
         ATTR{power/wakeup}=&quot;disabled&quot;
-</code></pre>
-
-<p>I&rsquo;ve put the file up <a href="https://github.com/Pobega/dotfiles/blob/65798e02182ed86f4901365af6c68c5137fcdfa3/t495s/80-intel9260-btusb.rules">on my Github</a> for anyone who wants to just download it.</p>
-
+</code></pre><p>I&rsquo;ve put the file up <a href="https://github.com/Pobega/dotfiles/blob/65798e02182ed86f4901365af6c68c5137fcdfa3/t495s/80-intel9260-btusb.rules">on my Github</a> for anyone who wants to just download it.</p>
 <p><del>Unfortunately it still seems to reset itself after a suspend cycle, I&rsquo;m trying to figure out if there&rsquo;s some way to have a udev rule trigger after suspend. In the meantime you could use a tool like <strong>tlp</strong> to keep the bluetooth off if you aren&rsquo;t using it.</del> (see <strong>edit</strong> for follow-up)</p>
-
-<p><br />
+<p><!-- raw HTML omitted -->
 <strong>Edit</strong> <em>8/27/2019</em>: To get the above rule to trigger after a suspend/resume cycle you can put the following script in <code>/usr/lib/systemd/system-sleep/bluetooth.sh</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/sh
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>1<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;pre&#34;</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+  <span style="color:#75715e"># Set manually here because `udevadm trigger -s usb`</span>
+  <span style="color:#75715e"># doesn&#39;t seem to work as a pre-suspend script.</span>
+  udevadm trigger --subsystem-match<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;usb&#34;</span>
+  udevadm settle <span style="color:#75715e"># block suspend until udev is done</span>
+<span style="color:#66d9ef">fi</span>
+<span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>1<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;post&#34;</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+  udevadm trigger --subsystem-match<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;usb&#34;</span>
+<span style="color:#66d9ef">fi</span>
 
-<pre><code class="language-bash">#!/bin/sh
-
-if [ &quot;${1}&quot; == &quot;pre&quot; ]; then
-  # Set manually here because `udevadm trigger -s usb`
-  # doesn't seem to work as a pre-suspend script.
-  udevadm trigger --subsystem-match=&quot;usb&quot;
-  udevadm settle # block suspend until udev is done
-fi
-if [ &quot;${1}&quot; == &quot;post&quot; ]; then
-  udevadm trigger --subsystem-match=&quot;usb&quot;
-fi
-
-</code></pre>
-
-<p><br />
+</code></pre></div><p><!-- raw HTML omitted -->
 <strong>Edit 2</strong> <em>8/28/2019</em>: There is an upstream bug against Fedora 30 at <a href="https://bugzilla.redhat.com/show_bug.cgi?id=1731915">https://bugzilla.redhat.com/show_bug.cgi?id=1731915</a></p>
-
-<p><br />
+<p><!-- raw HTML omitted -->
 <strong>Edit 2</strong> <em>8/30/2019</em>: Added the &lsquo;pre&rsquo; section to the systemd-suspend script since the udev rules don&rsquo;t seem to be triggering at boot on Fedora 30.</p>
 </div>
 
