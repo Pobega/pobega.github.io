@@ -62,4 +62,6 @@ And there we go - now we have a progress bar for disk syncing.
 
 !["Writedisk New"](/images/writedisk/writedisk-new.png)
 
+The code still needed a bit of cleaning up and organization as a lot of it was written inline in `main()`, but the progress bar works!
+
 If you're interested in seeing the code or the feedback I got on it you can view my PR here: https://github.com/nicholasbishop/writedisk/pull/5
