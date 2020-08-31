@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+         
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Monitoring filesystem syncing with Rust - pobe.ga</title>
+        
+        <style>
+
+    html body {
+        font-family: 'Montserrat', sans-serif;
+        background-color: white;
+    }
+
+    :root {
+        --accent: purple;
+        --border-width:  5px ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="https://pobe.ga/css/main.css">
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-dark.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
+ 
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/c.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/c&#43;&#43;.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/rust.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/bash.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/sh.min.js"></script> 
+
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+ <meta name="generator" content="Hugo 0.69.0" />
+        
+
+        
+
+        
+        
+        <script type="text/javascript" async
+          src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+        </script>
+        
+    </head>
+
+    <body>
+         
+        <nav class="navbar navbar-default navbar-fixed-top">
+
+            <div class="container">
+
+                <div class="navbar-header">
+
+                    <a class="navbar-brand visible-xs" href="#">Monitoring filesystem syncing with Rust</a>
+
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+
+                <div class="collapse navbar-collapse">
+
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="/">Home</a></li>
+                            
+                                <li><a href="/posts/">Posts</a></li>
+                            
+                                <li><a href="https://github.com/Pobega?tab=repositories&amp;q=&amp;type=source">Projects</a></li>
+                            
+                        </ul>
+                    
+
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="mailto:pobega@gmail.com"><i class="fas fa-envelope"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="/posts/index.xml"><i class="fas fa-rss"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://github.com/pobega/"><i class="fab fa-github"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://twitter.com/pobega/"><i class="fab fa-twitter"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://serverfault.com/users/18474/michael-pobega"><i class="fab fa-stack-overflow"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://www.linkedin.com/in/pobega/"><i class="fab fa-linkedin"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://pobega.itch.io/"><i class="fab fa-itch-io"></i></a></li>
+                            
+                        </ul>
+                    
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+<main>
+
+    <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/posts/rust-filesystem-sync/">Monitoring filesystem syncing with Rust</a></h4>
+    <h5>August 30, 2020</h5>
+    
+    <a href="https://pobe.ga/tags/linux"><kbd class="item-tag">linux</kbd></a>
+    
+    <a href="https://pobe.ga/tags/rust"><kbd class="item-tag">rust</kbd></a>
+    
+
+</div>
+
+
+    <br> <div class="text-justify"><p>I&rsquo;ve been using the <a href="https://crates.io/crates/writedisk">writedisk crate (crates.io)</a> for a while now to write disk images to USB drives. The interface is much nicer than using <code>dd</code> manually and it presents a list of USB devices and their human readable names to select from.</p>
+<p><img src="/images/writedisk/writedisk-old.png" alt="&ldquo;Writedisk Old&rdquo;"></p>
+<p>One thing that irked me was that there was a progress bar for copying the files but not for the filesystem sync afterwards so I decided to implement it myself.</p>
+<p>Unfortunately it seemed to be a bit more complicated than I originally anticipated. There <a href="https://unix.stackexchange.com/questions/48235/can-i-watch-the-progress-of-a-sync-operation">didn&rsquo;t seem to be a good way to get the progress of a <code>sync</code> command (stackexchange.com)</a> outside of monitoring dirty pages. Additionally there didn&rsquo;t seem to be a good way to get the dirty pages of just a single disk meaning we&rsquo;ll need to rely on the OS dirty pages to get the job done.</p>
+<p>I chose to use the <a href="https://crates.io/crates/procfs">procfs crate (crates.io)</a> to read <code>/proc/meminfo</code> which exposes it simply via:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">let</span> myprocfs <span style="color:#f92672">=</span> procfs::Meminfo::new();
+myprocfs.dirty
+</code></pre></div><p>Since we can&rsquo;t get the <strong>exact</strong> amount of dirty pages left for the UBB sync I decided we could flub it a bit by monitoring the dirty bits <em>as they approached zero</em>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust">    <span style="color:#75715e">// Get dirty pages after copy
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">let</span> meminfo <span style="color:#f92672">=</span> procfs::Meminfo::new().unwrap();
+    <span style="color:#66d9ef">let</span> dirty_after_copy <span style="color:#f92672">=</span> meminfo.dirty <span style="color:#f92672">-</span> dirty_before_copy;
+
+    thread::spawn(<span style="color:#66d9ef">move</span> <span style="color:#f92672">||</span> <span style="color:#66d9ef">loop</span> {
+        <span style="color:#66d9ef">let</span> meminfo <span style="color:#f92672">=</span> procfs::Meminfo::new().unwrap();
+        <span style="color:#66d9ef">let</span> percent <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span> <span style="color:#f92672">-</span> (meminfo.dirty) <span style="color:#f92672">/</span> (dirty_after_copy <span style="color:#f92672">/</span> <span style="color:#ae81ff">100</span>));
+        <span style="color:#75715e">/* Update progress bar */</span>
+    });
+
+    dst.sync_data().unwrap(); <span style="color:#75715e">// sync data and block until done
+</span></code></pre></div><p>One problem with this solution is that on a busy system there may already be dirty pages before the copy so your progress bar would never be <em>exactly</em> correct making <em>as it approaches zero</em> a mediocre metric to use.</p>
+<p>Therefore I decided that instead of using <em>zero</em> I would use the dirty bits before copy as my progress bar&rsquo;s &ldquo;goal&rdquo;:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust">    <span style="color:#75715e">// Get dirty pages before copy
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">let</span> meminfo <span style="color:#f92672">=</span> procfs::Meminfo::new().unwrap();
+    <span style="color:#66d9ef">let</span> dirty_before_copy <span style="color:#f92672">=</span> meminfo.dirty;
+
+    <span style="color:#75715e">/* Code that copies image to USB here */</span>
+
+    <span style="color:#75715e">// Get dirty pages after copy
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">let</span> meminfo <span style="color:#f92672">=</span> procfs::Meminfo::new().unwrap();
+    <span style="color:#66d9ef">let</span> dirty_after_copy <span style="color:#f92672">=</span> meminfo.dirty <span style="color:#f92672">-</span> dirty_before_copy;
+
+    thread::spawn(<span style="color:#66d9ef">move</span> <span style="color:#f92672">||</span> <span style="color:#66d9ef">loop</span> {
+        <span style="color:#66d9ef">let</span> meminfo <span style="color:#f92672">=</span> procfs::Meminfo::new().unwrap();
+        <span style="color:#66d9ef">let</span> percent <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span> <span style="color:#f92672">-</span> ((meminfo.dirty.saturating_sub(dirty_before_copy)) <span style="color:#f92672">/</span> (dirty_after_copy <span style="color:#f92672">/</span> <span style="color:#ae81ff">100</span>));
+        <span style="color:#75715e">/* Update progress bar */</span>
+    });
+
+    dst.sync_data().unwrap(); <span style="color:#75715e">// sync data and block until done
+</span></code></pre></div><p>And there we go - now we have a progress bar for disk syncing.</p>
+<p><img src="/images/writedisk/writedisk-new.png" alt="&ldquo;Writedisk New&rdquo;"></p>
+<p>If you&rsquo;re interested in seeing the code or the feedback I got on it you can view my PR here: <a href="https://github.com/nicholasbishop/writedisk/pull/5">https://github.com/nicholasbishop/writedisk/pull/5</a></p>
+</div>
+
+    
+    
+
+    
+
+    
+
+        <h4 class="page-header">Comments</h4>
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "pobega" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    
+
+</main>
+
+        <footer>
+
+            <p class="copyright text-muted"></p>
+
+        </footer>
+       
+    </body>
+
+</html>
+

@@ -6,10 +6,20 @@
     <description>Recent content on Michael Pobega</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 30 Aug 2020 16:58:29 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 30 Aug 2020 18:24:03 -0400</lastBuildDate>
     
 	<atom:link href="https://pobe.ga/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Monitoring filesystem syncing with Rust</title>
+      <link>https://pobe.ga/posts/rust-filesystem-sync/</link>
+      <pubDate>Sun, 30 Aug 2020 18:24:03 -0400</pubDate>
+      
+      <guid>https://pobe.ga/posts/rust-filesystem-sync/</guid>
+      <description>I&amp;rsquo;ve been using the writedisk crate (crates.io) for a while now to write disk images to USB drives. The interface is much nicer than using dd manually and it presents a list of USB devices and their human readable names to select from.
+One thing that irked me was that there was a progress bar for copying the files but not for the filesystem sync afterwards so I decided to implement it myself.</description>
+    </item>
     
     <item>
       <title>Firefox Video Decoding</title>

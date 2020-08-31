@@ -3,6 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://pobe.ga/tags/linux/</loc>
+    <lastmod>2020-08-30T18:24:03-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pobe.ga/</loc>
+    <lastmod>2020-08-30T18:24:03-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pobe.ga/posts/rust-filesystem-sync/</loc>
+    <lastmod>2020-08-30T18:24:03-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pobe.ga/posts/</loc>
+    <lastmod>2020-08-30T18:24:03-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pobe.ga/tags/rust/</loc>
+    <lastmod>2020-08-30T18:24:03-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pobe.ga/tags/</loc>
+    <lastmod>2020-08-30T18:24:03-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://pobe.ga/tags/ffmpeg/</loc>
     <lastmod>2020-08-30T16:58:29-04:00</lastmod>
   </url>
@@ -19,26 +49,6 @@
   
   <url>
     <loc>https://pobe.ga/tags/flatpak/</loc>
-    <lastmod>2020-08-30T16:58:29-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://pobe.ga/tags/linux/</loc>
-    <lastmod>2020-08-30T16:58:29-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://pobe.ga/</loc>
-    <lastmod>2020-08-30T16:58:29-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://pobe.ga/posts/</loc>
-    <lastmod>2020-08-30T16:58:29-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://pobe.ga/tags/</loc>
     <lastmod>2020-08-30T16:58:29-04:00</lastmod>
   </url>
   
