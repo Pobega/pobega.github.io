@@ -193,6 +193,7 @@ myprocfs.dirty
     dst.sync_data().unwrap(); <span style="color:#75715e">// sync data and block until done
 </span></code></pre></div><p>And there we go - now we have a progress bar for disk syncing.</p>
 <p><img src="/images/writedisk/writedisk-new.png" alt="&ldquo;Writedisk New&rdquo;"></p>
+<p>The code still needed a bit of cleaning up and organization as a lot of it was written inline in <code>main()</code>, but the progress bar works!</p>
 <p>If you&rsquo;re interested in seeing the code or the feedback I got on it you can view my PR here: <a href="https://github.com/nicholasbishop/writedisk/pull/5">https://github.com/nicholasbishop/writedisk/pull/5</a></p>
 </div>
 
