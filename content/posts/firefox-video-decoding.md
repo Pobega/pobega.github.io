@@ -1,5 +1,5 @@
 ---
-title: "Firefox Video Decoding"
+title: "Firefox & Hardware Video Decoding on Wayland"
 date: 2020-08-30T16:58:29-04:00
 draft: false
 tags: ["linux","flatpak","firefox","ffmpeg"]
