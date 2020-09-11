@@ -5,7 +5,7 @@ theme = "minimal"
 publishDir = "public"
 googleAnalytics = ""
 disqusShortname = "pobega"
-Paginate = 5 #
+Paginate = 4
 enableRobotsTXT = true
 
 [params]
@@ -17,8 +17,8 @@ enableRobotsTXT = true
     backgroundColor = "white"
     font = "Montserrat" # should match the name on Google Fonts!
     highlight = true
-    highlightStyle = "solarized-dark"
-    highlightLanguages = ["python", "c", "c++", "rust", "bash", "sh"]
+    highlightStyle = "gruvbox-dark"
+    highlightLanguages = ["python", "c", "c++", "rust", "javascript", "bash", "sh"]
     copyright = " "
 
 [[menu.main]]
