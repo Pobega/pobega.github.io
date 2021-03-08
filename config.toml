@@ -10,7 +10,7 @@ enableRobotsTXT = true
 
 [params]
     author = "Michael Pobega"
-    description = "Ramblings of a Linux kernel developer"
+    description = "Ramblings of a Linux systems engineer"
     githubUsername = "pobega"
     accent = "purple"
     showBorder = true
