@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ffmpeg on Michael Pobega</title>
+    <title>Ffmpeg on Michael Pobega</title>
     <link>https://pobe.ga/tags/ffmpeg/</link>
-    <description>Recent content in ffmpeg on Michael Pobega</description>
+    <description>Recent content in Ffmpeg on Michael Pobega</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 30 Aug 2020 16:58:29 -0400</lastBuildDate>
@@ -19,7 +19,7 @@
       <guid>https://pobe.ga/posts/firefox-video-decoding/</guid>
       <description>Hardware video decoding is now available in Firefox (version 80 at the time of writing.) While there seems to be some experimental X11 support in testing (via the MOZ_X11_EGL=1 env var) it has been working (mostly) consistently for me in Wayland via the official Flatpak on Flathub.
 The settings you&amp;rsquo;ll need in about:config are:
-gfx.webrender.enabled=true gfx.webrender.all=true media.ffmpeg.vaapi.enabled=true media.ffmpeg.dmabuf-textures.enabled=true Optionally if you&amp;rsquo;d like to use system ffmpeg for VP8/VP9 video decoding as well:</description>
+gfx.webrender.enabled=true gfx.webrender.all=true media.ffmpeg.vaapi.enabled=true media.ffmpeg.dmabuf-textures.enabled=true  Optionally if you&amp;rsquo;d like to use system ffmpeg for VP8/VP9 video decoding as well:</description>
     </item>
     
   </channel>

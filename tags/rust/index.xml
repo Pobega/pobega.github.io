@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>rust on Michael Pobega</title>
+    <title>Rust on Michael Pobega</title>
     <link>https://pobe.ga/tags/rust/</link>
-    <description>Recent content in rust on Michael Pobega</description>
+    <description>Recent content in Rust on Michael Pobega</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 30 Aug 2020 18:24:03 -0400</lastBuildDate>

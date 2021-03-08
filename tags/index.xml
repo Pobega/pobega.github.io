@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Michael Pobega</title>
@@ -6,166 +6,13 @@
     <description>Recent content in Tags on Michael Pobega</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 30 Aug 2020 18:24:03 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 14 Dec 2008 19:52:15 -0400</lastBuildDate>
     
 	<atom:link href="https://pobe.ga/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>linux</title>
-      <link>https://pobe.ga/tags/linux/</link>
-      <pubDate>Sun, 30 Aug 2020 18:24:03 -0400</pubDate>
-      
-      <guid>https://pobe.ga/tags/linux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>rust</title>
-      <link>https://pobe.ga/tags/rust/</link>
-      <pubDate>Sun, 30 Aug 2020 18:24:03 -0400</pubDate>
-      
-      <guid>https://pobe.ga/tags/rust/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ffmpeg</title>
-      <link>https://pobe.ga/tags/ffmpeg/</link>
-      <pubDate>Sun, 30 Aug 2020 16:58:29 -0400</pubDate>
-      
-      <guid>https://pobe.ga/tags/ffmpeg/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>firefox</title>
-      <link>https://pobe.ga/tags/firefox/</link>
-      <pubDate>Sun, 30 Aug 2020 16:58:29 -0400</pubDate>
-      
-      <guid>https://pobe.ga/tags/firefox/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>flatpak</title>
-      <link>https://pobe.ga/tags/flatpak/</link>
-      <pubDate>Sun, 30 Aug 2020 16:58:29 -0400</pubDate>
-      
-      <guid>https://pobe.ga/tags/flatpak/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>silverblue</title>
-      <link>https://pobe.ga/tags/silverblue/</link>
-      <pubDate>Tue, 07 Apr 2020 14:31:04 -0400</pubDate>
-      
-      <guid>https://pobe.ga/tags/silverblue/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>amd</title>
-      <link>https://pobe.ga/tags/amd/</link>
-      <pubDate>Mon, 02 Sep 2019 22:37:10 -0400</pubDate>
-      
-      <guid>https://pobe.ga/tags/amd/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>hardware</title>
-      <link>https://pobe.ga/tags/hardware/</link>
-      <pubDate>Mon, 02 Sep 2019 22:37:10 -0400</pubDate>
-      
-      <guid>https://pobe.ga/tags/hardware/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>review</title>
-      <link>https://pobe.ga/tags/review/</link>
-      <pubDate>Mon, 02 Sep 2019 22:37:10 -0400</pubDate>
-      
-      <guid>https://pobe.ga/tags/review/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>intel</title>
-      <link>https://pobe.ga/tags/intel/</link>
-      <pubDate>Mon, 26 Aug 2019 11:15:13 -0400</pubDate>
-      
-      <guid>https://pobe.ga/tags/intel/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>suspend</title>
-      <link>https://pobe.ga/tags/suspend/</link>
-      <pubDate>Mon, 26 Aug 2019 11:15:13 -0400</pubDate>
-      
-      <guid>https://pobe.ga/tags/suspend/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>archive</title>
-      <link>https://pobe.ga/tags/archive/</link>
-      <pubDate>Sun, 08 Sep 2013 11:44:15 -0400</pubDate>
-      
-      <guid>https://pobe.ga/tags/archive/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>college</title>
-      <link>https://pobe.ga/tags/college/</link>
-      <pubDate>Sun, 01 Feb 2009 14:23:15 -0400</pubDate>
-      
-      <guid>https://pobe.ga/tags/college/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>vim</title>
-      <link>https://pobe.ga/tags/vim/</link>
-      <pubDate>Sun, 21 Dec 2008 18:08:27 -0400</pubDate>
-      
-      <guid>https://pobe.ga/tags/vim/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>automation</title>
-      <link>https://pobe.ga/tags/automation/</link>
-      <pubDate>Sun, 21 Dec 2008 16:41:36 -0400</pubDate>
-      
-      <guid>https://pobe.ga/tags/automation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>gaming</title>
-      <link>https://pobe.ga/tags/gaming/</link>
-      <pubDate>Sun, 21 Dec 2008 16:41:36 -0400</pubDate>
-      
-      <guid>https://pobe.ga/tags/gaming/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>web</title>
-      <link>https://pobe.ga/tags/web/</link>
-      <pubDate>Sun, 21 Dec 2008 16:41:36 -0400</pubDate>
-      
-      <guid>https://pobe.ga/tags/web/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>adobeflash</title>
+      <title>Adobeflash</title>
       <link>https://pobe.ga/tags/adobeflash/</link>
       <pubDate>Sun, 14 Dec 2008 19:52:15 -0400</pubDate>
       
@@ -174,11 +21,164 @@
     </item>
     
     <item>
-      <title>bug</title>
+      <title>Amd</title>
+      <link>https://pobe.ga/tags/amd/</link>
+      <pubDate>Mon, 02 Sep 2019 22:37:10 -0400</pubDate>
+      
+      <guid>https://pobe.ga/tags/amd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Archive</title>
+      <link>https://pobe.ga/tags/archive/</link>
+      <pubDate>Sun, 08 Sep 2013 11:44:15 -0400</pubDate>
+      
+      <guid>https://pobe.ga/tags/archive/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Automation</title>
+      <link>https://pobe.ga/tags/automation/</link>
+      <pubDate>Sun, 21 Dec 2008 16:41:36 -0400</pubDate>
+      
+      <guid>https://pobe.ga/tags/automation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bug</title>
       <link>https://pobe.ga/tags/bug/</link>
       <pubDate>Sun, 14 Dec 2008 19:52:15 -0400</pubDate>
       
       <guid>https://pobe.ga/tags/bug/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>College</title>
+      <link>https://pobe.ga/tags/college/</link>
+      <pubDate>Sun, 01 Feb 2009 14:23:15 -0400</pubDate>
+      
+      <guid>https://pobe.ga/tags/college/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ffmpeg</title>
+      <link>https://pobe.ga/tags/ffmpeg/</link>
+      <pubDate>Sun, 30 Aug 2020 16:58:29 -0400</pubDate>
+      
+      <guid>https://pobe.ga/tags/ffmpeg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Firefox</title>
+      <link>https://pobe.ga/tags/firefox/</link>
+      <pubDate>Sun, 30 Aug 2020 16:58:29 -0400</pubDate>
+      
+      <guid>https://pobe.ga/tags/firefox/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Flatpak</title>
+      <link>https://pobe.ga/tags/flatpak/</link>
+      <pubDate>Sun, 30 Aug 2020 16:58:29 -0400</pubDate>
+      
+      <guid>https://pobe.ga/tags/flatpak/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gaming</title>
+      <link>https://pobe.ga/tags/gaming/</link>
+      <pubDate>Sun, 21 Dec 2008 16:41:36 -0400</pubDate>
+      
+      <guid>https://pobe.ga/tags/gaming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hardware</title>
+      <link>https://pobe.ga/tags/hardware/</link>
+      <pubDate>Mon, 02 Sep 2019 22:37:10 -0400</pubDate>
+      
+      <guid>https://pobe.ga/tags/hardware/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Intel</title>
+      <link>https://pobe.ga/tags/intel/</link>
+      <pubDate>Mon, 26 Aug 2019 11:15:13 -0400</pubDate>
+      
+      <guid>https://pobe.ga/tags/intel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>https://pobe.ga/tags/linux/</link>
+      <pubDate>Sun, 30 Aug 2020 18:24:03 -0400</pubDate>
+      
+      <guid>https://pobe.ga/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Review</title>
+      <link>https://pobe.ga/tags/review/</link>
+      <pubDate>Mon, 02 Sep 2019 22:37:10 -0400</pubDate>
+      
+      <guid>https://pobe.ga/tags/review/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rust</title>
+      <link>https://pobe.ga/tags/rust/</link>
+      <pubDate>Sun, 30 Aug 2020 18:24:03 -0400</pubDate>
+      
+      <guid>https://pobe.ga/tags/rust/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Silverblue</title>
+      <link>https://pobe.ga/tags/silverblue/</link>
+      <pubDate>Tue, 07 Apr 2020 14:31:04 -0400</pubDate>
+      
+      <guid>https://pobe.ga/tags/silverblue/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Suspend</title>
+      <link>https://pobe.ga/tags/suspend/</link>
+      <pubDate>Mon, 26 Aug 2019 11:15:13 -0400</pubDate>
+      
+      <guid>https://pobe.ga/tags/suspend/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vim</title>
+      <link>https://pobe.ga/tags/vim/</link>
+      <pubDate>Sun, 21 Dec 2008 18:08:27 -0400</pubDate>
+      
+      <guid>https://pobe.ga/tags/vim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Web</title>
+      <link>https://pobe.ga/tags/web/</link>
+      <pubDate>Sun, 21 Dec 2008 16:41:36 -0400</pubDate>
+      
+      <guid>https://pobe.ga/tags/web/</guid>
       <description></description>
     </item>
     
