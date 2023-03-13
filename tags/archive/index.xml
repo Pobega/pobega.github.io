@@ -1,16 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Archive on Michael Pobega</title>
+    <title>archive on Michael Pobega</title>
     <link>https://pobe.ga/tags/archive/</link>
-    <description>Recent content in Archive on Michael Pobega</description>
+    <description>Recent content in archive on Michael Pobega</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Sep 2013 11:44:15 -0400</lastBuildDate>
-    
-	<atom:link href="https://pobe.ga/tags/archive/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 08 Sep 2013 11:44:15 -0400</lastBuildDate><atom:link href="https://pobe.ga/tags/archive/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mythlogic Callisto 1413 (Clevo W740SU) Review</title>
       <link>https://pobe.ga/posts/clevo-w740su/</link>
@@ -87,7 +83,7 @@ Vimpress supports categories and tags, as well as the ability to edit previous p
       
       <guid>https://pobe.ga/posts/wget-and-post-data/</guid>
       <description>I had an idea for a script to automatically log me in to Advance Wars by Web and grab the number of games which it is my turn in, but Wget seems to have a lot of trouble with post-data and cookies while accessing pages. Currently, this is how my script looks:
-#! /bin/sh # Script for grabbing &amp;quot;Your Turn Games&amp;quot; from AWBW (http://awbw.amarriner.com) # Written and maintained by Michael Pobega # Special thanks to the GNU Wget manpage for help with cookie sessions wget --keep-session-cookies --save-cookies cookies.</description>
+#! /bin/sh # Script for grabbing &amp;#34;Your Turn Games&amp;#34; from AWBW (http://awbw.amarriner.com) # Written and maintained by Michael Pobega # Special thanks to the GNU Wget manpage for help with cookie sessions wget --keep-session-cookies --save-cookies cookies.</description>
     </item>
     
     <item>

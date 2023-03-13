@@ -1,16 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Suspend on Michael Pobega</title>
+    <title>suspend on Michael Pobega</title>
     <link>https://pobe.ga/tags/suspend/</link>
-    <description>Recent content in Suspend on Michael Pobega</description>
+    <description>Recent content in suspend on Michael Pobega</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 26 Aug 2019 11:15:13 -0400</lastBuildDate>
-    
-	<atom:link href="https://pobe.ga/tags/suspend/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 26 Aug 2019 11:15:13 -0400</lastBuildDate><atom:link href="https://pobe.ga/tags/suspend/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fixing Suspend Issues Caused By Intel 9260 Bluetooth</title>
       <link>https://pobe.ga/posts/intel-9260-suspend/</link>
