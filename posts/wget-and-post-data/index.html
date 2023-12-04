@@ -59,7 +59,7 @@
 
 
 <script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
- <meta name="generator" content="Hugo 0.69.0" />
+ <meta name="generator" content="Hugo 0.101.0" />
         
 
         
@@ -158,15 +158,15 @@
 
 
     <br> <div class="text-justify"><p>I had an idea for a script to automatically log me in to Advance Wars by Web and grab the number of games which it is my turn in, but Wget seems to have a lot of trouble with post-data and cookies while accessing pages. Currently, this is how my script looks:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e">#! /bin/sh
-</span><span style="color:#75715e"></span><span style="color:#75715e"># Script for grabbing &#34;Your Turn Games&#34; from AWBW (http://awbw.amarriner.com)</span>
-<span style="color:#75715e"># Written and maintained by Michael Pobega</span>
-<span style="color:#75715e"># Special thanks to the GNU Wget manpage for help with cookie sessions</span>
-
-wget --keep-session-cookies --save-cookies cookies.txt --post-data <span style="color:#e6db74">&#39;username=pobega&amp;password=PASSWORD&#39;</span> --keep-session-cookies http://awbw.amarriner.com/login.php
-
-wget --load-cookies cookies.txt http://awbw.amarriner.com/yourturn.php
-</code></pre></div><p>Every time I&rsquo;d login to the page, the downloaded yourturn.php would complain that I was not logged in. I&rsquo;m going to mess around with this script a little more and hopefully find the problem.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e">#! /bin/sh
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#75715e"># Script for grabbing &#34;Your Turn Games&#34; from AWBW (http://awbw.amarriner.com)</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Written and maintained by Michael Pobega</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Special thanks to the GNU Wget manpage for help with cookie sessions</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>wget --keep-session-cookies --save-cookies cookies.txt --post-data <span style="color:#e6db74">&#39;username=pobega&amp;password=PASSWORD&#39;</span> --keep-session-cookies http://awbw.amarriner.com/login.php
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>wget --load-cookies cookies.txt http://awbw.amarriner.com/yourturn.php
+</span></span></code></pre></div><p>Every time I&rsquo;d login to the page, the downloaded yourturn.php would complain that I was not logged in. I&rsquo;m going to mess around with this script a little more and hopefully find the problem.</p>
 <p><strong>Edit</strong>: Nevermind, I found the problem. I guess I&rsquo;m a bit blind, but it&rsquo;s right in the <em>wget(1)</em> manpage:</p>
 <p>If the server is using session cookies to track user authentication, the above will not work because <code>--save-cookies</code> will not save them (and neither will browsers) and the cookies.txt file will be empty. In that case use <code>--keep-session-cookies</code> along with <code>--save-cookies</code> to force saving of session cookies.</p>
 </div>
@@ -182,7 +182,7 @@ wget --load-cookies cookies.txt http://awbw.amarriner.com/yourturn.php
 
         <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

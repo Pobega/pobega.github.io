@@ -6,7 +6,17 @@
     <description>Recent content in ffmpeg on Michael Pobega</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 30 Aug 2020 16:58:29 -0400</lastBuildDate><atom:link href="https://pobe.ga/tags/ffmpeg/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 03 Dec 2023 16:58:29 -0400</lastBuildDate><atom:link href="https://pobe.ga/tags/ffmpeg/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2023 Update: Firefox &amp; Hardware Video Decoding on Wayland</title>
+      <link>https://pobe.ga/posts/firefox-video-decoding-2023/</link>
+      <pubDate>Sun, 03 Dec 2023 16:58:29 -0400</pubDate>
+      
+      <guid>https://pobe.ga/posts/firefox-video-decoding-2023/</guid>
+      <description>Things have gotten a bit hairy with the H.264 codecs as of late. They&amp;rsquo;ve been removed from most distro&amp;rsquo;s Mesa implementation which has caused a headache for AMD users (such as myself) since AMD offloads video decoding to Mesa.
+Thankfully you can still get hardware video decoding using Flathub&amp;rsquo;s Firefox Flatpak, ffmpeg and OpenH.264. I&amp;rsquo;ve deciding to document the process here since this whole thing was kind of a headache to figure out.</description>
+    </item>
+    
     <item>
       <title>Firefox &amp; Hardware Video Decoding on Wayland</title>
       <link>https://pobe.ga/posts/firefox-video-decoding/</link>

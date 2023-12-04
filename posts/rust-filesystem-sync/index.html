@@ -59,7 +59,7 @@
 
 
 <script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
- <meta name="generator" content="Hugo 0.69.0" />
+ <meta name="generator" content="Hugo 0.101.0" />
         
 
         
@@ -154,45 +154,45 @@
 
 
     <br> <div class="text-justify"><p>I&rsquo;ve been using the <a href="https://crates.io/crates/writedisk">writedisk crate (crates.io)</a> for a while now to write disk images to USB drives. The interface is much nicer than using <code>dd</code> manually and it presents a list of USB devices and their human readable names to select from.</p>
-<p><img src="/images/writedisk/writedisk-old.png" alt="&ldquo;Writedisk Old&rdquo;"></p>
+<p><img src="/images/writedisk/writedisk-old.png" alt="&amp;ldquo;Writedisk Old&amp;rdquo;"></p>
 <p>One thing that irked me was that there was a progress bar for copying the files but not for the filesystem sync afterwards so I decided to implement it myself.</p>
 <p>Unfortunately it seemed to be a bit more complicated than I originally anticipated. There <a href="https://unix.stackexchange.com/questions/48235/can-i-watch-the-progress-of-a-sync-operation">didn&rsquo;t seem to be a good way to get the progress of a <code>sync</code> command (stackexchange.com)</a> outside of monitoring dirty pages. Additionally there didn&rsquo;t seem to be a good way to get the dirty pages of just a single disk meaning we&rsquo;ll need to rely on the OS dirty pages to get the job done.</p>
 <p>I chose to use the <a href="https://crates.io/crates/procfs">procfs crate (crates.io)</a> to read <code>/proc/meminfo</code> which exposes it simply via:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">let</span> myprocfs <span style="color:#f92672">=</span> procfs::Meminfo::new();
-myprocfs.dirty
-</code></pre></div><p>Since we can&rsquo;t get the <strong>exact</strong> amount of dirty pages left for the UBB sync I decided we could flub it a bit by monitoring the dirty bits <em>as they approached zero</em>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust">    <span style="color:#75715e">// Get dirty pages after copy
-</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">let</span> meminfo <span style="color:#f92672">=</span> procfs::Meminfo::new().unwrap();
-    <span style="color:#66d9ef">let</span> dirty_after_copy <span style="color:#f92672">=</span> meminfo.dirty <span style="color:#f92672">-</span> dirty_before_copy;
-
-    thread::spawn(<span style="color:#66d9ef">move</span> <span style="color:#f92672">||</span> <span style="color:#66d9ef">loop</span> {
-        <span style="color:#66d9ef">let</span> meminfo <span style="color:#f92672">=</span> procfs::Meminfo::new().unwrap();
-        <span style="color:#66d9ef">let</span> percent <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span> <span style="color:#f92672">-</span> (meminfo.dirty) <span style="color:#f92672">/</span> (dirty_after_copy <span style="color:#f92672">/</span> <span style="color:#ae81ff">100</span>));
-        <span style="color:#75715e">/* Update progress bar */</span>
-    });
-
-    dst.sync_data().unwrap(); <span style="color:#75715e">// sync data and block until done
-</span></code></pre></div><p>One problem with this solution is that on a busy system there may already be dirty pages before the copy so your progress bar would never be <em>exactly</em> correct making <em>as it approaches zero</em> a mediocre metric to use.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> myprocfs <span style="color:#f92672">=</span> procfs::Meminfo::new();
+</span></span><span style="display:flex;"><span>myprocfs.dirty
+</span></span></code></pre></div><p>Since we can&rsquo;t get the <strong>exact</strong> amount of dirty pages left for the UBB sync I decided we could flub it a bit by monitoring the dirty bits <em>as they approached zero</em>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span>    <span style="color:#75715e">// Get dirty pages after copy
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">let</span> meminfo <span style="color:#f92672">=</span> procfs::Meminfo::new().unwrap();
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> dirty_after_copy <span style="color:#f92672">=</span> meminfo.dirty <span style="color:#f92672">-</span> dirty_before_copy;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    thread::spawn(<span style="color:#66d9ef">move</span> <span style="color:#f92672">||</span> <span style="color:#66d9ef">loop</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">let</span> meminfo <span style="color:#f92672">=</span> procfs::Meminfo::new().unwrap();
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">let</span> percent <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span> <span style="color:#f92672">-</span> (meminfo.dirty) <span style="color:#f92672">/</span> (dirty_after_copy <span style="color:#f92672">/</span> <span style="color:#ae81ff">100</span>));
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">/* Update progress bar */</span>
+</span></span><span style="display:flex;"><span>    });
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    dst.sync_data().unwrap(); <span style="color:#75715e">// sync data and block until done
+</span></span></span></code></pre></div><p>One problem with this solution is that on a busy system there may already be dirty pages before the copy so your progress bar would never be <em>exactly</em> correct making <em>as it approaches zero</em> a mediocre metric to use.</p>
 <p>Therefore I decided that instead of using <em>zero</em> I would use the dirty bits before copy as my progress bar&rsquo;s &ldquo;goal&rdquo;:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust">    <span style="color:#75715e">// Get dirty pages before copy
-</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">let</span> meminfo <span style="color:#f92672">=</span> procfs::Meminfo::new().unwrap();
-    <span style="color:#66d9ef">let</span> dirty_before_copy <span style="color:#f92672">=</span> meminfo.dirty;
-
-    <span style="color:#75715e">/* Code that copies image to USB here */</span>
-
-    <span style="color:#75715e">// Get dirty pages after copy
-</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">let</span> meminfo <span style="color:#f92672">=</span> procfs::Meminfo::new().unwrap();
-    <span style="color:#66d9ef">let</span> dirty_after_copy <span style="color:#f92672">=</span> meminfo.dirty <span style="color:#f92672">-</span> dirty_before_copy;
-
-    thread::spawn(<span style="color:#66d9ef">move</span> <span style="color:#f92672">||</span> <span style="color:#66d9ef">loop</span> {
-        <span style="color:#66d9ef">let</span> meminfo <span style="color:#f92672">=</span> procfs::Meminfo::new().unwrap();
-        <span style="color:#66d9ef">let</span> percent <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span> <span style="color:#f92672">-</span> ((meminfo.dirty.saturating_sub(dirty_before_copy)) <span style="color:#f92672">/</span> (dirty_after_copy <span style="color:#f92672">/</span> <span style="color:#ae81ff">100</span>));
-        <span style="color:#75715e">/* Update progress bar */</span>
-    });
-
-    dst.sync_data().unwrap(); <span style="color:#75715e">// sync data and block until done
-</span></code></pre></div><p>And there we go - now we have a progress bar for disk syncing.</p>
-<p><img src="/images/writedisk/writedisk-new.png" alt="&ldquo;Writedisk New&rdquo;"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span>    <span style="color:#75715e">// Get dirty pages before copy
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">let</span> meminfo <span style="color:#f92672">=</span> procfs::Meminfo::new().unwrap();
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> dirty_before_copy <span style="color:#f92672">=</span> meminfo.dirty;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/* Code that copies image to USB here */</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Get dirty pages after copy
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">let</span> meminfo <span style="color:#f92672">=</span> procfs::Meminfo::new().unwrap();
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> dirty_after_copy <span style="color:#f92672">=</span> meminfo.dirty <span style="color:#f92672">-</span> dirty_before_copy;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    thread::spawn(<span style="color:#66d9ef">move</span> <span style="color:#f92672">||</span> <span style="color:#66d9ef">loop</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">let</span> meminfo <span style="color:#f92672">=</span> procfs::Meminfo::new().unwrap();
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">let</span> percent <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span> <span style="color:#f92672">-</span> ((meminfo.dirty.saturating_sub(dirty_before_copy)) <span style="color:#f92672">/</span> (dirty_after_copy <span style="color:#f92672">/</span> <span style="color:#ae81ff">100</span>));
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">/* Update progress bar */</span>
+</span></span><span style="display:flex;"><span>    });
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    dst.sync_data().unwrap(); <span style="color:#75715e">// sync data and block until done
+</span></span></span></code></pre></div><p>And there we go - now we have a progress bar for disk syncing.</p>
+<p><img src="/images/writedisk/writedisk-new.png" alt="&amp;ldquo;Writedisk New&amp;rdquo;"></p>
 <p>The code still needed a bit of cleaning up and organization as a lot of it was written inline in <code>main()</code>, but the progress bar works!</p>
 <p>If you&rsquo;re interested in seeing the code or the feedback I got on it you can view my PR here: <a href="https://github.com/nicholasbishop/writedisk/pull/5">https://github.com/nicholasbishop/writedisk/pull/5</a></p>
 </div>
@@ -208,7 +208,7 @@ myprocfs.dirty
 
         <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

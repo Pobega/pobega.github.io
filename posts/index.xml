@@ -6,7 +6,17 @@
     <description>Recent content in Posts on Michael Pobega</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 30 Aug 2020 18:24:03 -0400</lastBuildDate><atom:link href="https://pobe.ga/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 03 Dec 2023 16:58:29 -0400</lastBuildDate><atom:link href="https://pobe.ga/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2023 Update: Firefox &amp; Hardware Video Decoding on Wayland</title>
+      <link>https://pobe.ga/posts/firefox-video-decoding-2023/</link>
+      <pubDate>Sun, 03 Dec 2023 16:58:29 -0400</pubDate>
+      
+      <guid>https://pobe.ga/posts/firefox-video-decoding-2023/</guid>
+      <description>Things have gotten a bit hairy with the H.264 codecs as of late. They&amp;rsquo;ve been removed from most distro&amp;rsquo;s Mesa implementation which has caused a headache for AMD users (such as myself) since AMD offloads video decoding to Mesa.
+Thankfully you can still get hardware video decoding using Flathub&amp;rsquo;s Firefox Flatpak, ffmpeg and OpenH.264. I&amp;rsquo;ve deciding to document the process here since this whole thing was kind of a headache to figure out.</description>
+    </item>
+    
     <item>
       <title>Monitoring filesystem syncing with Rust</title>
       <link>https://pobe.ga/posts/rust-filesystem-sync/</link>
@@ -36,7 +46,7 @@ gfx.webrender.enabled=true gfx.webrender.all=true media.ffmpeg.vaapi.enabled=tru
       <guid>https://pobe.ga/posts/firefox-flatpak-stable/</guid>
       <description>Distro wars time: I&amp;rsquo;m a Fedora Silverblue user. I use it for both the ease of administration as well as the security benefits a completely containerized workflow provides.
 One common issue folks trying to make the switch run into is packages being wholly unavailable - this can be resolved in three ways.
- Fedora Toolbox to create a Fedora container and dnf install tools. Flatpak to install graphical tools to be used on the desktop-side of the OS.</description>
+Fedora Toolbox to create a Fedora container and dnf install tools. Flatpak to install graphical tools to be used on the desktop-side of the OS.</description>
     </item>
     
     <item>

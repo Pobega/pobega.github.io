@@ -59,7 +59,7 @@
 
 
 <script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
- <meta name="generator" content="Hugo 0.69.0" />
+ <meta name="generator" content="Hugo 0.101.0" />
         
 
         
@@ -159,12 +159,12 @@
 
     <br> <div class="text-justify"><p>Hardware video decoding is now available in Firefox (version 80 at the time of writing.) While there seems to be some experimental X11 support in testing (via the <code>MOZ_X11_EGL=1</code> env var) it has been working (mostly) consistently for me in Wayland via the official Flatpak on Flathub.</p>
 <p>The settings you&rsquo;ll need in <code>about:config</code> are:</p>
-<pre><code>gfx.webrender.enabled=true
+<pre tabindex="0"><code>gfx.webrender.enabled=true
 gfx.webrender.all=true
 media.ffmpeg.vaapi.enabled=true
 media.ffmpeg.dmabuf-textures.enabled=true
 </code></pre><p>Optionally if you&rsquo;d like to use system ffmpeg for VP8/VP9 video decoding as well:</p>
-<pre><code>media.ffvpx.enabled=false
+<pre tabindex="0"><code>media.ffvpx.enabled=false
 </code></pre><p>Flathub Firefox users should install <code>org.freedesktop.Platform.ffmpeg-full</code> for system ffmpeg. The Fedora Firefox Flatpak currently doesn&rsquo;t support Flatpak&rsquo;d ffmpeg.</p>
 <p>There are some issues on my system where occassionally Twitch videos will require a full page refresh but it&rsquo;s infrequent enough to not be a huge issue. There&rsquo;s an <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1655794">upstream bug (bugzilla.mozilla.org)</a> for an similar issue on my hardware so I believe what I&rsquo;m seeing is just related to AMD Ryzen mobile APUs.</p>
 <p>Sources:</p>
@@ -186,7 +186,7 @@ media.ffmpeg.dmabuf-textures.enabled=true
 
         <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
