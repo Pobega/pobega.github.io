@@ -17,25 +17,6 @@
     </item>
     
     <item>
-      <title>Eee-Control and snd_hda_intel Troubles</title>
-      <link>https://pobe.ga/posts/eeecontrol-snd_hda_intel-troubles/</link>
-      <pubDate>Tue, 03 Feb 2009 09:03:19 -0400</pubDate>
-      
-      <guid>https://pobe.ga/posts/eeecontrol-snd_hda_intel-troubles/</guid>
-      <description>Ever since I bought my Eee PC 901 I&amp;rsquo;ve been trying to find a way to manually control the fan; all of the tools that worked on my Celeron-powered 900 don&amp;rsquo;t work at all on my Atom-powered 901.
-After a bit of Googling I found a program called Eee-Control, which claimed that it could control the Atom&amp;rsquo;s clock and fan speed. After trying and disliking the software I removed it from my system, but then I noticed a weird problem with my speakers &amp;ndash; they kept popping every time I initialized the sound!</description>
-    </item>
-    
-    <item>
-      <title>Introduction; the World&#39;s First Fully Open Netbook</title>
-      <link>https://pobe.ga/posts/first-fully-open-netbook/</link>
-      <pubDate>Mon, 02 Feb 2009 08:49:01 -0400</pubDate>
-      
-      <guid>https://pobe.ga/posts/first-fully-open-netbook/</guid>
-      <description>The netbook market has become watered down with so many competitors trying to cash in on the new craze, including but not limited to netbooks from companies such as Asus, Acer, Dell, MSI Wind, and Sony. Finally though, one company has decided to release a fully open netbook for those of us who love open stuff. Lemote&amp;rsquo;s 8.9 inch YeeLoong netbook doesn&amp;rsquo;t look fantastic by any means, and it sports a processor barely half as powerful as it&amp;rsquo;s competitors, but it&amp;rsquo;s definitely a step in the right direction.</description>
-    </item>
-    
-    <item>
       <title>Tunneling a connection through SSH</title>
       <link>https://pobe.ga/posts/tunneling-through-ssh/</link>
       <pubDate>Sun, 01 Feb 2009 14:23:15 -0400</pubDate>
@@ -43,95 +24,6 @@ After a bit of Googling I found a program called Eee-Control, which claimed that
       <guid>https://pobe.ga/posts/tunneling-through-ssh/</guid>
       <description>So I finally arrived at school, only to find that my college has decided to block IRC on the campus wifi. Weirdly enough, they allow AIM/MSN/Jabber/Skype/Ekiga/etc traffic, but not IRC. According to the IT department &amp;ldquo;IRC is commonly used to spread viruses&amp;rdquo;. I&amp;rsquo;m not sure how valid that is, but it didn&amp;rsquo;t stop me from trying to connect to my usual IRC networks.
 Luckily all they did was block the common (6000~7000) IRC ports, which meant that I could still get on any networks that offered alternate ports.</description>
-    </item>
-    
-    <item>
-      <title>Finally upgraded my Eee PC 900 - Eee PC 901</title>
-      <link>https://pobe.ga/posts/upgraded-eee901/</link>
-      <pubDate>Tue, 13 Jan 2009 18:08:43 -0400</pubDate>
-      
-      <guid>https://pobe.ga/posts/upgraded-eee901/</guid>
-      <description>I finally got the chance to buy a new Eee PC before leaving for college (to be exact, it arrived six days before I leave) and it&amp;rsquo;s great. Besides the processor being more powerful, I get three to five hours of battery life and my operating system is extremely responsive.
-The video card is also an upgraded Intel card (though it doesn&amp;rsquo;t make that much of a difference, really) which helps a small bit when it comes to gaming.</description>
-    </item>
-    
-    <item>
-      <title>New Kernel (2.6.27.9) Upgrade on my Eee</title>
-      <link>https://pobe.ga/posts/new-kernel-eee/</link>
-      <pubDate>Wed, 31 Dec 2008 16:32:14 -0400</pubDate>
-      
-      <guid>https://pobe.ga/posts/new-kernel-eee/</guid>
-      <description>So I upgraded my kernel from my very outdated 2.6.25-* kernel to 2.6.27.9, and I have to say I&amp;rsquo;m impressed.
-I ditched my old MadWiFi drivers (contrib) for fully free and open source ath5k modules (built right into the kernel!), as well as having my ethernet built in (non-modular) and an improvement in boot time (under 2 seconds, but still)
-I&amp;rsquo;ll be posting up a .deb and .config when I get around to it, I need to fix a little bit more (the webcam doesn&amp;rsquo;t work out of the box, I&amp;rsquo;m probably going to need to compile that into the kernel too).</description>
-    </item>
-    
-    <item>
-      <title>All Hail Vimpress!</title>
-      <link>https://pobe.ga/posts/all-hail-vimpress/</link>
-      <pubDate>Sun, 21 Dec 2008 18:08:27 -0400</pubDate>
-      
-      <guid>https://pobe.ga/posts/all-hail-vimpress/</guid>
-      <description>For the last week I&amp;rsquo;ve been using Drivel &amp;ndash; a GNOME application for blogging from your desktop. The problem with using Drivel for a Wordpress blog is that it doesn&amp;rsquo;t support multiple categories or even tags! Luckily, I&amp;rsquo;ve found a nice alternative that integrated with my favorite text editor; Vimpress!
-Vimpress supports categories and tags, as well as the ability to edit previous posts. My only quarry with Vim is that it doesn&amp;rsquo;t allow the deletion of older entries, for which I&amp;rsquo;m still forced to login to my Wordpress dashboard to do.</description>
-    </item>
-    
-    <item>
-      <title>Wget and Post Data</title>
-      <link>https://pobe.ga/posts/wget-and-post-data/</link>
-      <pubDate>Sun, 21 Dec 2008 16:41:36 -0400</pubDate>
-      
-      <guid>https://pobe.ga/posts/wget-and-post-data/</guid>
-      <description>I had an idea for a script to automatically log me in to Advance Wars by Web and grab the number of games which it is my turn in, but Wget seems to have a lot of trouble with post-data and cookies while accessing pages. Currently, this is how my script looks:
-#! /bin/sh # Script for grabbing &amp;#34;Your Turn Games&amp;#34; from AWBW (http://awbw.amarriner.com) # Written and maintained by Michael Pobega # Special thanks to the GNU Wget manpage for help with cookie sessions wget --keep-session-cookies --save-cookies cookies.</description>
-    </item>
-    
-    <item>
-      <title>Advance Wars by Web - Free Browser Game</title>
-      <link>https://pobe.ga/posts/awbw/</link>
-      <pubDate>Wed, 17 Dec 2008 01:39:26 -0400</pubDate>
-      
-      <guid>https://pobe.ga/posts/awbw/</guid>
-      <description>Advance Wars is one of the best turn based strategy games ever. Each separate games offers balance between both opponents without one side having an obvious advantage (like with the leveling system of Fire Emblem). A website called Advance Wars by Web lets users play Advance Wars online against other players through a simple web interface. Those who are familiar with the Gameboy Advance series should be able to get comfortable with the AWBW interface quickly.</description>
-    </item>
-    
-    <item>
-      <title>Celeron M vs Atom N270</title>
-      <link>https://pobe.ga/posts/celeronm-vs-atomn270/</link>
-      <pubDate>Wed, 17 Dec 2008 01:22:11 -0400</pubDate>
-      
-      <guid>https://pobe.ga/posts/celeronm-vs-atomn270/</guid>
-      <description>Ah, the question everyone asks. Celeron M vs Atom N270 for netbook computers (VIA is ruled out here, as it is outperformed by both in most benchmark tests). A note before I continue writing this article, I don&amp;rsquo;t actually own a netbook with an N270 processor, so the comparisons are based on my friend Quack&amp;rsquo;s Acer Aspire One.
-Day to Day Usage: In day to day usage, the Intel Atom outperforms the Celeron M in almost every field.</description>
-    </item>
-    
-    <item>
-      <title>Accepted!</title>
-      <link>https://pobe.ga/posts/accepted/</link>
-      <pubDate>Tue, 16 Dec 2008 21:54:33 -0400</pubDate>
-      
-      <guid>https://pobe.ga/posts/accepted/</guid>
-      <description>I got my acceptance letter from SUNY IT today, it put me in a pretty good mood. Finally, I&amp;rsquo;ll be out of the cruddy CUNY system and in a real tech school. No more bullshit Computer Science professors or retarded classes (a web design class where they teach you basic HTML in six months? No way!) for good.
-I&amp;rsquo;ve been telling all my friends that I&amp;rsquo;m leaving in a few weeks, and I am getting mixed reactions.</description>
-    </item>
-    
-    <item>
-      <title>Urban Terror, a realistic, modern day FPS on the Eee PC 900</title>
-      <link>https://pobe.ga/posts/urban-terror-eeepc-900/</link>
-      <pubDate>Mon, 15 Dec 2008 21:46:02 -0400</pubDate>
-      
-      <guid>https://pobe.ga/posts/urban-terror-eeepc-900/</guid>
-      <description>Since I&amp;rsquo;ve owned my Eee PC 900 I&amp;rsquo;ve been trying to find a good game to play on it. Most games require a real graphics card, or more than 900 MHz of computing power, so getting an Eee PC to comfortably run these games is a chore. Games like Tremulous or Counter Strike: Source (through Wine) run, but only at about 10 FPS maximum. Being frustrated with this, I Googled for a few hours looking for a good Linux native FPS.</description>
-    </item>
-    
-    <item>
-      <title>Flashplayer 10 - Horrible Bug</title>
-      <link>https://pobe.ga/posts/flashplayer-bug/</link>
-      <pubDate>Sun, 14 Dec 2008 19:52:15 -0400</pubDate>
-      
-      <guid>https://pobe.ga/posts/flashplayer-bug/</guid>
-      <description>So, I installed the Debian flashplayer-mozilla package the other day just to try out a game (Dofus, to be exact) while simultaneously voice chatting with a friend, when crash completely segfaulted and crashed my laptop. After rebooting and calling my friend back he complained about the quality of my voice &amp;ndash; Apparently flash player did something to my microphone and now it&amp;rsquo;s borked..
-My theory for how this happened is that I was using my microphone while flash was trying to access it (since Adobe&amp;rsquo;s flash player has mic and webcam access), Adobe flash panicked, and crashed (while still trying to access the mic) which caused a system crash and microphone hardware failure.</description>
     </item>
     
   </channel>

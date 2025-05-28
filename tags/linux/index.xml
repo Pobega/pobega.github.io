@@ -46,7 +46,7 @@ gfx.webrender.enabled=true gfx.webrender.all=true media.ffmpeg.vaapi.enabled=tru
       <guid>https://pobe.ga/posts/firefox-flatpak-stable/</guid>
       <description>Distro wars time: I&amp;rsquo;m a Fedora Silverblue user. I use it for both the ease of administration as well as the security benefits a completely containerized workflow provides.
 One common issue folks trying to make the switch run into is packages being wholly unavailable - this can be resolved in three ways.
-Fedora Toolbox to create a Fedora container and dnf install tools. Flatpak to install graphical tools to be used on the desktop-side of the OS.</description>
+ Fedora Toolbox to create a Fedora container and dnf install tools. Flatpak to install graphical tools to be used on the desktop-side of the OS.</description>
     </item>
     
     <item>
@@ -77,27 +77,6 @@ Last week I received my Lenovo ThinkPad T495s, a new T-series line of ThinkPads 
       
       <guid>https://pobe.ga/posts/clevo-w740su/</guid>
       <description>The last time I splurged on a laptop was back when the Intel Core 2 Duo was the newest CPU on the market. Nowadays, I tend to just use EeePCs or budget i3 laptops to get my work done. With graduation approaching and senior projects looming I decided I wanted something powerful, and it needed to be fully Linux compatible. After a bit of research I decided on the Clevo W740SU, also known as the Callisto 1413 sold by Mythlogic, the Galago Ultrapro sold by System76, the Zeus Hercules as sold by CyberpowerPC, and various other names from other resellers.</description>
-    </item>
-    
-    <item>
-      <title>Eee-Control and snd_hda_intel Troubles</title>
-      <link>https://pobe.ga/posts/eeecontrol-snd_hda_intel-troubles/</link>
-      <pubDate>Tue, 03 Feb 2009 09:03:19 -0400</pubDate>
-      
-      <guid>https://pobe.ga/posts/eeecontrol-snd_hda_intel-troubles/</guid>
-      <description>Ever since I bought my Eee PC 901 I&amp;rsquo;ve been trying to find a way to manually control the fan; all of the tools that worked on my Celeron-powered 900 don&amp;rsquo;t work at all on my Atom-powered 901.
-After a bit of Googling I found a program called Eee-Control, which claimed that it could control the Atom&amp;rsquo;s clock and fan speed. After trying and disliking the software I removed it from my system, but then I noticed a weird problem with my speakers &amp;ndash; they kept popping every time I initialized the sound!</description>
-    </item>
-    
-    <item>
-      <title>New Kernel (2.6.27.9) Upgrade on my Eee</title>
-      <link>https://pobe.ga/posts/new-kernel-eee/</link>
-      <pubDate>Wed, 31 Dec 2008 16:32:14 -0400</pubDate>
-      
-      <guid>https://pobe.ga/posts/new-kernel-eee/</guid>
-      <description>So I upgraded my kernel from my very outdated 2.6.25-* kernel to 2.6.27.9, and I have to say I&amp;rsquo;m impressed.
-I ditched my old MadWiFi drivers (contrib) for fully free and open source ath5k modules (built right into the kernel!), as well as having my ethernet built in (non-modular) and an improvement in boot time (under 2 seconds, but still)
-I&amp;rsquo;ll be posting up a .deb and .config when I get around to it, I need to fix a little bit more (the webcam doesn&amp;rsquo;t work out of the box, I&amp;rsquo;m probably going to need to compile that into the kernel too).</description>
     </item>
     
   </channel>
