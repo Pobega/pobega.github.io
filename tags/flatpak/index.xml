@@ -6,7 +6,17 @@
     <description>Recent content in flatpak on Michael Pobega</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 03 Dec 2023 16:58:29 -0400</lastBuildDate><atom:link href="https://pobe.ga/tags/flatpak/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 20 Nov 2025 13:53:42 -0400</lastBuildDate><atom:link href="https://pobe.ga/tags/flatpak/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Developing using Docker inside of a container</title>
+      <link>https://pobe.ga/posts/docker-from-container/</link>
+      <pubDate>Thu, 20 Nov 2025 13:53:42 -0400</pubDate>
+      
+      <guid>https://pobe.ga/posts/docker-from-container/</guid>
+      <description>For the last six years or so I&amp;rsquo;ve been running Fedora Atomic as my daily driver; an immutable version of Fedora that uses Flatpaks and containers rather than installing packages to the host OS.
+One complication is that so many projects use Docker, and running Docker from inside a container is generally not supported. Fortunately for us, flatpak-spawn lets us run binaries on the host OS and pass their output into the container.</description>
+    </item>
+    
     <item>
       <title>2023 Update: Firefox &amp; Hardware Video Decoding on Wayland</title>
       <link>https://pobe.ga/posts/firefox-video-decoding-2023/</link>

@@ -2,6 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://pobe.ga/posts/docker-from-container/</loc>
+    <lastmod>2025-11-20T13:53:42-04:00</lastmod>
+  </url><url>
+    <loc>https://pobe.ga/tags/development/</loc>
+    <lastmod>2025-11-20T13:53:42-04:00</lastmod>
+  </url><url>
+    <loc>https://pobe.ga/tags/docker/</loc>
+    <lastmod>2025-11-20T13:53:42-04:00</lastmod>
+  </url><url>
+    <loc>https://pobe.ga/tags/flatpak/</loc>
+    <lastmod>2025-11-20T13:53:42-04:00</lastmod>
+  </url><url>
+    <loc>https://pobe.ga/tags/linux/</loc>
+    <lastmod>2025-11-20T13:53:42-04:00</lastmod>
+  </url><url>
+    <loc>https://pobe.ga/</loc>
+    <lastmod>2025-11-20T13:53:42-04:00</lastmod>
+  </url><url>
+    <loc>https://pobe.ga/posts/</loc>
+    <lastmod>2025-11-20T13:53:42-04:00</lastmod>
+  </url><url>
+    <loc>https://pobe.ga/tags/</loc>
+    <lastmod>2025-11-20T13:53:42-04:00</lastmod>
+  </url><url>
     <loc>https://pobe.ga/posts/firefox-video-decoding-2023/</loc>
     <lastmod>2023-12-03T16:58:29-04:00</lastmod>
   </url><url>
@@ -9,21 +33,6 @@
     <lastmod>2023-12-03T16:58:29-04:00</lastmod>
   </url><url>
     <loc>https://pobe.ga/tags/firefox/</loc>
-    <lastmod>2023-12-03T16:58:29-04:00</lastmod>
-  </url><url>
-    <loc>https://pobe.ga/tags/flatpak/</loc>
-    <lastmod>2023-12-03T16:58:29-04:00</lastmod>
-  </url><url>
-    <loc>https://pobe.ga/tags/linux/</loc>
-    <lastmod>2023-12-03T16:58:29-04:00</lastmod>
-  </url><url>
-    <loc>https://pobe.ga/</loc>
-    <lastmod>2023-12-03T16:58:29-04:00</lastmod>
-  </url><url>
-    <loc>https://pobe.ga/posts/</loc>
-    <lastmod>2023-12-03T16:58:29-04:00</lastmod>
-  </url><url>
-    <loc>https://pobe.ga/tags/</loc>
     <lastmod>2023-12-03T16:58:29-04:00</lastmod>
   </url><url>
     <loc>https://pobe.ga/posts/rust-filesystem-sync/</loc>
