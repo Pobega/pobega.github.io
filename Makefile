@@ -1,3 +1,5 @@
+.PHONY: build publish server clean worktree
+
 # Just run a Hugo build and regenerate the site
 build:
 	hugo
