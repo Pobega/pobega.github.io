@@ -157,11 +157,12 @@
 </div>
 
 
-    <br> <div class="text-justify"><p>For the last six years or so I&rsquo;ve been running <a href="https://fedoraproject.org/atomic-desktops/">Fedora Atomic</a> as my daily driver; an immutable version of Fedora that uses Flatpaks and containers rather than installing packages to the host OS.</p>
-<p>One complication is that so many projects use Docker, and running Docker from inside a container is generally not supported. Fortunately for us there are a few methods to get run containers inside your containers.</p>
+    <br> <div class="text-justify"><p>This guide assumes familiarity with Linux command-line operations, Docker, and Fedora Atomic concepts.</p>
+<p>For the last six years or so I&rsquo;ve been running <a href="https://fedoraproject.org/atomic-desktops/">Fedora Atomic</a> as my daily driver; an immutable version of Fedora that uses Flatpaks and containers rather than installing packages to the host OS. This means the base operating system is read-only, making direct installation of packages like Docker challenging within the host environment.</p>
+<p>One complication is that so many projects use <code>docker</code> for building which is not supported inside of a container. Fortunately for us there are a few methods to get run containers inside your containers.</p>
 <h2 id="method-1">Method 1</h2>
-<p>This method uses a layered <code>docker</code> package on your host and utilizses <code>flatpak-spawn</code> to launch it on the host, forwarding the output back into the container. First make sure to have <code>docker</code> as a layered package on your host OS via <code>rpm-ostree</code>, consult Google for up-to-date information on that.</p>
-<p>Once Docker is installed create a shim shell script somewhere in your <code>$PATH</code> (such as <code>~/.local/bin/docker</code>) that calls out to <code>flatpak-spawn</code>:</p>
+<p>This method uses a layered <code>docker</code> package on your host and utilizes <code>flatpak-spawn</code> to launch it on the host, forwarding the output back into the container. First make sure to have <code>docker</code> as a layered package on your host OS via <code>rpm-ostree</code> (e.g., <code>sudo rpm-ostree install docker-ce</code>), consult Google for up-to-date information on that.</p>
+<p>Once <code>docker</code> is installed create a shim shell script somewhere in your <code>$PATH</code> (such as <code>~/.local/bin/docker</code>) that calls out to <code>flatpak-spawn</code>:</p>
 <pre tabindex="0"><code>#!/bin/bash
 
 if [ ! -x /usr/bin/docker ]; then
@@ -173,13 +174,17 @@ fi
 <p>Note: You can also get away with an alias such as <code>alias docker='flatpak-spawn --host docker'</code></p>
 <p>Downsides to this method are that I&rsquo;ve seen some strange clashing with <code>flatpak-spawn</code> and Flatpaks running on the host, but it doesn&rsquo;t appear to happen very often.</p>
 <h2 id="method-2">Method 2</h2>
-<p>Another method for using Docker inside of Toolbx actually uses Podman&rsquo;s host socket with a Docker client inside of the container.</p>
+<p>Another method for using <code>docker</code> inside your container actually uses Podman&rsquo;s host socket with a standard <code>docker</code> client in your guest.</p>
 <p>First, ensure that you enable the user socket for your user:</p>
-<pre tabindex="0"><code>systemctl --user enable --now podman.socket
-</code></pre><p>Then enter your toolbox and simply <code>sudo dnf install docker</code>. To tell Docker to use the host&rsquo;s socket, set your DOCKER_HOST environment variable:</p>
+<pre tabindex="0"><code>(host-system)$ systemctl --user enable --now podman.socket
+</code></pre><p>Then inside your container, install <code>docker</code>:</p>
+<pre tabindex="0"><code>(container)$ sudo dnf install docker
+</code></pre><p>To tell <code>docker</code> to use the host&rsquo;s socket, set your <code>DOCKER_HOST</code> environment variable:</p>
 <pre tabindex="0"><code>export DOCKER_HOST=&#34;unix://$XDG_RUNTIME_DIR/podman/podman.sock&#34;
-</code></pre><p>And you should have working Docker inside your container!</p>
-<p>Downsides to this method are that there appear to be permission issues, and I don&rsquo;t think it&rsquo;s fully compatible with Docker compose (since you are technically using Podman as your Docker host.) But this one requires the least setup and is the simpler.</p>
+</code></pre><p>And you should have working Docker inside your container! Be sure to set this variable somewhere automatic as well, like in <code>~/.bashrc</code> (or your shell&rsquo;s equivalent.)</p>
+<p>Downsides to this method are that there appear to be permission issues (I&rsquo;ve run into some issues with passing volumes,) and I don&rsquo;t think it&rsquo;s fully compatible with Docker compose (since you are technically using Podman as your Docker host.) But this one requires the least setup and is the simplest of the two.</p>
+<h3 id="conclusion">Conclusion</h3>
+<p>Choosing between these methods depends on your specific needs. Method 1 offers a more direct Docker experience with potential <code>flatpak-spawn</code> quirks, while Method 2 provides a simpler setup by leveraging Podman, though it may have compatibility limitations with advanced Docker features like Docker Compose or volume passing.</p>
 </div>
 
     

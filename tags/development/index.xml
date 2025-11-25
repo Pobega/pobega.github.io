@@ -13,9 +13,9 @@
       <pubDate>Thu, 20 Nov 2025 13:53:42 -0400</pubDate>
       
       <guid>https://pobe.ga/posts/docker-from-container/</guid>
-      <description>For the last six years or so I&amp;rsquo;ve been running Fedora Atomic as my daily driver; an immutable version of Fedora that uses Flatpaks and containers rather than installing packages to the host OS.
-One complication is that so many projects use Docker, and running Docker from inside a container is generally not supported. Fortunately for us there are a few methods to get run containers inside your containers.
-Method 1 This method uses a layered docker package on your host and utilizses flatpak-spawn to launch it on the host, forwarding the output back into the container.</description>
+      <description>This guide assumes familiarity with Linux command-line operations, Docker, and Fedora Atomic concepts.
+For the last six years or so I&amp;rsquo;ve been running Fedora Atomic as my daily driver; an immutable version of Fedora that uses Flatpaks and containers rather than installing packages to the host OS. This means the base operating system is read-only, making direct installation of packages like Docker challenging within the host environment.
+One complication is that so many projects use docker for building which is not supported inside of a container.</description>
     </item>
     
   </channel>
