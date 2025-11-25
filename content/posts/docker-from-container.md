@@ -8,7 +8,7 @@ This guide assumes familiarity with Linux command-line operations, Docker, and F
 
 For the last six years or so I've been running [Fedora Atomic](https://fedoraproject.org/atomic-desktops/) as my daily driver; an immutable version of Fedora that uses Flatpaks and containers rather than installing packages to the host OS. This means the base operating system is read-only, making direct installation of packages like Docker challenging within the host environment.
 
-One complication is that so many projects use `docker` for building which is not supported inside of a container. Fortunately for us there are a few methods to get run containers inside your containers.
+One complication is that so many projects use `docker` for building which is not supported inside of a container. Fortunately for us there are a few methods to run containers inside your containers.
 
 ## Method 1
 This method uses a layered `docker` package on your host and utilizes `flatpak-spawn` to launch it on the host, forwarding the output back into the container. First make sure to have `docker` as a layered package on your host OS via `rpm-ostree` (e.g., `sudo rpm-ostree install docker-ce`), consult Google for up-to-date information on that.
