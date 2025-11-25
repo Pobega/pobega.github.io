@@ -159,7 +159,7 @@
 
     <br> <div class="text-justify"><p>This guide assumes familiarity with Linux command-line operations, Docker, and Fedora Atomic concepts.</p>
 <p>For the last six years or so I&rsquo;ve been running <a href="https://fedoraproject.org/atomic-desktops/">Fedora Atomic</a> as my daily driver; an immutable version of Fedora that uses Flatpaks and containers rather than installing packages to the host OS. This means the base operating system is read-only, making direct installation of packages like Docker challenging within the host environment.</p>
-<p>One complication is that so many projects use <code>docker</code> for building which is not supported inside of a container. Fortunately for us there are a few methods to get run containers inside your containers.</p>
+<p>One complication is that so many projects use <code>docker</code> for building which is not supported inside of a container. Fortunately for us there are a few methods to run containers inside your containers.</p>
 <h2 id="method-1">Method 1</h2>
 <p>This method uses a layered <code>docker</code> package on your host and utilizes <code>flatpak-spawn</code> to launch it on the host, forwarding the output back into the container. First make sure to have <code>docker</code> as a layered package on your host OS via <code>rpm-ostree</code> (e.g., <code>sudo rpm-ostree install docker-ce</code>), consult Google for up-to-date information on that.</p>
 <p>Once <code>docker</code> is installed create a shim shell script somewhere in your <code>$PATH</code> (such as <code>~/.local/bin/docker</code>) that calls out to <code>flatpak-spawn</code>:</p>
